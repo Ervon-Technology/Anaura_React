@@ -4,7 +4,11 @@ import './brands.css'
 const Brands = () => {
   return (
     <div>
+        
         <div class="container-fluid">
+        <section className=' sec-1 container-fluid'>
+
+</section>
         {/* <!-- First Row --> */}
         <div class="container-fluid p-0">
             <div class="row no-gutters">

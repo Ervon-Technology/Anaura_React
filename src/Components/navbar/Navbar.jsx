@@ -51,7 +51,7 @@ const MyNavbar = () => {
       {/* Navbar section */}
       <nav className="navbar navbar-expand-lg navbar-light position-fixed top-0 w-100" style={{ zIndex: 2 }}>
         <div className="container">
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand" href="/">
             <img src={logo} height="30" alt="ANAURA" />
           </a>
           <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">

@@ -1,4 +1,8 @@
             /* 1st row */
+            .sec-1{
+                height: 500px;
+                background-color: black;
+            }
             .gray-background {
            
                 height: 95vh;
