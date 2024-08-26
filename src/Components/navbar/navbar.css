@@ -1,0 +1,110 @@
+.hover-bg:hover {
+    background-color: #f8f9fa; /* Background color on hover */
+}
+.navbtn:hover{
+  color: black !important;
+
+}
+
+ul li {
+    margin-right: 1rem; /* Adjust as needed */
+}
+
+ul li:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+}
+
+.navbar {
+  background-color: transparent;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+.navbar .nav-link, .navbar .navbar-brand, .navbar .btn-outline-light {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.navbar .btn-outline-light {
+  border-color: white;
+}
+
+/* Navbar when scrolled */
+.navbar.scrolled {
+  background-color: white !important;
+  color: black !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.navbar.scrolled .nav-link, .navbar.scrolled .navbar-brand, .navbar.scrolled .btn-outline-light {
+  color: black !important;
+}
+
+.navbar.scrolled .btn-outline-light {
+  border-color: black !important;
+}
+
+
+
+
+
+/* Ensure the dropdown-content is initially hidden */
+.dropdown-content {
+  display: none; /* Hide dropdown content by default */
+  position: absolute; /* Position relative to the parent */
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for a blurred effect */
+  border: 1px solid #ddd; /* Border color */
+  border-radius: 4px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Shadow */
+  z-index: 1; /* Ensure it is above other content */
+  width: 230px; /* Width of the dropdown */
+  top: 150%; /* Position it below the dropdown toggle */
+  left: -50px; /* Align it to the left of the toggle */
+  backdrop-filter: blur(10px); /* Apply the blur effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari support */
+}
+
+/* Style dropdown items */
+.dropdown-content a {
+  color: #333; /* Text color */
+  padding: 8px 16px; /* Padding */
+  text-decoration: none; /* Remove underline */
+  display: block; /* Block display for each item */
+}
+
+/* Hover effect for dropdown items */
+.dropdown-content a:hover {
+  background-color: rgba(241, 241, 241, 0.8); /* Light gray background on hover with transparency */
+}
+
+/* Create the triangle indicator */
+.dropdown-content::before {
+  content: '';
+  position: absolute;
+  top: -20px; /* Position the triangle above the dropdown */
+  left: calc(50% - 5px); /* Center the triangle relative to the dropdown */
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent rgba(255, 255, 255, 0.8) transparent; /* Match the triangle with the dropdown background */
+}
+
+/* Show the dropdown content when the parent is active */
+.nav-item.dropdown.show .dropdown-content {
+  display: block;
+}
+
+
+
+
+
+
+@media screen and (min-width:320px) and (max-width:800px) {
+  nav .nav-link{
+    color: black !important;
+  }
+  .navbtn{
+    color: black !important;
+  }
+  
+}
+
+
+
