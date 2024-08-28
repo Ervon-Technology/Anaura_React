@@ -69,8 +69,8 @@ const MyNavbar = () => {
                     Discover ANAURA
                   </a>
                   <div className="dropdown-content" id="dropdownDiscoverContent">
-                    <a className="dropdown-item border-bottom" href="#">About us</a>
-                    <a className="dropdown-item border-bottom" href="#">How it's made</a>
+                    <a className="dropdown-item border-bottom" href="/about">About us</a>
+                    <a className="dropdown-item border-bottom" href="/fashion">How it's made</a>
                     <a className="dropdown-item border-bottom" href="/brands">Anaura for brands</a>
                   </div>
                 </li>
@@ -98,8 +98,8 @@ const MyNavbar = () => {
       {/* Full-width dropdown container */}
       <div className="dropdown-fullwidth bg-white position-absolute w-100 d-none" id="dropdownMenuContainer">
         <div id="dropdownDiscoverMenu" className="dropdown-menu-custom d-none">
-          <a className="dropdown-item" href="#">About us</a>
-          <a className="dropdown-item" href="#">How it's made</a>
+          <a className="dropdown-item" href="/about">About us</a>
+          <a className="dropdown-item" href="/fashion">How it's made</a>
           <a className="dropdown-item" href="/brands">Anaura for brands</a>
         </div>
         <div id="dropdownSustainabilityMenu" className="dropdown-menu-custom d-none">

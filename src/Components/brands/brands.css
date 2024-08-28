@@ -1,7 +1,21 @@
             /* 1st row */
             .sec-1{
                 height: 500px;
-                background-color: black;
+                width: 100%;
+              
+            }
+            .img-col{
+                background-color: lightgray;
+            }
+            .img{
+               
+                
+               height:100%;
+               width: 100%;
+                background-image: url(../../images/brand-1.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+
             }
             .gray-background {
            

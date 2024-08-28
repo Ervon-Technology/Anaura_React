@@ -1,14 +1,26 @@
 import React from 'react'
 import './brands.css'
+import brand from "../../images/brand-1.jpg";
 
 const Brands = () => {
   return (
     <div>
         
-        <div class="container-fluid">
-        <section className=' sec-1 container-fluid'>
+        <div class="container-fluid p-0">
+        <section className=' row sec-1 container-fluid p-0 img-col'>
+        
+                <div className="col-lg-8"></div>
+                <div className="col-lg-4  ">
+                    <div className=' img '>
+
+                    </div>
+
+                
+            </div>
+
 
 </section>
+
         {/* <!-- First Row --> */}
         <div class="container-fluid p-0">
             <div class="row no-gutters">

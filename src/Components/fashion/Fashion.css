@@ -1,0 +1,400 @@
+
+
+.main-content-fashion-1 {
+  height: fit-content;
+  width: 100%;
+}
+
+.main-content-fashion-11 {
+  height: 450px;
+  background-color: aliceblue;
+  width: 100%;
+}
+
+.main-content-fashion-2{
+  margin-top: 100px ;
+}
+
+.main-content-fashion {
+  height: 500px;
+  width: 100%;
+}
+
+.main-content-fashion-3 {
+  height: fit-content;
+  margin-top: 100px !important;
+}
+
+.main-content-fashion-3-column-1 {
+  height: 450px;
+  background-image: url(../../images/scarf_outfit.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-content-fashion-3-column-2 {
+  height: 450px;
+}
+.text-content-div {
+  height: 80%;
+  font-size: 2.5rem;
+  /* padding: 150px; */
+}
+
+.small-text-paragraph {
+  padding: 0px 400px 0px 400px;
+}
+
+.small-text-paragraph-1 {
+  padding: 0px 300px 0px 300px;
+}
+
+.small-text-paragraph-2 {
+  padding: 0px 400px 0px 400px;
+}
+
+.custom-btn-fashion {
+  border-radius: 20px;
+}
+.img-fashion {
+  height: 500px !important;
+}
+
+.img-fashion1 {
+  height: 100% !important;
+  width:100% !important;
+  object-fit: cover;
+}
+.custom-carousel-container {
+  overflow-x: hidden;
+  display: flex;
+  width: 100%;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  position: relative; /* Ensure buttons are positioned correctly */
+}
+
+.carousel-wrapper {
+  display: flex;
+  flex-wrap: nowrap; /* Prevent slides from wrapping */
+  margin-left: 70px;
+}
+
+.carousel-slide {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel-slide img {
+  max-width: 100%;
+  height: auto;
+  margin-left: 10px !important;
+  border-radius: 8px;
+  display: block;
+}
+
+.active-slide {
+  transform: scale(0.9);
+}
+
+.inactive-slide {
+  transform: scale(0.7);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-control-prev {
+  left: 10px;
+}
+
+.carousel-control-next {
+  right: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 20px;
+  height: 20px;
+}
+.fashion-last{
+  /* background-color: lightgoldenrodyellow; */
+  height: fit-content;
+}
+
+
+@media screen and (min-width: 801px) and (max-width: 1025px) {
+  .small-text-paragraph {
+    padding: 0px 200px 0px 200px;
+  }
+  .small-text-paragraph-1 {
+    padding: 0px 100px 0px 100px;
+  }
+  .small-text-paragraph-2 {
+    padding: 0px 200px 0px 200px;
+  }
+  .img-fashion {
+    height: 400px;
+  }
+  .carousel-wrapper {
+    margin-left: 10px;
+  }
+
+  .carousel-slide img {
+    margin-left: 5px !important;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 35px;
+    height: 35px;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
+  .main-content-fashion-1 {
+    height: 600px;
+    width: 100%;
+  }
+
+  .img-fashion {
+    height: 500px !important;
+    width: 50% !important;
+  }
+  .text-content-div {
+    height: 100%;
+    font-size: 1.25rem !important;
+    padding: 0px 100px 0px 100px;
+  }
+  .small-text-paragraph {
+    padding: 0px 0px 0px 0px;
+  }
+  .small-text-paragraph-1 {
+    padding: 0px 100px 0px 100px;
+  }
+  .main-content-fashion-3-column-1 {
+    height: 400px;
+  }
+  .main-content-fashion-3-column-2 {
+    height: 200px;
+  }
+  .small-text-paragraph-2 {
+    padding: 0px 100px 0px 100px;
+  }
+  .carousel-wrapper {
+    margin-left: 60px;
+    margin-top: 10px;
+  }
+
+  .carousel-slide img {
+    margin-left: 0px !important;
+    height: 200px !important;
+    width: 200px !important;
+  }
+
+  .carousel-slide {
+    margin-right: 5px;
+  }
+
+  .active-slide {
+    transform: scale(1);
+  }
+
+  .inactive-slide {
+    transform: scale(0.65);
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 30px;
+    height: 30px;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 10px;
+    height: 10px;
+  }
+  .small-text-paragraph-11{
+    /* font-size: 14px !important; */
+    margin-top: 120px !important;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 426px) {
+  .main-content-fashion-1 {
+    height: 400px;
+    width: 100%;
+  }
+  .img-fashion {
+    height: 500px !important;
+    width: 50% !important;
+  }
+  .main-content-fashion-11 {
+    height: 300px;
+    width: 100%;
+  }
+  .main-content-fashion-2{
+    margin-top: 130px ;
+  }
+  .text-content-div {
+    height: 100%;
+    font-size: 1.25rem !important;
+  }
+  .small-text-paragraph {
+    padding: 0px 0px 0px 0px;
+  }
+  .small-text-paragraph-1 {
+    padding: 0px 50px 0px 50px;
+  }
+  .main-content-fashion-3-column-1 {
+    height: 300px;
+  }
+  .main-content-fashion-3-column-2 {
+    height: 200px;
+  }
+  .small-text-paragraph-2 {
+    padding: 0px 50px 0px 50px;
+  }
+  .img-fashion {
+    height: 300px;
+  }
+  .carousel-wrapper{
+    margin-left: 0;
+  }
+  .carousel-wrapper {
+    margin-left: 60px;
+    margin-top: 10px;
+  }
+
+  .carousel-slide img {
+    margin-left: 0px !important;
+    height: 200px !important;
+    width: 200px !important;
+  }
+
+  .carousel-slide {
+    margin-right: 3px;
+  }
+
+  .active-slide {
+    transform: scale(1);
+  }
+
+  .inactive-slide {
+    transform: scale(0.9);
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 25px;
+    height: 25px;
+    display: none;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 8px;
+    height: 8px;
+  }
+  .small-text-paragraph-11{
+    font-size: 18px !important;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 397px) {
+  .main-content-fashion-1 {
+    height: 400px;
+    width: 100%;
+  }
+  .img-fashion {
+    height: 500px !important;
+    width: 50% !important;
+  }
+  .main-content-fashion-11 {
+    height: 200px;
+    width: 100%;
+  }
+  .main-content-fashion-2{
+    margin-top: 160px ;
+  }
+  .text-content-div {
+    height: 100%;
+    font-size: 1.25rem !important;
+  }
+  .small-text-paragraph {
+    padding: 0px 0px 0px 0px;
+  }
+  .small-text-paragraph-1 {
+    padding: 0px 50px 0px 50px;
+  }
+  .main-content-fashion-3-column-1 {
+    height: 200px;
+  }
+  .main-content-fashion-3-column-2 {
+    height: 200px;
+  }
+  .small-text-paragraph-2 {
+    padding: 0px 50px 0px 50px;
+  }
+  .img-fashion {
+    height: 200px;
+  }
+  .carousel-wrapper {
+    margin-left: 60px;
+    margin-top: 10px;
+  }
+
+  .carousel-slide img {
+    margin-left: 0px !important;
+    height: 200px !important;
+    width: 200px !important;
+  }
+
+  .carousel-slide {
+    margin-right: 3px;
+  }
+
+  .active-slide {
+    transform: scale(1);
+  }
+
+  .inactive-slide {
+    transform: scale(0.9);
+  }
+  .small-text-paragraph-11{
+    font-size: 14px !important;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 25px;
+    height: 25px;
+    display: none;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 8px;
+    height: 8px;
+  }
+}

@@ -1,0 +1,24 @@
+.hero{
+    background-image: url('https://s3-alpha-sig.figma.com/img/d19f/078b/37b903c01216d46846d9e2ee508244eb?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=V0dXez74F78KPG7~NkD3lsv-QC~PrRsQtss-PsjITmZ8c4u96R~k~BAJnGkuli5o-EV7dMSJ6MCRoU4wD~wbxhbs5uHI8GGTkKQyW5o7cr8o4SRYyBDjiitw1c2omSTS6YaGZ5iY~LpuZnY9irBC1NMrQA6Gy4scFBPJvTQEclG45Mm3qdBxh740K5EDSGcF9RUDNAFUm1nZ5dNBrEyOGjqnVcdfQXSVKtV~hpiMU~p-TqralIoRxcTUe8fKjPLK5wDvtq-XI~~ZTrYTXeGgLk46LmxGuBWNAtvMq3oG8D1n62NaajbrQVUDWKqyWBr41UlynRS-ERFENe-m~Rxvlw__');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero h3{
+    font-weight: 400;
+}
+.crafting{
+    background-color:  #D1EBF8;
+
+}
+.ab-2{
+    background-color: rgb(233, 225, 225);
+}
+.abtbtn:hover{
+    background-color: black !important;
+    color: white !important;
+  
+  }
+  .hero-last{
+    background-color: lightgoldenrodyellow;
+    height: fit-content;
+}
