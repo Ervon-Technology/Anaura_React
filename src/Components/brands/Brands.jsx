@@ -1,25 +1,19 @@
 import React from 'react'
 import './brands.css'
-import brand from "../../images/brand-1.jpg";
+
 
 const Brands = () => {
   return (
-    <div>
+<div>
         
-        <div class="container-fluid p-0">
-        <section className=' row sec-1 container-fluid p-0 img-col'>
-        
-                <div className="col-lg-8"></div>
-                <div className="col-lg-4  ">
-                    <div className=' img '>
+    <div class="container-fluid p-0">
 
-                    </div>
-
-                
+        <section className=' container-fluid p-0'>
+            <div className="row  sec-1">
+                <div className="col-8 "></div>
+                <div className="col-4 img p-5"> </div>
             </div>
-
-
-</section>
+        </section>
 
         {/* <!-- First Row --> */}
         <div class="container-fluid p-0">
@@ -90,7 +84,7 @@ const Brands = () => {
                     <div>
                         <p class="  text-start  text-section-5 ">Make your brand Trustable, 
                             Traceable & Sustainable</p>
-                        <p class="text-start  w-75 ml-5">with Anaura , Anaura comes with quality 
+                        <p class="text-start  w-75 ml-5 text-section-5-1">with Anaura , Anaura comes with quality 
                             standardisation certificates , You can trace Anaura 
                             back to from where it was made OBP , HBP or PCR and 
                             it’s made with sustainable manufacturing process by 
@@ -106,7 +100,7 @@ const Brands = () => {
 
 
       
-    </div>
+</div>
   )
 }
 

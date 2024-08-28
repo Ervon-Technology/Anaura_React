@@ -1,91 +1,157 @@
-            /* 1st row */
-            .sec-1{
-                height: 500px;
-                width: 100%;
-              
-            }
-            .img-col{
-                background-color: lightgray;
-            }
-            .img{
-               
-                
-               height:100%;
-               width: 100%;
-                background-image: url(../../images/brand-1.jpg);
-                background-repeat: no-repeat;
-                background-size: cover;
+/* 1st row */
+.sec-1 {
+    height: 70vh;
+    background-image: linear-gradient(to left, white 5%, gray 190%);
+}
 
-            }
-            .gray-background {
-           
-                height: 95vh;
-            }
-            .text-section{
-                font-size: 40px;
-                font-weight: 600;
-                letter-spacing: 1px;
-                width: 450px;
-            }
-            .bg-tertiary{
-                background-color: lightgray;
-            }
-            /* 1st row end */
-    
-    
-    
-            /* 2nd row */
-            .text-section-2{
-                font-size: 30px;
-                font-weight: 500;
-                width: 382px;
-                line-height: 42px;
-                /* letter-spacing: 1px; */
-            }
-            .scecond-row{
-                margin-top: 100px;
-            }
-            .highlight-text{
-                margin-top: -10px;
-            }
-            /* 2nd row end*/
-    
-            /* 3rd row */
-    
-            .text-section-3{
-                font-size: 25px;
-                font-weight: 500;
-                width: 382px;
-                margin-left: -100px;
-                line-height: 42px;
-                /* letter-spacing: 1px; */
-            }
-            .third-row{
-                margin-top: 100px;
-    
-            }
-    
-            /* 3rd row end */
-    
-            /* 4th row */
-            .text-section-4{
-                font-size: 25px;
-                font-weight: 500;
-                width: 482px;
-                margin-left: 100px;
-                line-height: 42px;
-    
-            }
-            /* 5th row */
-    
-            .text-section-5{
-                font-size: 25px;
-                font-weight: 500;
-                width: 382px;
-                margin-left: 50px;
-                line-height: 42px;
-    
-            }
+.img {
+    background-image: url(../../images/brand-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -100px;
+}
 
+.gray-background {
+    height: 95vh;
+    background-image: url('https://s3-alpha-sig.figma.com/img/b51f/7bb1/c8073257b8a0c12c39a520bf3a61754c?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bOw1tsfC2h2CdYUEo8CQUQ4I7ShdouAaG9m8319CGwF4h2aHvKPY1NTwnLNU3liPssfxVnozT~gXZO-cGhgvlSbjvS-sS9RlqZWs0al1HtNjrmGkA7CmAoWo3LU41isZxQZx22PA7ANJdXhkit-IPYF~-5YDxeaY4E2MgeedaJRKltKupekU35E-Sg3u72TIgjp1gVzA6q17fULOTK0ecuoxIjh5bnyhL3RIauxND6~ugjsETs8hXJtLlsu4m0hclAlTg1WksdAxG~4ZE6Mh2z~88YqczyhlC6vdq0xIBuRnO1rpHEjBvq4xzDGRuu6NDgmAIoA~kTHRofim-nS8-w__');
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
 
-            
+.text-section {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    width: 450px;
+}
+
+.bg-tertiary {
+    background-color: rgb(209, 237, 255);
+}
+
+/* 1st row end */
+
+/* 2nd row */
+.text-section-2 {
+    font-size: 30px;
+    font-weight: 500;
+    width: 382px;
+    line-height: 42px;
+}
+
+.scecond-row {
+    margin-top: 100px;
+}
+
+.highlight-text {
+    margin-top: -10px;
+}
+
+/* 2nd row end */
+
+/* 3rd row */
+.text-section-3 {
+    font-size: 25px;
+    font-weight: 500;
+    width: 382px;
+    margin-left: -100px;
+    line-height: 42px;
+}
+
+.third-row {
+    margin-top: 100px;
+}
+
+/* 3rd row end */
+
+/* 4th row */
+.text-section-4 {
+    font-size: 25px;
+    font-weight: 500;
+    width: 482px;
+    margin-left: 100px;
+    line-height: 42px;
+}
+
+/* 5th row */
+.text-section-5 {
+    font-size: 25px;
+    font-weight: 500;
+    width: 382px;
+    margin-left: 50px;
+   
+    line-height: 42px;
+}
+.text-section-5-1 {
+    font-size: 16px;
+    font-weight: 500;
+    width: 382px;
+    margin-left: 50px;
+    line-height: 27px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    /* Adjustments for large tablets and smaller screens */
+    .text-section, .text-section-2, .text-section-3, .text-section-4, .text-section-5 {
+        font-size: 28px;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .img {
+        background-position-y: center;
+    }
+
+    .gray-background {
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Adjustments for tablets */
+    .text-section, .text-section-2, .text-section-3, .text-section-4, .text-section-5 {
+        font-size: 22px;
+        line-height: 36px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .sec-1 {
+        height: auto;
+    }
+
+    .img {
+        height: 200px;
+        background-position-y: center;
+    }
+
+    .gray-background {
+        height: auto;
+    }
+
+    .scecond-row, .third-row {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Adjustments for mobile phones */
+    .text-section, .text-section-2, .text-section-3, .text-section-4, .text-section-5 {
+        font-size: 18px;
+        line-height: 28px;
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .scecond-row, .third-row {
+        margin-top: 20px;
+    }
+
+    .img {
+        height: 150px;
+        background-position-y: center;
+    }
+}
