@@ -73,11 +73,7 @@ function Wow() {
       <div className="container-fluid pt-5 m-0 p-0">
         <div className="row">
           <div className="col-lg-4 col-12 d-flex justify-content-center bg-secondary-subtle wow-col-2">
-            {/* <img
-              src="https://dummyimage.com/600x400/000/fff"
-              alt=""
-              className="w-100 "
-            /> */}
+          
           </div>
           <div className="col-lg-8 col-12 bg-white d-flex justify-content-center align-items-center m-0 p-0 wow-col-2">
             <p className="fs-1 ">

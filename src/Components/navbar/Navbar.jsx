@@ -49,7 +49,7 @@ const MyNavbar = () => {
   return (
     <>
       {/* Navbar section */}
-      <nav className="navbar navbar-expand-lg navbar-light position-fixed top-0 w-100" style={{ zIndex: 2 }}>
+      <nav className="navbar navbar-expand-lg navbar-light position-fixed top-0 w-100 z-100" style={{ zIndex: 2 }}>
         <div className="container">
           <a className="navbar-brand" href="/">
             <img src={logo} height="30" alt="ANAURA" />

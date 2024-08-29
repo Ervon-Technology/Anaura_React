@@ -4,7 +4,7 @@ import logo from "../../images/Logo.png";
 const Footer = () => {
   return (
     <div>
-        <footer class="container-fluid border-top">
+  <footer class="container-fluid border-top z-100">
     <div class="row pt-5 pb-4">
       <div class="col-xl-6 col-lg-5 col-md-12 col-sm-12 text-center my-4 my-md-0 text-lg-start">
         <a href="/"><img src={logo} alt="ANAURA Future-Proof Fashion" class="img-fluid ms-lg-5"
@@ -45,7 +45,7 @@ const Footer = () => {
             <a href="#" class="text-decoration-none text-dark fw-semibold">Our Story</a>
           </li>
           <li class="mb-4">
-            <a href="#" class="text-decoration-none text-dark fw-semibold">Contact Us</a>
+            <a href="/contact-us" class="text-decoration-none text-dark fw-semibold">Contact Us</a>
           </li>
         </ul>
       </div>
