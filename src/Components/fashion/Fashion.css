@@ -14,6 +14,14 @@
 .main-content-fashion-2{
   margin-top: 100px ;
 }
+.main-content-fashion-2-before::before{
+  content: '';
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgba(0, 123, 255, 0.2);
+}
 
 .main-content-fashion {
   height: 500px;
@@ -136,6 +144,18 @@
   height: fit-content;
 }
 
+@media screen and (min-width: 1439px) {
+  .carousel-wrapper{
+    margin-left: 190px;
+  }
+
+}
+@media screen and (min-width: 1500px) {
+  .carousel-wrapper{
+    margin-left: 230px;
+  }
+
+}
 
 @media screen and (min-width: 801px) and (max-width: 1025px) {
   .small-text-paragraph {

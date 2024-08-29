@@ -13,7 +13,7 @@ const Footer = () => {
       <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 mt-4 mt-lg-0 text-center  text-lg-start ">
         <ul class="list-unstyled">
           <li class="mb-4">
-            <a href="#" class="text-decoration-none text-dark fw-semibold">Discover ANAURA</a>
+            <a href="/fashion" class="text-decoration-none text-dark fw-semibold">Discover ANAURA</a>
           </li>
           <li class="mb-4">
             <a href="/about" class="text-decoration-none text-dark fw-semibold">About us</a>

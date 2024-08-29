@@ -1,15 +1,4 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
-/* Ensure full width and prevent horizontal scroll */
-html,
-body {
-  width: 100%;
-  overflow-x: hidden;
-}
 
 .first-contain-wow {
   background: url("https://s3-alpha-sig.figma.com/img/f36d/2e06/202218d510dd69fc81d907ae05f2583a?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=cEJLIKh9SoceRzIiZcNYjuuKeZSG4rsGsMpmHab2e2pKtQbGNY0qr8G0HV-1c4vPNZ2SW1svwiI9gGAYAUf8v8IoXTaPyKpmhPvo2d7F02kF9ndOr5ZSakzZ-6G9kU1ePrQ0dz1OTENG4CuiMICtRolACNROLw~jcU9D25xpjKL94DR4o2xPvLgSbcuBuuRhwFv3YDKl1xYr-8F7LB4qWqI0k1ZeMcWSF9GhA99EfR6jixi5kwZ9n9~ucGN1n06~H3E0eMe~o8sMy4V8HTQ0xpPFx3N5EDeKHg58KnNAYAITGILkyK2-2HO9YfETwnq1~AisCCj7l6Gh4U7fye3-jA__");

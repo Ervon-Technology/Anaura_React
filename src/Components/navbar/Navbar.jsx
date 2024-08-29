@@ -65,12 +65,12 @@ const MyNavbar = () => {
             <div className="offcanvas-body">
               <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li className="nav-item dropdown">
-                  <a className="nav-link dropdown-toggle text-white" href="#" id="dropdownDiscover" aria-expanded="false">
+                  <a className="nav-link dropdown-toggle text-white" href="/fashion" id="dropdownDiscover" aria-expanded="false">
                     Discover ANAURA
                   </a>
                   <div className="dropdown-content" id="dropdownDiscoverContent">
                     <a className="dropdown-item border-bottom" href="/about">About us</a>
-                    <a className="dropdown-item border-bottom" href="/fashion">How it's made</a>
+                    <a className="dropdown-item border-bottom" href="">How it's made</a>
                     <a className="dropdown-item border-bottom" href="/brands">Anaura for brands</a>
                   </div>
                 </li>

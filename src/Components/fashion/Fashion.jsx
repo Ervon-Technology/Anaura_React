@@ -57,7 +57,7 @@ function Fashion() {
       {/* main-content-fashion-2- */}
 
       <div className="container-fluid main-content-fashion-2">
-      <p className="fs-1 fw-bold text-center m-0 mt-4">Creative Design</p>
+      <p className="fs-1 fw-bold text-center m-0 mt-4 ">Creative <span className="main-content-fashion-2-before"> Design </span></p>
       <p className="text-center small-text-paragraph">
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard

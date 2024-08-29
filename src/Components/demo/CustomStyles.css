@@ -52,6 +52,15 @@
     margin-left: 22.3rem;
   }
   
+  @media (min-width:1439px) {
+    .carousel-item{
+      width: 50%;
+    } 
+    .carousel-inner img{
+      margin-left: 30em;
+    }
+    
+  }
   @media (max-width: 768px) {
     .section-title {
       font-size: 2rem;
