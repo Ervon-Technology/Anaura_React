@@ -75,14 +75,14 @@ const MyNavbar = () => {
                   </div>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link text-white" href="#">ANAURA Our Ocean</a>
+                  <a className="nav-link text-white" href="/ocean">ANAURA Our Ocean</a>
                 </li>
                 <li className="nav-item dropdown">
-                  <a className="nav-link dropdown-toggle text-white" href="#" id="dropdownSustainability" aria-expanded="false">
+                  <a className="nav-link dropdown-toggle text-white" href="/achivement" id="dropdownSustainability" aria-expanded="false">
                     Sustainability
                   </a>
                   <div className="dropdown-content" id="dropdownSustainabilityContent">
-                    <a className="dropdown-item border-bottom" href="#">W.O.W Factor</a>
+                    <a className="dropdown-item border-bottom" href="/wow">W.O.W Factor</a>
                     <a className="dropdown-item border-bottom" href="#">Our Story</a>
                   </div>
                 </li>
@@ -103,7 +103,7 @@ const MyNavbar = () => {
           <a className="dropdown-item" href="/brands">Anaura for brands</a>
         </div>
         <div id="dropdownSustainabilityMenu" className="dropdown-menu-custom d-none">
-          <a className="dropdown-item" href="#">W.O.W Factor</a>
+          <a className="dropdown-item" href="/wow">W.O.W Factor</a>
           <a className="dropdown-item" href="#">Our Story</a>
         </div>
       </div>

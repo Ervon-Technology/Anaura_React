@@ -10,7 +10,10 @@ const Brands = () => {
 
         <section className=' container-fluid p-0'>
             <div className="row  sec-1">
-                <div className="col-8 "></div>
+                <div className="col-8 d-flex justify-content-center align-items-center ">
+                <h1 className='sec-1-text'>ANAURA FOR <br /><span className='mx-5 '> 
+                BRANDS</span></h1>
+                </div>
                 <div className="col-4 img p-5"> </div>
             </div>
         </section>
@@ -61,7 +64,9 @@ const Brands = () => {
 
         <div class="container p-0 third-row">
             <div class="row no-gutters">
-                <div class="col-lg-5 gray-background  bg-secondary"></div>
+                <div class="col-lg-5 ">
+                    <div className='gray-background '></div>
+                </div>
                 <div class="col-lg-7 fs-1  d-flex align-items-center justify-content-center ">
                     <div>
                         <p class="  text-start  text-section-4 ">By reducing your plastic footprint, 

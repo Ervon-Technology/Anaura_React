@@ -16,7 +16,7 @@ const Footer = () => {
             <a href="#" class="text-decoration-none text-dark fw-semibold">Discover ANAURA</a>
           </li>
           <li class="mb-4">
-            <a href="#" class="text-decoration-none text-dark fw-semibold">About us</a>
+            <a href="/about" class="text-decoration-none text-dark fw-semibold">About us</a>
           </li>
           <li class="mb-4">
             <a href="#" class="text-decoration-none text-dark fw-semibold">How it's made</a>
@@ -26,20 +26,20 @@ const Footer = () => {
       <div class="col-xl-2 ps-xl-0 col-lg-3 ps-lg-5 col-md-4 col-sm-6 mt-4 mt-lg-0 text-center  text-lg-start">
         <ul class="list-unstyled">
           <li class="mb-4">
-            <a href="#" class="text-decoration-none text-dark fw-semibold">Anaura for brands</a>
+            <a href="/brands" class="text-decoration-none text-dark fw-semibold">Anaura for brands</a>
           </li>
           <li class="mb-4">
-            <a href="#" class="text-decoration-none text-dark fw-semibold">ANAURA Our Ocean</a>
+            <a href="/ocean" class="text-decoration-none text-dark fw-semibold">ANAURA Our Ocean</a>
           </li>
           <li class="mb-4">
-            <a href="#" class="text-decoration-none text-dark fw-semibold">Sustainability</a>
+            <a href="/achivement" class="text-decoration-none text-dark fw-semibold">Sustainability</a>
           </li>
         </ul>
       </div>
       <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 mt-4 mt-lg-0 text-center  text-lg-start">
         <ul class="list-unstyled">
           <li class="mb-4">
-            <a href="#" class="text-decoration-none text-dark fw-semibold">W.O.W Factor</a>
+            <a href="/wow" class="text-decoration-none text-dark fw-semibold">W.O.W Factor</a>
           </li>
           <li class="mb-4">
             <a href="#" class="text-decoration-none text-dark fw-semibold">Our Story</a>
