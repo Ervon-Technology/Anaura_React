@@ -23,11 +23,21 @@
   .sec-contain-text {
     padding: 0px 100px 0px 100px;
   }
+  .third-contain img{
+    /* height: 350px !important; */
+    padding-bottom: 50px !important;
+
+  }
 }
 
 @media screen and (min-width: 400px) and (max-width: 426px) {
   .sec-contain-text {
     padding: 0px 50px 0px 50px;
+  }
+  .third-contain img{
+    /* height: 350px !important; */
+    padding-bottom: 50px !important;
+
   }
 }
 

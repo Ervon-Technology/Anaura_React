@@ -15,7 +15,7 @@ const Ocean = () => {
         <div className="container pt-5 text-center Ocean-Bound-containor">
             <div className="pt-lg-5"></div>
             <h1 className='pt-5 Ocean-Bound-head'>Made with Ocean-Bound Plastic Bottles. </h1>
-            <p className=' fs-4 pt-2 Ocean-Bound-text '>People around the globe are asking: How can we save our oceans from plastic pollution? We listened and came up with a meaningful way to address the problem  head-on.</p>
+            <p className=' fs-4 pt-4 Ocean-Bound-text '>People around the globe are asking: How can we save our oceans from plastic pollution? We listened and came up with a meaningful way to address the problem  head-on.</p>
         </div>
       </section>
 
@@ -26,12 +26,12 @@ const Ocean = () => {
                 <div className="col-md-6 fs-4 d-flex justify-content-center align-items-center ">
                     <div className=" ">
                         
-                    <p className='w-lg-75  part-3-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ducimus quia veritatis sed, dignissimos ipsa nam nemo provident vel quis cum officia expedita voluptas possimus laboriosam, libero maiores dolore obcaecati.
+                    <p className='w-lg-75   part-3-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ducimus quia veritatis sed, dignissimos ipsa nam nemo provident vel quis cum officia expedita voluptas possimus laboriosam, libero maiores dolore obcaecati.
                     Possimus accusamus maiores veniam, laborum error iusto, ducimus tempore assumenda perferendis officia asperiores eveniet debitis alias labore similique nisi doloremque quis ab! Suscipit illum quasi repellat enim, tenetur inventore nostrum!
                    </p>
                     </div>
                 </div>
-                <div className="col-md-6 ">
+                <div className="col-md-6 mt-md-0 mt-4">
                     <div className='d-flex justify-content-center align-items-center'>
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhQhO0PJS5mVX93nG6E9At4Ndm6BuAaolllQ&s" alt="" className='all-img' />
                     </div>
@@ -56,12 +56,12 @@ const Ocean = () => {
                 <div className="col-md-6 fs-4 d-flex justify-content-center align-items-center ">
                     <div className=" ">
                         
-                    <p className='w-75 part-3-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ducimus quia veritatis sed, dignissimos ipsa nam nemo provident vel quis cum officia expedita voluptas possimus laboriosam, libero maiores dolore obcaecati.
+                    <p className='w-lg-75  part-3-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ducimus quia veritatis sed, dignissimos ipsa nam nemo provident vel quis cum officia expedita voluptas possimus laboriosam, libero maiores dolore obcaecati.
                     Possimus accusamus maiores veniam, laborum error iusto, ducimus tempore assumenda perferendis officia asperiores 
                    </p>
                     </div>
                 </div>
-                <div className="col-md-6 ">
+                <div className="col-md-6 mt-md-0 mt-4 ">
                     <div className='d-flex justify-content-center align-items-center'>
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhQhO0PJS5mVX93nG6E9At4Ndm6BuAaolllQ&s" alt="" className='all-img' />
                     </div>
@@ -84,7 +84,7 @@ const Ocean = () => {
                 <div className="col-md-6 d-flex justify-content-center align-items-center">
                 <div className=" ">
                         
-                        <p className='w-75 part-3-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ducimus quia veritatis sed, dignissimos ipsa nam nemo provident vel quis cum officia expedita voluptas possimus laboriosam, libero maiores dolore obcaecati.
+                        <p className='w-lg-75  part-3-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ducimus quia veritatis sed, dignissimos ipsa nam nemo provident vel quis cum officia expedita voluptas possimus laboriosam, libero maiores dolore obcaecati.
                         Possimus accusamus maiores veniam, laborum error iusto, ducimus tempore assumenda perferendis officia asperiores 
                        </p>
                         </div>

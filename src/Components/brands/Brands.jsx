@@ -1,5 +1,7 @@
 import React from 'react'
 import './brands.css'
+import tree from "../../images/tree.jpg";
+import reduce from "../../images/reduce.jpg";
 
 
 const Brands = () => {
@@ -33,10 +35,10 @@ const Brands = () => {
 
         {/* <!-- Second Row --> */}
         <div class="row  scecond-row">
-            <div class="col-md-6 d-flex align-items-center justify-content-center">
-                <p class="section-title text-section-2 text-start ">New generation want  brands to take a stand on  issues close to their hearts.</p>
+            <div class="col-md-6 d-flex align-items-center justify-content-center ">
+                <p class=" text-section-2 text-start ">New generation want  brands to take a stand on  issues close to their hearts.</p>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 px-lg-0 px-5">
                 <p class=" w-75 small-text">88% of the consumers said they buy products from a company leading with a purpose.</p>
                 <p class=" highlight-text small-text w-75">It's more than environmental or social purpose; it's a toolkit to enhance your brand story.</p>
                 <p class=" highlight-text small-text w-75">94% of consumers say it's a brand's responsibility to create products that are not harmful to the earth.</p>
@@ -56,7 +58,9 @@ const Brands = () => {
                             drive business growth.</p>
                     </div>
                 </div>
-                <div class="col-lg-5 gray-background  bg-secondary"></div>
+                <div class="col-lg-5 gray-background   d-flex justify-content-center align-items-center">
+                    <img src={tree} alt="" height={400} width={400}className='img-fluid object-fit-cover' />
+                </div>
             </div>
         </div>
 
@@ -64,8 +68,8 @@ const Brands = () => {
 
         <div class="container p-0 third-row">
             <div class="row no-gutters">
-                <div class="col-lg-5 ">
-                    <div className='gray-background '></div>
+            <div class="col-lg-5 gray-background   d-flex justify-content-center align-items-center">
+                    <img src={reduce} alt="" height={600} width={600}className='img-fluid object-fit-cover' />
                 </div>
                 <div class="col-lg-7 fs-1  d-flex align-items-center justify-content-center ">
                     <div>
@@ -96,7 +100,9 @@ const Brands = () => {
                             one India’s largest integrated manufacturing plants</p>
                     </div>
                 </div>
-                <div class="col-lg-5 gray-background  bg-secondary"></div>
+                <div class="col-lg-5 gray-background   d-flex justify-content-center align-items-center">
+                    <img src={reduce} alt="" height={600} width={600}className='img-fluid object-fit-cover' />
+                </div>
             </div>
         </div>
         

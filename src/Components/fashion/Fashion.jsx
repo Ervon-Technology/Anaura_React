@@ -141,14 +141,22 @@ function Fashion() {
       {/* text-section-only ends */}
 
       {/* text-section-only product */}
-      <div className="container-fluid m-0 p-0 ps-md-5 main-content-fashion-4 py-5 bg-secondary-subtle">
-        <div className="ps-5 ms-md-5">
-          <p className="fs-1 m-0 p-0">PRODUCT ONE</p>
-          <p className="fs-1 m-0 p-0">PRODUCT TWO</p>
-          <p className="fs-1 m-0 p-0">PRODUCT THREE</p>
-          <p className="fs-1 m-0 p-0">PRODUCT FOUR</p>
-        </div>
+      <div className="container-fluid m-0 p-0 main-content-fashion-4 py-0 bg-secondary-subtle">
+  <div className="row">
+    <div className="col-4 col-md-2 main-content-fashion-4-back-img"> 
+    </div>
+    <div className="col-8 col-md-8 py-md-5 mx-md-5 ps-5">
+      <div className="px-lg-5 mx-lg-4 py-md-0 py-5 ">
+      <p className="fs-1  m-0 p-0">SPRING COLLECTION</p>
+      <p className="fs-1  m-0 p-0">SUMMER COLLECTION</p>
+      <p className="fs-1  m-0 p-0">WINTER COLLECTION</p>
+      <p className="fs-1  m-0 p-0">Sustainable sports wear</p>
+
       </div>
+    </div>
+  </div>
+</div>
+
 
       {/* text-section-only product ends */}
 

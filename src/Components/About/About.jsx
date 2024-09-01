@@ -26,7 +26,7 @@ const About = () => {
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
-                        <img src="https://s3-alpha-sig.figma.com/img/55ef/eace/f0f74fa591d0e7245f581b5a793fcc01?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Nr7yfbcQ2isd9YikRBOx47DT3by18lYU7P42CnxqvDOoQMxSbff~nSNb4f-T3ASgb-202E9tqi~VejxtFXlhR9Z0Jae-naRZrljGuFp1dBMlsQ66qR3FOLMmnjAaKpLRRXpQCHE2l3RVzqdfRIJgFUBpUVk06tassJwFiXvjtBv047VRqgNlf-v0mQuosjvbBg~887PcRAC5qhMPUWj0cQB2Ac7KE~H8Gx-NadQBBEPsUJNWLGy0iKu-SwkQQQHXzb1V0rRkuKtZF-jUkxtnhE75xOyyaAeNNu4jZfZUM8~GTXFOOZFFKkdNNmi-yFMCcE5EnsdNV1P9gSLXDKd1zQ__" alt="" class="w-100 img-fluid me-5"/>
+                        <img src="https://s3-alpha-sig.figma.com/img/55ef/eace/f0f74fa591d0e7245f581b5a793fcc01?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Nr7yfbcQ2isd9YikRBOx47DT3by18lYU7P42CnxqvDOoQMxSbff~nSNb4f-T3ASgb-202E9tqi~VejxtFXlhR9Z0Jae-naRZrljGuFp1dBMlsQ66qR3FOLMmnjAaKpLRRXpQCHE2l3RVzqdfRIJgFUBpUVk06tassJwFiXvjtBv047VRqgNlf-v0mQuosjvbBg~887PcRAC5qhMPUWj0cQB2Ac7KE~H8Gx-NadQBBEPsUJNWLGy0iKu-SwkQQQHXzb1V0rRkuKtZF-jUkxtnhE75xOyyaAeNNu4jZfZUM8~GTXFOOZFFKkdNNmi-yFMCcE5EnsdNV1P9gSLXDKd1zQ__" alt="" class="w-100 img-fluid "/>
                     </div>
                     <div class="col-lg-6 col-md-12 d-flex align-items-center">
                         <p
@@ -130,7 +130,7 @@ const About = () => {
 
         {/* <!-- heroic --> */}
         <section>
-            <div class="row p-0">
+            <div class="row p-0 w-100">
                 <div class="col-6 p-0">
                     <img src="https://s3-alpha-sig.figma.com/img/8e86/2ef4/b04aa145fdb0d21bae205dd2ebd8f789?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=JF11L1qDRIemkEXRMYxy~tD-EiepLZRr6RGYN8kkj~4gTiuFBWO23TMRcjLx4ZndKToLlqb-0zytvLHMcLkOXVsYJj8xnStQ3YG4nbz8cCWWpsi71GyYQF3EADoga-BdbAm4~dj1vefhA1xFW~9YV01do3K5-fJJ77YODlg0X0DPpV0~TgrORY7BQF6raTUFRmfnZ~nHeA70Mp~DyHg-aRyxio6fqNFXSQvP16PK0rYGB3E10-fER0agdy1NvFuubRQFIKRov619wopLyIMfQIMKoKjoNlzB1COchurfiNHPDolaacw-JUDnuTEmwA0W1coyVIPijpvE54sma9PvMw__" alt="" class="w-100 h-100 object-fit-cover img-fluid"/>
                 </div>

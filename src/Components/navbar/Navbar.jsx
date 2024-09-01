@@ -87,7 +87,7 @@ const MyNavbar = () => {
                   </div>
                 </li>
                 <li className="nav-item">
-                  <a className="btn btn-outline-light rounded-pill px-4 navbtn" href="#">ANAURA For Business</a>
+                  <a className="btn btn-outline-light rounded-pill px-3 navbtn" href="#">ANAURA For Business</a>
                 </li>
               </ul>
             </div>

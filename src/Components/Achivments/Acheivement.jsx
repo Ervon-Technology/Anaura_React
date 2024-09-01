@@ -1,5 +1,7 @@
 import React from "react";
 import "./Achievement.css";
+import love from "../../images/love.jpg";
+import earth from "../../images/earth.jpg";
 
 function Acheivement() {
   return (
@@ -14,7 +16,7 @@ function Acheivement() {
         </p>
       </div>
 
-      <div className="container mb-5 third-contain">
+      <div className="container  mb-5 third-contain">
         <div className="row">
           <div className="col-lg-6  d-flex justify-content-center order-lg-1 order-2 ">
             <p className="fs-lg-2 fs-4 px-5">
@@ -84,7 +86,9 @@ function Acheivement() {
             <img
               src="https://dummyimage.com/600x400/000/fff"
               alt=""
-              className="w-100 img-fluid"
+              className=" img-fluid"
+              height={300}
+              width={300}
             />
           </div>
         </div>
@@ -101,10 +105,12 @@ function Acheivement() {
             </p>
           </div>
           <div className="col-lg-6 d-flex justify-content-center order-1 pb-lg-0 pb-3">
-            <img
-              src="https://dummyimage.com/600x400/000/fff"
+          <img
+              src={love}
               alt=""
-              className="w-100 img-fluid"
+              className="obkect-fit-cover img-fluid"
+              height={300}
+              width={400}
             />
           </div>
         </div>
@@ -122,9 +128,11 @@ function Acheivement() {
           </div>
           <div className="col-lg-6 d-flex justify-content-center order-lg-2 order-1 pb-lg-0 pb-3">
             <img
-              src="https://dummyimage.com/600x400/000/fff"
+              src={earth}
               alt=""
-              className="w-100 img-fluid"
+              className="obkect-fit-cover img-fluid"
+              height={280}
+              width={400}
             />
           </div>
         </div>
