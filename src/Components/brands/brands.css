@@ -136,6 +136,12 @@
     .brands__section-1 {
       height: 37.7vh;
     }
+    .brands__highlight-text-div{
+      width: 90% !important;
+      padding: 40px;
+      margin-left: 70px;
+     
+    }
   
     .brands__title {
       font-size: 36px;
@@ -164,7 +170,10 @@
       width: 70%;
       text-align: center;
       margin-left: 0;
-      padding: 0 15px;
+      padding: 15px !important;
+    }
+    .brands__text--section-5{
+      margin-left: 100px !important;
     }
   
     .brands__image--first {
@@ -189,6 +198,15 @@
     .brands__section-1 {
       height: 25vh;
     }
+    .brands__text--section-5 {
+      margin-left: 0px !important;
+  }
+  .brands__highlight-text-div{
+    /* width: 90% !important; */
+    padding-top: 10px;
+    margin-left: 30px;
+   
+  }
   
     .brands__title {
       font-size: 24px;
