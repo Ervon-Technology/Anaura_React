@@ -120,7 +120,7 @@ function AnauraHome() {
             <img src='https://s3-alpha-sig.figma.com/img/17fe/8e3d/9a43c8375fdf7281907724bd6aa5185e?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YW6ABqOIxDeu2ZmXmY474jBrdpgdzTZBtOZbm98wxnT8sBLQTbSPMhcZL-u3j8PxqFLIUS-nwz3Lvvq4fCkSGh44IXUXOo3XK1CMvBxv7E8mwjMk2ZfXP2pPTrG9f7leltO2SEgwB58msNseF8cIKurYtEaTZOjME7A2MCZTDJ78NWmp1gzr3rb4gisdkA0~mG5VaigqVjlXANRXJ7Ae6n-7I1AJNV~77-QxYQcXchiAydYg9KMMhQ4uwX7f4RAZRnGGrLNQUDl2p1bhqhYZOUpPoohU5gCOgk3kiGIxIX28nnZZ0C60rpnsy3rRsqqSmIdGG~2DqBCv4JSxc82ejg__' alt="" className="img-fashion1 " />
           </div>
           <div className="col-xl-9  col-lg-7 col-12 bg-secondary-subtle d-flex justify-content-center align-items-center m-0 p-0 main-content-fashion-3-column-2">
-            <p className=" fs-1 w-lg-50 w-75 ">
+            <p className=" Born fs-1 w-lg-50 w-75 ">
             BORN OUT OF EXTENSIVE RESEARCH, INNOVATION,
             CUTTING EDGE TECHNOLOGY AND ESG WAY OF WORKING
             </p>
