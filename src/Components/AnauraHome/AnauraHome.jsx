@@ -45,7 +45,7 @@ function AnauraHome() {
             <img src='https://s3-alpha-sig.figma.com/img/9958/06df/f289487fe7b0f2546ea8390c08ca6591?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=E9hg8IFVAwnMokb2PLrWs5xcaOusLZCh62EZ3y6eJk68qoNO8-HcGe-uqgjme2SyCpBcVgLcNs3r0AtWHxCcqd1vcPYBc38HCynnnGAoB7ww5FXVqBORJ3WXP4-fCzegkvdu-k3Adi6QUbD7sALClskbawOkPDm26zQzkWeXyj3AuSxNmL5QkKlO7XfAY0w17UaDX~pbcfpLzzA0ub9iwG3uJyxZcG9wI1oIK6Z0RS80lSwP5uqo4IMylBOfbkBukk6ZOgEPks5BnrRjhtI7kYPKF4HzwUs5Z2GlxZX91tuyzgvW~cR3ANj-NdE9wIu9zOBgZurwmYFAKpGMwbzO6g__' alt="" className="object-fit-cover" height={350} width={300} />
           </div>
           <div className="col-lg-7 bg-secondary-subtle col-12 d-flex justify-content-center align-items-center ps-lg-3 mt-4 mt-lg-0 m-0 p-0">
-                          <p className=" w-75 fw-1 fs-3  px-0">
+                          <p className=" w-75 fw-1 fs-1  px-0">
                 Step into the future of home fashion with recycled threads that
                 redefine sustainability
               </p>
@@ -120,7 +120,7 @@ function AnauraHome() {
             <img src='https://s3-alpha-sig.figma.com/img/17fe/8e3d/9a43c8375fdf7281907724bd6aa5185e?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YW6ABqOIxDeu2ZmXmY474jBrdpgdzTZBtOZbm98wxnT8sBLQTbSPMhcZL-u3j8PxqFLIUS-nwz3Lvvq4fCkSGh44IXUXOo3XK1CMvBxv7E8mwjMk2ZfXP2pPTrG9f7leltO2SEgwB58msNseF8cIKurYtEaTZOjME7A2MCZTDJ78NWmp1gzr3rb4gisdkA0~mG5VaigqVjlXANRXJ7Ae6n-7I1AJNV~77-QxYQcXchiAydYg9KMMhQ4uwX7f4RAZRnGGrLNQUDl2p1bhqhYZOUpPoohU5gCOgk3kiGIxIX28nnZZ0C60rpnsy3rRsqqSmIdGG~2DqBCv4JSxc82ejg__' alt="" className="img-fashion1 " />
           </div>
           <div className="col-xl-9  col-lg-7 col-12 bg-secondary-subtle d-flex justify-content-center align-items-center m-0 p-0 main-content-fashion-3-column-2">
-            <p className=" fs-3 w-lg-50 w-75 ">
+            <p className=" fs-1 w-lg-50 w-75 ">
             BORN OUT OF EXTENSIVE RESEARCH, INNOVATION,
             CUTTING EDGE TECHNOLOGY AND ESG WAY OF WORKING
             </p>
