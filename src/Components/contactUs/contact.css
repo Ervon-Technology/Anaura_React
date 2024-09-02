@@ -1,0 +1,126 @@
+.main-container-background {
+    position: relative; /* Necessary for positioning the overlay */
+    height: 100%;
+    background: url('https://s3-alpha-sig.figma.com/img/27de/ec04/1258c253a7d02da5e464c6dc960ae72b?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=WeqvqYnpHahi4nogAYNVaRBCvd-Sj6fzvfWXZRk0L7~CgOdlPrsmy3FT6zIchEj0YJr59-9BtmvBoSpl1tctsu1TZlc~NcoDMExT~5uGDZsHtSUsRATtXHb40q69mIF-IC05tNDDBZjlLZf9KwpYX0iJIR7VtIDJgWvvZqAxsI-MC0ooB6rxzL-dk13qHSBudnhKGBO06CCcKdbi6kZ31zvJ~8LoYaQOHZ4PMF4vbE4ltPwpAAn8X~xVEJEHSr2kUJeoDgDONCX9e9ykHjFwkbipu6KcfKC-Za~eIDx3RR0QaDGDKaYFKi9O2-~2~FnYHvalo3~pk9xXxeoXQ60GIQ__');
+    background-size: cover;
+    overflow: hidden; /* Ensure the overlay does not overflow */
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(29, 29, 29, 0.7); /* Black fade with 50% opacity */
+    backdrop-filter: contrast(1000%); /* Apply contrast filter to the overlay */
+    z-index: 1; /* Ensure the overlay is on top of the background image but behind content */
+}
+
+.content {
+    position: relative; /* Ensure content is above the overlay */
+    z-index: 2; /* Content is above the overlay */
+}
+
+.fst-btn {
+    height: 50px;
+    background-color: #fff;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.fst-btn:hover {
+    background-color: #f0f0f0; /* Slightly different hover effect */
+    color: black;
+}
+
+.snd-btn {
+    height: 52px;
+    width: 198px;
+    border: 1px solid black;
+    border-radius: 45px;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 8px;
+    transition: border-color 0.3s;
+}
+
+.snd-btn:hover {
+    border-color: #333; /* Change border color on hover */
+}
+
+.someText {
+    font-size: 36px; /* Responsive font size */
+    width: 55%; /* Responsive width */
+}
+
+.fom-container {
+    max-width: 90%;
+    height: auto;
+    margin: auto;
+    width: 700px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+label {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+input {
+    height: 40px;
+    border: 0.2px solid rgba(72, 62, 62, 0.541) !important;
+    
+}
+
+.changed-inp {
+    height: 100px;
+    border: 0.2px solid rgba(72, 62, 62, 0.541) !important;
+}
+
+@media screen and (min-width: 320px) and (max-width: 397px) {
+    .fst-btn {
+        height: 50px;
+    }
+    .someText {
+        font-size: 27px;
+        width: 100%;
+    }
+    .fom-container {
+        width: 300px;
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 426px) {
+    .fst-btn {
+        height: 50px;
+    }
+    .someText {
+        font-size: 30px;
+        width: 100%;
+    }
+    .fom-container {
+        width: 350px;
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
+    .someText {
+        font-size: 40px;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1025px) {
+    /* Add styles for this range if needed */
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1441px) {
+   
+}

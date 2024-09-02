@@ -45,7 +45,7 @@ const Footer = () => {
          
         
           <li class="mb-4">
-            <a href="/contact-us" class="contact text-decoration-none text-dark fw-semibold">Contact Us</a>
+            <a href="/contact" class="contact text-decoration-none text-dark fw-semibold">Contact Us</a>
           </li>
         </ul>
       </div>

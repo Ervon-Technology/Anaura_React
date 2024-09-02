@@ -9,10 +9,20 @@ const Brands = () => {
       <div className="container-fluid p-0">
         <section className="brands__section-1 container-fluid p-0">
           <div className="row brands__row">
-            <div className="col-8 d-flex justify-content-center align-items-center">
-              <h1 className="brands__title ">
+          <div
+      className="col-8 d-flex justify-content-center align-items-center"
+      
+    >
+              <h1 className="brands__title " style={{
+        fontFamily: "'Inter', sans-serif",
+        fontSize: "3.4375rem",
+        fontWeight: 600,
+        lineHeight: "4.125rem",
+        textAlign: "center",
+        color:" #606060"
+      }}>
                 ANAURA FOR <br />
-                <span className="brands__title--highlight">BRANDS</span>
+                <span className="">BRANDS</span>
               </h1>
             </div>
             <div className="col-4 brands__image p-5"></div>
@@ -22,8 +32,8 @@ const Brands = () => {
         {/* First Row */}
         <div className="container-fluid p-0">
           <div className="row no-gutters">
-            <div className="col-lg-5 brands__image--first bg-secondary"></div>
-            <div className="col-lg-7 brands__text-container d-flex align-items-center justify-content-center bg-tertiary">
+            <div className="col-lg-4 brands__image--first bg-secondary"></div>
+            <div className="col-lg-8 brands__text-container d-flex align-items-center justify-content-center bg-tertiary">
               <p className="brands__text brands__text--section-1">
                 New generation of consumers want brands to take a stand on issues close to their hearts.
               </p>
@@ -33,8 +43,8 @@ const Brands = () => {
 
         {/* Second Row */}
         <div className="row brands__second-row">
-          <div className="col-lg-6 d-flex align-items-center justify-content-center">
-            <p className="brands__text brands__text--section-2 ">
+          <div className="col-lg-6 d-flex align-items-center justify-content-center px-5">
+            <p className="brands__text brands__text--section-2 px-5">
               New generation want brands to take a stand on issues close to their hearts.
             </p>
           </div>
@@ -46,7 +56,7 @@ const Brands = () => {
         </div>
 
         {/* Third Row */}
-        <div className="container p-0 brands__third-row">
+        <div className="container  brands__third-row">
           <div className="row no-gutters">
             <div className="col-lg-7 brands__text-container d-flex align-items-center justify-content-center">
               <p className="brands__text brands__text--section-3">
@@ -54,7 +64,7 @@ const Brands = () => {
               </p>
             </div>
             <div className="col-lg-5 brands__image-container d-flex justify-content-center align-items-center">
-              <img src={tree} alt="Tree" className="img-fluid" />
+              <img src={tree} alt="Tree" />
             </div>
           </div>
         </div>
@@ -63,7 +73,7 @@ const Brands = () => {
         <div className="container p-0 brands__fourth-row">
           <div className="row no-gutters">
             <div className="col-lg-5 brands__image-container d-flex justify-content-center align-items-center">
-              <img src={reduce} alt="Reduce" className="img-fluid" />
+              <img src={reduce} alt="Reduce" className="" height={300} width='100%'/>
             </div>
             <div className="col-lg-7 brands__text-container d-flex align-items-center justify-content-center">
               <p className="brands__text brands__text--section-4 py-lg-0 py-5">
@@ -77,15 +87,15 @@ const Brands = () => {
         <div className="container p-0 brands__fifth-row">
           <div className="row no-gutters">
             <div className="col-lg-7 brands__text-container d-flex flex-column  justify-content-center">
-              <p className="brands__text brands__text--section-5 px-lg-0 px-5 mx-lg-0 mx-5 text-center">
+              <p className="brands__text brands__text--section-5 px-lg-0 px-5 mx-lg-0 mx-5 text-start">
                 Make your brand Trustable, Traceable & Sustainable
               </p>
               <p className="brands__text brands__text--section-5-1">
                 With Anaura, Anaura comes with quality standardisation certificates. You can trace Anaura back to where it was made: OBP, HBP, or PCR, and it’s made with a sustainable manufacturing process by one of India’s largest integrated manufacturing plants.
               </p>
             </div>
-            <div className="col-lg-5 brands__image-container d-flex justify-content-end ">
-              <img src={reduce} alt="Reduce" className="img-fluid" />
+            <div className="col-lg-5 brands__image-container brands__image-container-x d-flex justify-content-end ">
+              <img src={reduce} alt="Reduce" className="image-fluid" height={300} width='100%' />
             </div>
           </div>
         </div>

@@ -54,7 +54,7 @@ const MyNavbar = () => {
       {/* Navbar section */}
       <nav
         className="navbar navbar-expand-lg navbar-light position-fixed top-0 w-100 z-100"
-        style={{ zIndex: 2 }}
+        style={{ zIndex: 200000}}
       >
         <div className="container">
           <a className="navbar-brand" href="/">

@@ -8,10 +8,11 @@ import Footer from './Components/footer/Footer';
 import Fashion from './Components/fashion/Fashion';
 import Acheivement from './Components/Achivments/Acheivement';
 import Ocean from './Components/Ocean/Ocean';
-// import Wow from './Components/wow_factor/Wow';
+
 import AnauraHome from './Components/AnauraHome/AnauraHome';
 import PageNotFound from './Components/PageNotFound/Page';
-// import Conatct from './Components/contact/Conatct';
+import Contact from './Components/contactUs/Contact';
+
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/achivement" element={<Acheivement/>} />
         <Route path="/ocean" element={<Ocean/>} />
         <Route path="/home" element={<AnauraHome/>}/>
+        <Route path="/contact" element={<Contact/>}/>
         <Route path='*' element={<PageNotFound/>} />
         {/* <Route path="/contact-us" element={<Conatct/>}/> */}
       </Routes>

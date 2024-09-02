@@ -54,7 +54,7 @@ ul li:last-child {
   border: 1px solid #ddd; /* Border color */
   border-radius: 4px; /* Rounded corners */
   box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Shadow */
-  z-index: 1; /* Ensure it is above other content */
+  z-index: 1000000; /* Ensure it is above other content */
   width: 230px; /* Width of the dropdown */
   top: 150%; /* Position it below the dropdown toggle */
   left: -50px; /* Align it to the left of the toggle */
