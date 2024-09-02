@@ -1,6 +1,6 @@
 import React from 'react'
 import './brands.css'
-import tree from "../../images/tree.jpg";
+import tree from "../../images/tree.png";
 import reduce from "../../images/reduce.jpg";
 
 
@@ -23,7 +23,7 @@ const Brands = () => {
         {/* <!-- First Row --> */}
         <div class="container-fluid p-0">
             <div class="row no-gutters">
-                <div class="col-lg-5 gray-background  bg-secondary"></div>
+                <div class="col-lg-5 gray-background  firstrow-img bg-secondary"></div>
                 <div class="col-lg-7 fs-1  d-flex align-items-center justify-content-center bg-tertiary ">
                     <div>
                         <p class="  text-start  text-section ">New generation of  want brands to take a stand on issues close  to their hearts.</p>

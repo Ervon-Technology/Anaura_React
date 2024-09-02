@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from "../../images/Logo.png";
+import './footer.css'
 
 const Footer = () => {
   return (
@@ -32,20 +33,19 @@ const Footer = () => {
             <a href="/ocean" class="text-decoration-none text-dark fw-semibold">ANAURA Our Ocean</a>
           </li>
           <li class="mb-4">
-            <a href="/achivement" class="text-decoration-none text-dark fw-semibold">Sustainability</a>
+            <a href="/achivement" class="Sustainability text-decoration-none text-dark fw-semibold">Sustainability</a>
           </li>
         </ul>
       </div>
       <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 mt-4 mt-lg-0 text-center  text-lg-start">
         <ul class="list-unstyled">
           <li class="mb-4">
-            <a href="/wow" class="text-decoration-none text-dark fw-semibold">W.O.W Factor</a>
+            <a href="/home" class="text-decoration-none text-dark fw-semibold">Anaura For Home</a>
           </li>
+         
+        
           <li class="mb-4">
-            <a href="#" class="text-decoration-none text-dark fw-semibold">Our Story</a>
-          </li>
-          <li class="mb-4">
-            <a href="/contact-us" class="text-decoration-none text-dark fw-semibold">Contact Us</a>
+            <a href="/contact-us" class="contact text-decoration-none text-dark fw-semibold">Contact Us</a>
           </li>
         </ul>
       </div>

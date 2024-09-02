@@ -8,14 +8,17 @@ import Footer from './Components/footer/Footer';
 import Fashion from './Components/fashion/Fashion';
 import Acheivement from './Components/Achivments/Acheivement';
 import Ocean from './Components/Ocean/Ocean';
-import Wow from './Components/wow_factor/Wow';
+// import Wow from './Components/wow_factor/Wow';
+import AnauraHome from './Components/AnauraHome/AnauraHome';
+import PageNotFound from './Components/PageNotFound/Page';
 // import Conatct from './Components/contact/Conatct';
 
 function App() {
   return (
     <div className="App">
-    <MyNavbar/>
+    
     <BrowserRouter>
+    <MyNavbar/>
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/brands" element={<Brands/>} />
@@ -23,11 +26,13 @@ function App() {
         <Route path="/fashion" element={<Fashion/>} />
         <Route path="/achivement" element={<Acheivement/>} />
         <Route path="/ocean" element={<Ocean/>} />
-        <Route path="/wow" element={<Wow/>}/>
+        <Route path="/home" element={<AnauraHome/>}/>
+        <Route path='*' element={<PageNotFound/>} />
         {/* <Route path="/contact-us" element={<Conatct/>}/> */}
       </Routes>
-      </BrowserRouter>
       <Footer/>
+      </BrowserRouter>
+     
     </div>
   );
 }

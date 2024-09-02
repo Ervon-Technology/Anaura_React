@@ -104,6 +104,9 @@ ul li:last-child {
   .navbtn{
     color: black !important;
   }
+  .dropdown-content{
+    position: static;
+  }
   
 }
 

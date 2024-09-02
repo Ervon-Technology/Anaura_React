@@ -24,6 +24,11 @@
     height: 95vh;
  
 }
+.firstrow-img{
+    background-image: url('https://s3-alpha-sig.figma.com/img/b51f/7bb1/c8073257b8a0c12c39a520bf3a61754c?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=OEpNKxzxsZZgUS3MLts50w6bCa0afC5oSb-DQ188j7gr5Qpk~XC6TlmRB8bnQZUb4MmSql4ntpQTQkvQx0d53FfmTgHVYU73xpKhGj-onDvT0viUyyV2aKCwnTxRaptNGww7Q5Opp3BZrsfc10LeZ~smjfdxnIMhk1Qs3HYyza6XfmTSFbcxV2dQwPQLnazn72a85W4viAFXPqlEv9lPMHcHE~IzAWei9al14I5BTOt9Y0zasyP9kTIdKnBNhsEjHk-vaUxOjxILqUmeHddfQjEw-yGuHmaP45vow0iQhPH2iKaD8aEcE3AjdoxF9ugPllAYnSHxY2ZK83IRuSCbzA__');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .text-section {
     font-size: 56px;
@@ -65,7 +70,7 @@
 }
 
 .third-row {
-    margin-top: 100px;
+    /* margin-top: 100px; */
 }
 
 /* 4th row */
