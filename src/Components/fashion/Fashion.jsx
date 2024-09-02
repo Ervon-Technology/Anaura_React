@@ -42,10 +42,10 @@ function Fashion() {
         
         <div className="row h-100">
           <div className="col-lg-5 col-12 m-0 p-0 d-flex align-items-center justify-content-center pe-lg-3">
-            <img src={brown} alt="" className="object-fit-cover" height={350} width={300} />
+            <img src={brown} alt="" className="object-fit-cover" height={500} width='90%' />
           </div>
           <div className="col-lg-7 bg-secondary-subtle col-12 d-flex justify-content-center align-items-center ps-lg-3 mt-4 mt-lg-0 m-0 p-0">
-                          <p className=" w-75 fw-1 fs-3  px-0">
+                          <p className=" w-75 fw-1 fs-1  px-0">
                 Step into the future of home fashion with recycled threads that
                 redefine sustainability
               </p>
