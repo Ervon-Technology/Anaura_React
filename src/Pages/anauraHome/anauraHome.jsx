@@ -13,6 +13,19 @@ import summerImage from "../../images/summer_collection.jpg";
 import sportsWearImage from "../../images/sports_wear.jpg";
 import HomeFashionCard from "./homeFashionCard"
 
+import furniture1 from "../../images/anaura-home/furniture-1.png"
+import furniture2 from "../../images/anaura-home/furniture-2.png"
+import homefurnitures from '../../images/anaura-home/home-furnitures.jpg'
+import carpets from '../../images/anaura-home/carpets.jpg'
+import exhibitioncarpets from '../../images/anaura-home/exhibition-carpets.jpg'
+import furniturecarousal1 from '../../images/anaura-home/furniture-carousal-1.jpg'
+import furniturecarousal2 from '../../images/anaura-home/furniture-carousal-2.jpg'
+import furniturecarousal3 from '../../images/anaura-home/furniture-carousal-3.jpg'
+
+import mobilecarousal1 from '../../images/anaura-home/mobile-carousal.avif'
+import mobilecarousal2 from '../../images/anaura-home/mobile-carousal-2.avif'
+import mobilecarousal3 from '../../images/anaura-home/mobile-carousal-3.avif'
+
 import SavePlanet from "../Component/SavePlanet/SavePlanet";
 import './anauraHome.css';
 
@@ -20,23 +33,22 @@ function AnauraHome() {
 
   // Images for the mobile carousel
   const mobileSlides = [
-    { src: green, alt: "Green Outfit" },
-    { src: peach, alt: "Peach Outfit" },
-    { src: peacock, alt: "Peacock Outfit" },
+    { src: mobilecarousal1, alt: "mobilecarousal1" },
+    { src: mobilecarousal2, alt: "mobilecarousal2" },
+    { src: mobilecarousal3, alt: "mobilecarousal3" },
   ];
 
   // Images for the laptop/tablet carousel
   const desktopTabletSlides = [
-    { src: laptopImage1, alt: "Laptop Outfit 1" },
-    { src: laptopImage2, alt: "Laptop Outfit 2" },
-    { src: laptopImage3, alt: "Laptop Outfit 3" },
+    { src: furniturecarousal1, alt: "Furniture Carousal 1" },
+    { src: furniturecarousal2, alt: "Furniture Carousal 2" },
+    { src: furniturecarousal3, alt: "Furniture Carousal 3" },
   ];
 
   const collections = [
-    { name: "SPRING COLLECTION", image: springImage },
-    { name: "WINTER COLLECTION", image: winterImage },
-    { name: "SUMMER COLLECTION", image: summerImage },
-    { name: "SUSTAINABLE SPORTS WEAR", image: sportsWearImage },
+    { name: "HOME FURNITURES", image: homefurnitures },
+    { name: "CARPETS", image: carpets },
+    { name: "EXHIBITION CARPETS", image: exhibitioncarpets },
   ];
 
   const [activeCollectionIndex, setActiveCollectionIndex] = useState(0);
@@ -103,9 +115,9 @@ function AnauraHome() {
           {desktopTabletSlides.map((slide, index) => (
             <div
               key={index}
-              className={`carousel-item ${index === 0 ? "active" : ""}`}
+              className={`carousel-item  ${index === 0 ? "active" : ""}`}
             >
-              <img src={slide.src} className="d-block w-100" alt={slide.alt} />
+              <img src={slide.src} className="d-block object-fit-cover w-100" alt={slide.alt} />
             </div>
           ))}
         </div>
@@ -134,20 +146,20 @@ function AnauraHome() {
         <div className="row align-items-center">
           <div className="col-lg-6 d-none d-lg-flex">
             <img 
-              src={scarf} 
-              alt="Scarf Outfit" 
+              src={furniture1} 
+              alt="furniture-1" 
               className="img-fluid rounded"
               style={{ height: "600px", width: "550px", objectFit: "cover" }}
             />
           </div>
           <div className="col-lg-6 text-center text-lg-start">
-            <h2 className="display-5">Enjoy future-proof fashion with ANAURA's vast range of fabric alternatives</h2>
+            <h2 className="display-5">Enjoy future-proof furniture with ANAURA's vast range of fabric alternatives</h2>
           </div>
         </div>
       </div>
 
       {/* Creative Design Section */}
-      <div className="container mt-5 py-5 text-center">
+      <div className="my-5 py-5 text-center" style={{ backgroundColor: "rgb(235, 235, 235)" }}>
         <h2 className="fw-semibold display-5">Creative <span className="text-danger">Design</span></h2>
         <p className="text-muted mb-5">Explore the latest trends in fashion with our curated collection.</p>
         <HomeFashionCard />
@@ -161,14 +173,14 @@ function AnauraHome() {
         <div className="row align-items-center">
           <div className="col-lg-6 d-none d-lg-flex">
             <img
-              src={peach}
-              alt="Fashion"
+              src={furniture2}
+              alt="furniture-2"
               className="img-fluid rounded"
               style={{ height: "600px", width: "550px", objectFit: "cover" }}
             />
           </div>
           <div className="col-lg-6 text-center text-lg-start">
-            <p className="display-5">Anaura offers a diverse range of upcycled fabrics, for every season fashion and sustainable sportswear</p>
+            <p className="display-5">Anaura offers a diverse range of upcycled materials, perfect for every season's furniture and sustainable home decor.</p>
           </div>
         </div>
       </div>
@@ -188,7 +200,7 @@ function AnauraHome() {
           {collections.map((collection, index) => (
             <h2
               key={index}
-              className={`display-5 w-50 mb-4 ${index === activeCollectionIndex ? "text-danger fw-normal" : "fw-normal"}`}
+              className={`display-5 w-100 w-lg-50 mb-4 ${index === activeCollectionIndex ? "text-danger fw-normal" : "fw-normal text-white"}`}
               onMouseEnter={() => handleMouseEnter(index)}
               style={{ cursor: "pointer" }}
             >
