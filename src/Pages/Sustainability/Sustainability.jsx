@@ -9,7 +9,12 @@ import SavePlanet from '../Component/SavePlanet/SavePlanet'
 import Img1 from '../../images/sustainability/plastic.png'
 import Img2 from '../../images/sustainability/saveplanet.png'
 
+import caro1 from '../../images/sustainability/caro1.png'
+import caro2 from '../../images/sustainability/caro2.png'
+import caro3 from '../../images/sustainability/caro3.png'
+
 import Img3 from '../../images/sustainability/sustainability.png'
+import EnvironmentAware from '../Component/EnvironmentAware/EnvironmentAware'
 
 const Sustainability = () => {
     return (
@@ -19,6 +24,8 @@ const Sustainability = () => {
                 <HeroSection bgImg={Img3} title={'We are passionate creators, blending science and sustainability for the Earth.'} />
 
                 <SustainabilityImpact/>
+
+                <EnvironmentAware img1={caro1} img2={caro2} img3={caro3}/>
 
                 <EcoSection imageSrc={Img1}/>
 

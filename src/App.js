@@ -35,10 +35,11 @@ function App() {
         <Route path="/contact" element={<Contact/>}/>
         <Route path='*' element={<PageNotFound/>} />
         {/* <Route path="/contact-us" element={<Conatct/>}/> */}
-        <Route path="/about" element={<About2/>} />
-        <Route path="/anaura-fashion" element={<Fashion2/>} />
-        <Route path="/anaura-home" element={<AnauraHome/>} />
+        <Route path="/about-anaura" element={<About2/>} />
+
         <Route path="/Sustainability" element={<Sustainability/>} />
+
+        <Route path="/anaura-fashion" element={<Fashion2/>} />
         <Route path="/anaura-home" element={<AnauraHome/>} />
 
       </Routes>
