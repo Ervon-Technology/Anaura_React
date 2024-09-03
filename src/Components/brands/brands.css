@@ -1,307 +1,100 @@
-.brands__section-1 {
-    height: 70vh;
-    background-image: linear-gradient(to left, white 5%, gray 190%);
+.bg-lightblue {
+  background-color: #D1EBF8;
+}
+
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+@media (max-width: 1024px) {
+  .brands__section-1 {
+    height: 50vh;
   }
-  
+
   .brands__title {
-    line-height: 50px;
-    letter-spacing: 10px;
-    position: relative;
-    left: 190px;
-    top: -120px;
-    text-align: center;
+    font-size: 2.5rem;
+    line-height: 3rem;
   }
-  
-  .brands__title--highlight {
-    margin-left: 2rem;
-    font-family: Inter;
-font-size: 1.3125rem;
-font-weight: 400;
-line-height: 1.5rem;
-text-align: left;
 
+  .bg-lightblue {
+    padding: 3rem 1.5rem;
   }
-  
-  .brands__image {
-    height: 95vh;
-    background-image: url(../../images/brand-1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: -100px;
-  }
-  
-  .brands__image--first {
-    height: 95vh;
-    background-image: url('https://s3-alpha-sig.figma.com/img/b51f/7bb1/c8073257b8a0c12c39a520bf3a61754c?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=OEpNKxzxsZZgUS3MLts50w6bCa0afC5oSb-DQ188j7gr5Qpk~XC6TlmRB8bnQZUb4MmSql4ntpQTQkvQx0d53FfmTgHVYU73xpKhGj-onDvT0viUyyV2aKCwnTxRaptNGww7Q5Opp3BZrsfc10LeZ~smjfdxnIMhk1Qs3HYyza6XfmTSFbcxV2dQwPQLnazn72a85W4viAFXPqlEv9lPMHcHE~IzAWei9al14I5BTOt9Y0zasyP9kTIdKnBNhsEjHk-vaUxOjxILqUmeHddfQjEw-yGuHmaP45vow0iQhPH2iKaD8aEcE3AjdoxF9ugPllAYnSHxY2ZK83IRuSCbzA__');
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  .brands__text {
-    font-size: 56px;
-    font-weight: 400;
-    letter-spacing: 1px;
-    line-height: 64px;
-    width: 617px;
-  }
-  
-  .bg-tertiary {
-    background-color: rgb(209, 237, 255);
-  }
-  
-  /* 2nd row */
-  .brands__text--section-2 {
-    font-family: Inter;
-    font-size: 2.375rem;
-    font-weight: 400;
-    line-height: 2.625rem;
-    text-align: left;
-    
-width: 35rem;
-height: 16rem;
 
+  .fs-3, .fs-4 {
+    font-size: 1.5rem !important;
+    line-height: 2rem !important;
   }
-  .brands__second-row{
-    margin-top: 100px;
-    padding-top: 60px;
-  }
-  
-  .brands__highlight-text {
-    margin-top: -10px;
-    font-size: 21px;
-    line-height: 24px;
-  }
-  
-  /* 3rd row */
-  .brands__text--section-3 {
-    font-size: 29px;
-    font-weight: 500;
-    width: 515px;
-    margin-left: -127px;
-    line-height: 41px;
-  }
-  .brands__third-row{
-    margin-top: 100px;
-  }
-  
-  
-  /* 4th row */
-  .brands__text--section-4 {
-    font-size: 29px;
-    font-weight: 500;
-    width: 515px;
-    /* margin-left: 127px; */
-    line-height: 41px;
-  }
-  .brands__fourth-row{
-    margin-top: 100px;
-  }
-  /* 5th row */
-  .brands__text--section-5 {
-    font-size: 29px;
-    font-weight: 500;
-    width: 515px;
-    line-height: 41px;
-  }
-  .brands__fifth-row{
-    margin-top: 100px;
-    padding-top: 60px;
-  }
-  
-  .brands__text--section-5-1 {
-    font-size: 20px;
-    font-weight: 400;
-    width: 515px;
-    line-height: 30px;
-  }
-  
-  /* Responsive Design Enhancements */
-  
-  /* Adjustments for large tablets and smaller screens */
-  @media (max-width: 1200px) {
-    .brands__text,
-    .brands__text--section-2,
-    .brands__text--section-3,
-    .brands__text--section-4,
-    .brands__text--section-5 {
-      font-size: 28px;
-      width: 100%;
-      margin-left: 0;
-      padding: 0 20px;
-    }
-  
-    .brands__image {
-      background-position-y: center;
-      background-size: contain;
-    }
-  
-    .brands__section-1 {
-      height: 50vh;
-    }
-  
-    .brands__image--first {
-      height: auto;
-      padding: 20px;
-    }
-  }
-  
-  /* Adjustments for tablets */
-  @media (max-width: 768px) {
-    .brands__section-1 {
-      height: 37.7vh;
-    }
-    .brands__highlight-text-div{
-      width: 90% !important;
-      padding: 40px;
-      margin-left: 70px;
-     
-    }
-  
-    .brands__title {
-      font-size: 36px;
-      line-height: 36px;
-      letter-spacing: 5px;
-      text-align: center;
-      font-weight: 900;
-      left: 20px;
-      top: 10px;
-    }
-  
-    .brands__image {
-      height: 300px;
-      background-position-y: center;
-      background-size: cover;
-      margin: 0 auto;
-    }
-  
-    .brands__text,
-    .brands__text--section-2,
-    .brands__text--section-3,
-    .brands__text--section-4,
-    .brands__text--section-5 {
-      font-size: 22px;
-      line-height: 36px;
-      width: 70%;
-      text-align: center;
-      margin-left: 0;
-      padding: 15px !important;
-      height: fit-content;
-    }
-    .brands__text--section-3{
-      width: 100%;
-    text-align: start;
-    margin-left: 50px;
-    }
-    .brands__text--section-4{
-      width: 100%;
-      text-align: start;
-      margin-left: 50px;
 
-    }
-    .brands__text--section-5{
-      margin-left: 100px !important;
-    }
-  
-    .brands__image--first {
-      height: 25rem;
-      padding: 15px;
-    }
-  
-    .brands__second-row,
-    .brands__third-row,
-    .brands__fourth-row,
-    .brands__fifth-row {
-      margin-top: 50px;
-      padding-top: 0;
-    }
-  
-    .brands__text--section-5-1 {
-      width: 100%;
-    }
+  .fs-5 {
+    font-size: 1.25rem !important;
+    line-height: 1.75rem !important;
   }
-  
-  /* Adjustments for mobile phones */
-  @media (max-width: 576px) {
-    .brands__section-1 {
-      height: 25vh;
-    }
-    .brands__text--section-5 {
-      margin-left: 13px !important;
+
+  .p-4 {
+    padding: 1rem !important;
   }
-  .brands__highlight-text{
-    font-size: 15px !important;
+}
+
+@media (max-width: 769px) {
+  .brands__section-1 {
+    height: 50vh;
+    /* background-position-x: -180px; */
+    background-size: contain;
   }
-  .brands__highlight-text-div{
-    /* width: 90% !important; */
-    padding-top: 10px;
-    margin-left: 30px;
+  .fifth{
+    padding-top:0 !important;
+  }
+  .brands__title {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+  }
+
+  .bg-lightblue {
+    padding: 2rem 1rem;
+  }
+
+  .fs-3, .fs-4 {
+    font-size: 1.25rem !important;
+    line-height: 1.75rem !important;
+  }
+
+  .fs-5 {
+    font-size: 1rem !important;
     line-height: 1.5rem !important;
-   
   }
-  
-    .brands__title {
-      font-size: 24px !important;
-      line-height: 32px !important;
-      letter-spacing: 3px !important;
-      text-align: center !important;
-      left: 30px !important;
-    }
-  
-    .brands__image {
-      height: 200px;
-      background-position-y: center;
-      background-size: cover;
-      margin: 0 auto;
-    }
-  
-    .brands__text,
-    .brands__text--section-2,
-    .brands__text--section-3,
-    .brands__text--section-4,
-    .brands__text--section-5 {
-      font-size: 20px;
-      line-height: 28px;
-      /* margin-left: 0; */
-      width: 100%;
-      text-align: center;
-      padding: 30px;
-      height: fit-content;
-      margin-left: 10px;
-    }
-  
-    .brands__second-row,
-    .brands__third-row,
-    .brands__fourth-row,
-    .brands__fifth-row {
-      margin-top: 20px;
-    }
-  
-    .brands__text--section-5-1 {
-      font-size: 14px;
-      line-height: 24px;
-      padding-left: 30px;
-      padding-bottom: 10px;
-      margin-left: 10px !important;
-      text-align: start !important;
-      margin-top: -25px;
-    }
-    .brands__image-container img{
-      height: 25rem !important;
-      width: 25rem !important;
-  }
-    
-    .brands__image-container {
-      background-size: cover;
-      background-position: center;
-     
-      margin: 0 6px;
-        /* padding: 0 40px; */
-      width: 29.5625rem;
-height: fit-content;
 
-    }
-    .brands__image-container-x{
-      margin: -7px;
-    }
+  .p-4 {
+    padding: 0.5rem !important;
   }
-  
+}
+
+@media (max-width: 576px) {
+  .brands__section-1 {
+    height: 40vh !important;
+    /* background-position-x: -650px !important; */
+  }
+
+  .brands__title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .fs-3, .fs-4 {
+    font-size: 1rem !important;
+    line-height: 1.5rem !important;
+  }
+
+  .fs-5 {
+    font-size: 0.875rem !important;
+    line-height: 1.25rem !important;
+  }
+
+  .p-4 {
+    padding: 0.25rem !important;
+  }
+}
