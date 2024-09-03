@@ -14,6 +14,7 @@ import PageNotFound from './Components/PageNotFound/Page';
 import Contact from './Components/contactUs/Contact';
 import About2 from './Pages/About/About';
 import Fashion2 from './Pages/fashion/Fashion';
+import Sustainability from './Pages/Sustainability/Sustainability';
 
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
         {/* <Route path="/contact-us" element={<Conatct/>}/> */}
         <Route path="/about2" element={<About2/>} />
         <Route path="/fashion2" element={<Fashion2/>} />
+        <Route path="/Sustainability" element={<Sustainability/>} />
       </Routes>
       <Footer/>
       </BrowserRouter>
