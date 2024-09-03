@@ -1,15 +1,15 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import peacock from "../../images/peacock_ourfit.jpg";
-import white from "../../images/white_outfit.jpg";
-import scarf from "../../images/scarf_outfit.jpg";
+import collection1 from '../../images/anaura-home/furniture-collection-1.jpg'
+import collection2 from '../../images/anaura-home/furniture-collection-2.jpg'
+import collection3 from '../../images/anaura-home/furniture-collection-3.jpg'
 import './homeFashionCard.css'
 
 const HomeFashionCard = () => {
   const outfits = [
-    { src: peacock, alt: "Peacock Outfit" },
-    { src: scarf, alt: "Scarf Outfit" },
-    { src: white, alt: "White Outfit" },
+    { src: collection1, alt: "collection1" },
+    { src: collection2, alt: "collection2" },
+    { src: collection3, alt: "collection3" },
   ];
 
   return (
