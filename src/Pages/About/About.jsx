@@ -7,12 +7,17 @@ import AboutUsSection from '../Component/AboutUsSection/AboutUsSection';
 import CraftingSection from '../Component/CraftingSection/CraftingSection';
 import SavePlanet from '../Component/SavePlanet/SavePlanet';
 
+import BgHeroic from '../../images/about/about-heroic.png'
+
 const About2 = () => {
     return (
         <div>
             <main>
                 
-                <HeroSection />
+                <HeroSection 
+                    bgImg={BgHeroic} 
+                    title={'We are passionate creators, blending science and sustainability for the Earth.'} 
+                />
 
                 <SectionTwo />
 
