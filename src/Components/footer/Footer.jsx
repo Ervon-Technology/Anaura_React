@@ -5,47 +5,50 @@ import './footer.css'
 const Footer = () => {
   return (
     <div>
-  <footer class="container-fluid border-top z-100">
-    <div class="row pt-5 pb-4">
+  <footer class="container-fluid border-top z-100" >
+    <div class="row pt-5 pb-4" style={{"min-height":"15rem"}}>
       <div class="col-xl-6 col-lg-5 col-md-12 col-sm-12 text-center my-4 my-md-0 text-lg-start">
         <a href="/"><img src={logo} alt="ANAURA Future-Proof Fashion" class="img-fluid ms-lg-5"
           style={{ maxWidth: '300px' }}/></a>
+          
       </div>
       <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 mt-4 mt-lg-0 text-center  text-lg-start ">
         <ul class="list-unstyled">
-          <li class="mb-4">
+          {/* <li class="mb-4">
             <a href="/fashion" class="text-decoration-none text-dark fw-semibold">Discover ANAURA</a>
+          </li> */}
+          <li class="mb-4">
+            <a href="/anaura-for-brands" class="text-decoration-none text-dark fw-semibold">Anaura for brands</a>
+            
           </li>
           <li class="mb-4">
             <a href="/about" class="text-decoration-none text-dark fw-semibold">About us</a>
           </li>
-          <li class="mb-4">
+          {/* <li class="mb-4">
             <a href="#" class="text-decoration-none text-dark fw-semibold">How it's made</a>
-          </li>
+          </li> */}
         </ul>
       </div>
       <div class="col-xl-2 ps-xl-0 col-lg-3 ps-lg-5 col-md-4 col-sm-6 mt-4 mt-lg-0 text-center  text-lg-start">
         <ul class="list-unstyled">
+          {/* <li class="mb-4">
+            <a href="/anaura-for-brands" class="text-decoration-none text-dark fw-semibold">Anaura for brands</a>
+          </li> */}
           <li class="mb-4">
-            <a href="/brands" class="text-decoration-none text-dark fw-semibold">Anaura for brands</a>
+            <a href="/Sustainability" class="Sustainability text-decoration-none text-dark fw-semibold">Sustainability</a>
           </li>
           <li class="mb-4">
-            <a href="/ocean" class="text-decoration-none text-dark fw-semibold">ANAURA Our Ocean</a>
-          </li>
-          <li class="mb-4">
-            <a href="/achivement" class="Sustainability text-decoration-none text-dark fw-semibold">Sustainability</a>
+            <a href="/contact" class="contact text-decoration-none text-dark fw-semibold">Contact Us</a>
           </li>
         </ul>
       </div>
       <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 mt-4 mt-lg-0 text-center  text-lg-start">
         <ul class="list-unstyled">
           <li class="mb-4">
-            <a href="/home" class="text-decoration-none text-dark fw-semibold">Anaura For Home</a>
+            <a href="/anaura-home" class="text-decoration-none text-dark fw-semibold">Anaura For Home</a>
           </li>
-         
-        
           <li class="mb-4">
-            <a href="/contact" class="contact text-decoration-none text-dark fw-semibold">Contact Us</a>
+            <a href="/anaura-fashion" class="text-decoration-none text-dark fw-semibold">Anaura For Fashion</a>
           </li>
         </ul>
       </div>

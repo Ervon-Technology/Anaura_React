@@ -174,6 +174,9 @@ const MyNavbar = () => {
           <a className="dropdown-item" href="/home">
             Anaura For Home
           </a>
+          <a className="dropdown-item" href="/home">
+            Anaura For Home
+          </a>
         </div>
       </div>
       {/* Navbar section ends here */}

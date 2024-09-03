@@ -11,11 +11,12 @@ import springImage from "../../images/spring_collection.jpg";
 import winterImage from "../../images/winter_collection.jpg";
 import summerImage from "../../images/summer_collection.jpg";
 import sportsWearImage from "../../images/sports_wear.jpg";
-import FashionCard from "./FashionCard";
-import SavePlanet from "../Component/SavePlanet/SavePlanet";
-import './Fashion.css';
+import HomeFashionCard from "./homeFashionCard"
 
-function Fashion2() {
+import SavePlanet from "../Component/SavePlanet/SavePlanet";
+import './anauraHome.css';
+
+function AnauraHome() {
 
   // Images for the mobile carousel
   const mobileSlides = [
@@ -149,7 +150,10 @@ function Fashion2() {
       <div className="container mt-5 py-5 text-center">
         <h2 className="fw-semibold display-5">Creative <span className="text-danger">Design</span></h2>
         <p className="text-muted mb-5">Explore the latest trends in fashion with our curated collection.</p>
-        <FashionCard />
+        <HomeFashionCard />
+
+
+
       </div>
 
       {/* Stand for Issues Section */}
@@ -199,4 +203,4 @@ function Fashion2() {
   );
 }
 
-export default Fashion2;
+export default AnauraHome;
