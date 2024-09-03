@@ -8,7 +8,7 @@ import laptopImage1 from "../../images/carousal-1.jpg";
 import laptopImage2 from "../../images/carousal-2.jpg";
 import laptopImage3 from "../../images/carousal-3.jpg";
 import FashionCard from "./FashionCard";
-import SavePlanet from "../Component/SavePlanet/SavePlanet"
+import SavePlanet from "../Component/SavePlanet/SavePlanet";
 import './Fashion.css';
 
 function Fashion2() {
@@ -32,7 +32,7 @@ function Fashion2() {
       {/* Mobile Carousel Section */}
       <div
         id="mobileCarousel"
-        className="carousel slide d-lg-none"
+        className="carousel slide d-md-none"
         data-bs-ride="carousel"
         data-bs-interval="2000"
       >
@@ -47,7 +47,7 @@ function Fashion2() {
           ))}
         </div>
         <button
-          className="carousel-control-prev"
+          className="carousel-control-prev relative top-50"
           type="button"
           data-bs-target="#mobileCarousel"
           data-bs-slide="prev"
@@ -56,7 +56,7 @@ function Fashion2() {
           <span className="visually-hidden">Previous</span>
         </button>
         <button
-          className="carousel-control-next"
+          className="carousel-control-next relative top-50"
           type="button"
           data-bs-target="#mobileCarousel"
           data-bs-slide="next"
@@ -69,7 +69,7 @@ function Fashion2() {
       {/* Laptop and Tablet Carousel Section */}
       <div
         id="desktopTabletCarousel"
-        className="carousel slide d-none d-lg-block"
+        className="carousel slide d-none d-md-block"
         data-bs-ride="carousel"
         data-bs-interval="2000"
       >
@@ -111,7 +111,7 @@ function Fashion2() {
               src={scarf} 
               alt="Scarf Outfit" 
               className="img-fluid rounded" 
-              style={{ height: "600px", width: "550px", objectFit: "cover" }}  // Adjust height and maintain aspect ratio
+              style={{ height: "600px", width: "550px", objectFit: "cover" }}
             />
           </div>
           <div className="col-lg-6 text-center text-lg-start">
@@ -135,7 +135,7 @@ function Fashion2() {
               src={peach}
               alt="Fashion"
               className="img-fluid rounded"
-              style={{ height: "600px", width: "550px", objectFit: "cover" }}  // Adjust height and maintain aspect ratio
+              style={{ height: "600px", width: "550px", objectFit: "cover" }}
             />
           </div>
           <div className="col-lg-6 text-center text-lg-start">
