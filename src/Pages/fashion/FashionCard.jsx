@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import peacock from "../../images/peacock_ourfit.jpg";
 import white from "../../images/white_outfit.jpg";
 import scarf from "../../images/scarf_outfit.jpg";
+import './FashionCard.css'
 
 const FashionCard = () => {
   const outfits = [

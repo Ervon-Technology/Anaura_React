@@ -6,7 +6,7 @@ body {
 }
 
 .carousel-inner img {
-  max-height: 500px;
+  max-height: 650px;
 }
 
 .carousel-control-prev,
@@ -14,11 +14,8 @@ body {
   outline: none;
 }
 
-/* Ensure the container does not exceed the viewport width */
-body {
-  overflow-x: hidden;
-}
 
+/* Ensure the container does not exceed the viewport width */
 .FashionCard-container {
   display: flex;
   overflow-x: auto;

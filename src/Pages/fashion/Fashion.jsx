@@ -4,15 +4,27 @@ import green from "../../images/green_outfit.jpg";
 import peach from "../../images/peach_outfit.jpg";
 import peacock from "../../images/peacock_ourfit.jpg";
 import scarf from "../../images/scarf_outfit.jpg";
+import laptopImage1 from "../../images/carousal-1.jpg"; 
+import laptopImage2 from "../../images/carousal-2.jpg";
+import laptopImage3 from "../../images/carousal-3.jpg";
 import FashionCard from "./FashionCard";
-import './Fashion.css'
+import SavePlanet from "../Component/SavePlanet/SavePlanet"
+import './Fashion.css';
 
 function Fashion2() {
 
-  const slides = [
-    { src: green, alt: "Green" },
-    { src: peach, alt: "Peach" },
-    { src: peacock, alt: "Peacock" },
+  // Images for the mobile carousel
+  const mobileSlides = [
+    { src: green, alt: "Green Outfit" },
+    { src: peach, alt: "Peach Outfit" },
+    { src: peacock, alt: "Peacock Outfit" },
+  ];
+
+  // Images for the laptop/tablet carousel
+  const desktopTabletSlides = [
+    { src: laptopImage1, alt: "Laptop Outfit 1" },
+    { src: laptopImage2, alt: "Laptop Outfit 2" },
+    { src: laptopImage3, alt: "Laptop Outfit 3" },
   ];
 
   return (
@@ -22,10 +34,10 @@ function Fashion2() {
         id="mobileCarousel"
         className="carousel slide d-lg-none"
         data-bs-ride="carousel"
-        data-bs-interval="3000"
+        data-bs-interval="2000"
       >
         <div className="carousel-inner">
-          {slides.map((slide, index) => (
+          {mobileSlides.map((slide, index) => (
             <div
               key={index}
               className={`carousel-item ${index === 0 ? "active" : ""}`}
@@ -59,28 +71,20 @@ function Fashion2() {
         id="desktopTabletCarousel"
         className="carousel slide d-none d-lg-block"
         data-bs-ride="carousel"
-        data-bs-interval="3000"
+        data-bs-interval="2000"
       >
         <div className="carousel-inner">
-          {/* Add your slides here */}
-          <div className="carousel-item active">
-            <div className="d-block w-100" style={{ height: "400px", backgroundColor: "#f5f5f5" }}>
-              <h3 className="text-center pt-5">Slide 1 Content</h3>
+          {desktopTabletSlides.map((slide, index) => (
+            <div
+              key={index}
+              className={`carousel-item ${index === 0 ? "active" : ""}`}
+            >
+              <img src={slide.src} className="d-block w-100" alt={slide.alt} />
             </div>
-          </div>
-          <div className="carousel-item">
-            <div className="d-block w-100" style={{ height: "400px", backgroundColor: "#e0e0e0" }}>
-              <h3 className="text-center pt-5">Slide 2 Content</h3>
-            </div>
-          </div>
-          <div className="carousel-item">
-            <div className="d-block w-100" style={{ height: "400px", backgroundColor: "#ccc" }}>
-              <h3 className="text-center pt-5">Slide 3 Content</h3>
-            </div>
-          </div>
+          ))}
         </div>
         <button
-          className="carousel-control-prev"
+          className="carousel-control-prev relative top-50"
           type="button"
           data-bs-target="#desktopTabletCarousel"
           data-bs-slide="prev"
@@ -89,7 +93,7 @@ function Fashion2() {
           <span className="visually-hidden">Previous</span>
         </button>
         <button
-          className="carousel-control-next"
+          className="carousel-control-next relative top-50"
           type="button"
           data-bs-target="#desktopTabletCarousel"
           data-bs-slide="next"
@@ -100,10 +104,15 @@ function Fashion2() {
       </div>
 
       {/* Main Content Section */}
-      <div className="container mt-5">
+      <div className="container mt-5 pt-5">
         <div className="row align-items-center">
-          <div className="col-lg-6 d-none d-lg-flex justify-content-center">
-            <img src={scarf} alt="Scarf Outfit" className="img-fluid rounded" />
+          <div className="col-lg-6 d-none d-lg-flex ">
+            <img 
+              src={scarf} 
+              alt="Scarf Outfit" 
+              className="img-fluid rounded" 
+              style={{ height: "600px", width: "550px", objectFit: "cover" }}  // Adjust height and maintain aspect ratio
+            />
           </div>
           <div className="col-lg-6 text-center text-lg-start">
             <h2 className="display-5">Enjoy future-proof fashion with ANAURA's vast range of fabric alternatives</h2>
@@ -113,44 +122,39 @@ function Fashion2() {
 
       {/* Creative Design Section */}
       <div className="container mt-5 py-5 text-center">
-        <h2 className="fw-bold">Creative <span className="text-primary">Design</span></h2>
-        <p className="text-muted">Explore the latest trends in fashion with our curated collection.</p>
+        <h2 className="fw-semibold display-5">Creative <span className="text-primary">Design</span></h2>
+        <p className="text-muted mb-5">Explore the latest trends in fashion with our curated collection.</p>
         <FashionCard />
       </div>
 
       {/* Stand for Issues Section */}
       <div className="container mt-5">
-        <div className="row">
-          <div className="col-lg-4 col-12 d-flex justify-content-center">
+        <div className="row align-items-center">
+          <div className="col-lg-6 d-none d-lg-flex">
             <img
               src={peach}
               alt="Fashion"
               className="img-fluid rounded"
+              style={{ height: "600px", width: "550px", objectFit: "cover" }}  // Adjust height and maintain aspect ratio
             />
           </div>
-          <div className="col-lg-8 col-12 d-flex justify-content-center align-items-center bg-light text-center text-lg-start p-4">
-            <p className="fs-1">New generation of want brands to take a stand on issues close to their hearts.</p>
+          <div className="col-lg-6 text-center text-lg-start">
+            <p className="display-5">New generation of want brands to take a stand on issues close to their hearts.</p>
           </div>
         </div>
       </div>
 
       {/* Collections Section */}
-      <div className="container-fluid py-5 text-center bg-light">
-        <div className="container">
+      <div className="container-fluid mt-5 py-5 text-center bg-light">
+        <div className="container my-5">
           <h2 className="display-4 mb-4">SPRING COLLECTION</h2>
-          <h2 className="display-4 mb-4">SUMMER COLLECTION</h2>
           <h2 className="display-4 mb-4">WINTER COLLECTION</h2>
+          <h2 className="display-4 mb-4">SUMMER COLLECTION</h2>
           <h2 className="display-4">SUSTAINABLE SPORTS WEAR</h2>
         </div>
       </div>
 
-      {/* Call to Action Section */}
-      <section className="text-center py-5 bg-light">
-        <div className="container">
-          <h1 className="mb-4">We’re here to save mother earth</h1>
-          <a href="#" className="btn btn-outline-dark rounded-pill px-4 mt-4">Contact Us To Know How</a>
-        </div>
-      </section>
+      <SavePlanet />
     </div>
   );
 }
