@@ -24,7 +24,7 @@ const Brands = () => {
         </div>
 
         {/* Second Row */}
-        <div className="row g-3 p-5">
+        <div className="row g-3 p-lg-5 p-2">
           <div className="col-lg-6 d-flex align-items-center justify-content-center p-lg-5 ">
             <p className="fs-3 fs-lg-1 display-lg-1 fw-bold text-start  p-lg-5 ">
               New generation want brands to take a stand on issues close to their hearts.
@@ -32,9 +32,9 @@ const Brands = () => {
           </div>
           <div className="col-lg-6 px-lg-0 px-lg-5 py-lg-5 ">
             <div className="p-lg-5 p-3 ">
-              <p className="lead mt-4 fw-semibold">88% of consumers said they buy products from a company leading with a purpose.</p>
-              <p className="lead mt-4 fw-semibold">It's more than environmental or social purpose; it's a toolkit to enhance your brand story.</p>
-              <p className="lead mt-4 fw-semibold">94% of consumers say it's a brand's responsibility to create products that are not harmful to the earth.</p>
+              <p className="lead mt-lg-4 fw-semibold">88% of consumers said they buy products from a company leading with a purpose.</p>
+              <p className="lead mt-lg-4 fw-semibold">It's more than environmental or social purpose; it's a toolkit to enhance your brand story.</p>
+              <p className="lead mt-lg-4 fw-semibold">94% of consumers say it's a brand's responsibility to create products that are not harmful to the earth.</p>
             </div>
           </div>
         </div>
