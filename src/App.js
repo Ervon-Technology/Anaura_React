@@ -26,17 +26,18 @@ function App() {
     <MyNavbar/>
       <Routes>
         <Route path="/" element={<Home/>} />
-        <Route path="/brands" element={<Brands/>} />
-        <Route path="/about" element={<About/>} />
-        <Route path="/fashion" element={<Fashion/>} />
+        <Route path="/anaura-for-brands" element={<Brands/>} />
+       
+   
         <Route path="/achivement" element={<Acheivement/>} />
         <Route path="/ocean" element={<Ocean/>} />
         {/* <Route path="/home" element={<AnauraHome/>}/> */}
         <Route path="/contact" element={<Contact/>}/>
         <Route path='*' element={<PageNotFound/>} />
         {/* <Route path="/contact-us" element={<Conatct/>}/> */}
-        <Route path="/about2" element={<About2/>} />
-        <Route path="/fashion2" element={<Fashion2/>} />
+        <Route path="/about" element={<About2/>} />
+        <Route path="/anaura-fashion" element={<Fashion2/>} />
+        <Route path="/anaura-home" element={<AnauraHome/>} />
         <Route path="/Sustainability" element={<Sustainability/>} />
         <Route path="/anaura-home" element={<AnauraHome/>} />
 

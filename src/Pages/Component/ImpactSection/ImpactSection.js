@@ -15,7 +15,7 @@ const ImpactSection = ({ imageSrc }) => {
           <div className="col-md-6 d-flex align-items-center order-2 order-md-1">
             <div className="col-md-10 py-4">
               <h6 className="text-muted mb-3 text-uppercase">Is Our Impact Meaningful?</h6>
-              <p className="font-weight-normal display-6 mb-3">Guided by Integrity, Driven by a Purposeful Vision.</p>
+              <p className="font-weight-normal display-6 mb-4">Guided by Integrity, Driven by a Purposeful Vision.</p>
               <p className="fs-5 mb-5">
                 At Anaura, every decision—from our business operations to our team selection and growth—prioritizes the well-being of our planet.
                 We are hopeful partners, committed to transparency and driven by a shared belief in a sustainable future.
