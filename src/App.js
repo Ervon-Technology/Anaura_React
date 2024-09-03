@@ -12,6 +12,8 @@ import Ocean from './Components/Ocean/Ocean';
 import AnauraHome from './Components/AnauraHome/AnauraHome';
 import PageNotFound from './Components/PageNotFound/Page';
 import Contact from './Components/contactUs/Contact';
+import About2 from './Pages/About/About';
+import Fashion2 from './Pages/fashion/Fashion';
 
 
 function App() {
@@ -31,6 +33,8 @@ function App() {
         <Route path="/contact" element={<Contact/>}/>
         <Route path='*' element={<PageNotFound/>} />
         {/* <Route path="/contact-us" element={<Conatct/>}/> */}
+        <Route path="/about2" element={<About2/>} />
+        <Route path="/fashion2" element={<Fashion2/>} />
       </Routes>
       <Footer/>
       </BrowserRouter>
