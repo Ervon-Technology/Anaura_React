@@ -1,0 +1,36 @@
+/* No custom CSS needed for the core structure. All CSS should be removed in favor of Bootstrap classes. */
+
+/* Use these CSS rules if needed for fine-tuning */
+body {
+  overflow-x: hidden;
+}
+
+.carousel-inner img {
+  max-height: 650px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  outline: none;
+}
+
+
+/* Ensure the container does not exceed the viewport width */
+.FashionCard-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.FashionCard-container .card {
+  scroll-snap-align: start;
+}
+
+.FashionCard-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+}
+
+.FashionCard-container {
+  -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
