@@ -139,13 +139,13 @@ function Fashion2() {
             />
           </div>
           <div className="col-lg-6 text-center text-lg-start">
-            <p className="display-5">New generation of want brands to take a stand on issues close to their hearts.</p>
+            <p className="display-5">Anaura offers a diverse range of upcycled fabrics, for every season fashion  and sustainable sportswear</p>
           </div>
         </div>
       </div>
 
       {/* Collections Section */}
-      <div className="container-fluid mt-5 py-5 text-center bg-light">
+      <div className="container-fluid mt-5 py-5  bg-light">
         <div className="container my-5">
           <h2 className="display-4 mb-4">SPRING COLLECTION</h2>
           <h2 className="display-4 mb-4">WINTER COLLECTION</h2>
