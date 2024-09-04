@@ -1,6 +1,6 @@
 import './App.css';
 import About from './Components/About/About';
-import Brands from './Components/brands/Brands';
+import Brands from './Pages/brands/Brands';
 import Home from './Components/Home/Home';
 import MyNavbar from './Components/navbar/Navbar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -30,12 +30,12 @@ function App() {
        
    
         <Route path="/achivement" element={<Acheivement/>} />
-        <Route path="/ocean" element={<Ocean/>} />
+        {/* <Route path="/ocean" element={<Ocean/>} /> */}
         {/* <Route path="/home" element={<AnauraHome/>}/> */}
         <Route path="/contact" element={<Contact/>}/>
         <Route path='*' element={<PageNotFound/>} />
         {/* <Route path="/contact-us" element={<Conatct/>}/> */}
-        <Route path="/about-anaura" element={<About2/>} />
+        <Route path="/about" element={<About2/>} />
 
         <Route path="/Sustainability" element={<Sustainability/>} />
 
