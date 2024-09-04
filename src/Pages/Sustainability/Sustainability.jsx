@@ -25,7 +25,13 @@ const Sustainability = () => {
 
                 <SustainabilityImpact/>
 
-                <EnvironmentAware img1={caro1} img2={caro2} img3={caro3}/>
+                <EnvironmentAware 
+                title={"Tackling Environmental Challenges"}
+                heading={"Pioneering Sustainable Solutions"}
+                body={"Anaura is at the forefront of reducing the carbon footprint caused by plastic waste and organizing the unorganized plastic waste market in India. Our initiative extends to the production of Biomass Briquettes and high-quality recycled products. By investing in these forward-thinking solutions, we are promoting a niche line of eco-friendly products, enhancing sustainability, and ensuring end-to-end traceability."}
+                img1={caro1} 
+                img2={caro2} 
+                img3={caro3}/>
 
                 <EcoSection imageSrc={Img1}/>
 

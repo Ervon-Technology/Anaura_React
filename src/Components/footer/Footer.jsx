@@ -24,6 +24,10 @@ const Footer = () => {
           <li class="mb-4">
             <a href="/about" class="text-decoration-none text-dark fw-semibold">About us</a>
           </li>
+          <li class="mb-4">
+            <a href="/how-its-made" class="text-decoration-none text-dark fw-semibold">How its made</a>
+            
+          </li>
           {/* <li class="mb-4">
             <a href="#" class="text-decoration-none text-dark fw-semibold">How it's made</a>
           </li> */}
