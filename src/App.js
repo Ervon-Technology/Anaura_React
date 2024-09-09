@@ -1,7 +1,7 @@
 import './App.css';
 import About from './Components/About/About';
 import Brands from './Pages/brands/Brands';
-import Home from './Components/Home/Home';
+import Home from './Pages/Home/Home';
 import MyNavbar from './Components/navbar/Navbar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Footer from './Components/footer/Footer';
