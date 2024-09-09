@@ -4,14 +4,10 @@ import logo from "../../images/Logo.png";
 
 const MyNavbar = () => {
   const [scrolled, setScrolled] = useState(false);
-  const [visible, setVisible] = useState(true); // Track navbar visibility
-  let lastScrollY = window.scrollY;
 
   useEffect(() => {
     const handleScroll = () => {
       const navbar = document.querySelector(".navbar");
-
-      // Toggle the scrolled class based on the scroll position
       if (window.scrollY > 50) {
         navbar.classList.add("scrolled");
         setScrolled(true);
@@ -19,30 +15,19 @@ const MyNavbar = () => {
         navbar.classList.remove("scrolled");
         setScrolled(false);
       }
-
-      // Check scroll direction to hide/show navbar
-      if (window.scrollY > lastScrollY) {
-        // If scrolling down, hide the navbar
-        setVisible(false);
-      } else {
-        // If scrolling up, show the navbar
-        setVisible(true);
-      }
-      lastScrollY = window.scrollY;
     };
 
     window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [lastScrollY]);
+  }, []);
 
   return (
     <>
       {/* Navbar section */}
       <nav
-        className={`navbar navbar-expand-lg ${scrolled ? "navbar-light bg-white shadow" : "navbar-dark bg-transparent"} fixed-top ${visible ? "visible" : "hidden"} hover-bg`}
+        className={`navbar navbar-expand-lg ${scrolled ? "navbar-light bg-white shadow" : "navbar-dark bg-transparent"} fixed-top hover-bg`}
       >
         <div className="container">
           <a className="navbar-brand" href="/">

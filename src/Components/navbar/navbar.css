@@ -1,19 +1,7 @@
 /* Default styles for the navbar */
 .navbar {
   background-color: transparent;
-  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
-}
-
-/* Hidden class for navbar when scrolling down */
-.hidden {
-  transform: translateY(-100%);
-  transition: transform 0.3s ease;
-}
-
-/* Visible class for navbar when scrolling up */
-.visible {
-  transform: translateY(0);
-  transition: transform 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .navbar .nav-link,
@@ -26,6 +14,7 @@
 .navbar .navbar-toggler {
   border-color: rgba(255, 255, 255, 0.8); /* Ensure visibility of the burger menu button */
 }
+
 
 /* Make the burger icon black when the navbar is scrolled */
 .navbar .navbar-toggler-icon.black-icon {
