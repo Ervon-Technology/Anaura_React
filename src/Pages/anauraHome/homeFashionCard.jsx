@@ -13,7 +13,7 @@ const HomeFashionCard = () => {
   ];
 
   return (
-    <div className="d-flex justify-content-start justify-content-md-center overflow-auto">
+    <div className="d-flex justify-content-start justify-content-lg-center overflow-auto">
       <div className="d-flex gap-4">
         {outfits.map((outfit, index) => (
           <div key={index} className="card" style={{ width: "18rem" }}>
