@@ -15,7 +15,7 @@ import FashionCard from "./FashionCard";
 import SavePlanet from "../Component/SavePlanet/SavePlanet";
 import './Fashion.css';
 
-function Fashion2() {
+function Fashion() {
 
   // Images for the mobile carousel
   const mobileSlides = [
@@ -199,4 +199,4 @@ function Fashion2() {
   );
 }
 
-export default Fashion2;
+export default Fashion;

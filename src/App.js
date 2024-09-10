@@ -1,22 +1,17 @@
 import './App.css';
-import About from './Components/About/About';
-import Brands from './Pages/brands/Brands';
-import Home from './Pages/Home/Home';
-import MyNavbar from './Components/navbar/Navbar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Footer from './Components/footer/Footer';
-import Fashion from './Components/fashion/Fashion';
-import Acheivement from './Components/Achivments/Acheivement';
-import Ocean from './Components/Ocean/Ocean';
-
-// import AnauraHome from './Components/AnauraHome/AnauraHome';
-import PageNotFound from './Components/PageNotFound/Page';
-import Contact from './Components/contactUs/Contact';
-import About2 from './Pages/About/About';
-import Fashion2 from './Pages/fashion/Fashion';
+import MyNavbar from './Pages/Component/navbar/Navbar';
+import PageNotFound from './Pages/PageNotFound/Page';
+import Contact from './Pages/contactUs/Contact';
+import Home from './Pages/Home/Home';
+import About from './Pages/About/About';
+import Fashion from './Pages/fashion/Fashion';
+import Acheivement from './Pages/Achivments/Acheivement';
 import Sustainability from './Pages/Sustainability/Sustainability';
+import Brands from './Pages/brands/Brands';
 import AnauraHome from './Pages/anauraHome/anauraHome';
 import HowItsMade from './Pages/HowItsMade/HowItsMade';
+import Footer from './Pages/Component/footer/Footer';
 
 
 function App() {
@@ -30,13 +25,11 @@ function App() {
         <Route path="/anaura-for-brands" element={<Brands/>} />
         <Route path="/achivement" element={<Acheivement/>} />
         <Route path="/contact" element={<Contact/>}/>
-        <Route path="/about" element={<About2/>} />
+        <Route path="/about" element={<About/>} />
         <Route path="/how-its-made" element={<HowItsMade/>} />
         <Route path="/Sustainability" element={<Sustainability/>} />
-
-        <Route path="/anaura-fashion" element={<Fashion2/>} />
+        <Route path="/anaura-fashion" element={<Fashion/>} />
         <Route path="/anaura-home" element={<AnauraHome/>} />
-
         <Route path='*' element={<PageNotFound/>} />
       </Routes>
       <Footer/>

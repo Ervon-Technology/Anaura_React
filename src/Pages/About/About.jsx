@@ -9,7 +9,7 @@ import SavePlanet from '../Component/SavePlanet/SavePlanet';
 
 import BgHeroic from '../../images/about/about-heroic.png'
 
-const About2 = () => {
+const About = () => {
     return (
         <div>
             <main>
@@ -46,4 +46,4 @@ const About2 = () => {
     )
 }
 
-export default About2
+export default About

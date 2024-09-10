@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./navbar.css";
-import logo from "../../images/Logo.png";
+import logo from "../../../images/Logo.png";
 
 const MyNavbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -98,18 +98,23 @@ const MyNavbar = () => {
                   </a>
                   <ul className="dropdown-menu" aria-labelledby="dropdownDiscover">
                     <li>
-                      <a className="dropdown-item" href="/ocean">
-                        ANAURA Our Ocean
+                      <a className="dropdown-item" href="/anaura-for-brands">
+                        ANAURA For Brand
                       </a>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="/fashion">
-                        How it's made
+                      <a className="dropdown-item" href="/how-its-made">
+                        How ANAURA is Made
                       </a>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="/brands">
-                        Anaura for brands
+                      <a className="dropdown-item" href="/anaura-fashion">
+                      ANAURA For Fashion
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="/anaura-home">
+                      ANAURA For Home
                       </a>
                     </li>
                   </ul>
@@ -139,7 +144,7 @@ const MyNavbar = () => {
                 </li>
                 <li className="nav-item me-4">
                   <a className="nav-link" href="/about">
-                    About us
+                    About ANAURA
                   </a>
                 </li>
                 <li className="nav-item">
