@@ -15,7 +15,6 @@
   border-color: rgba(255, 255, 255, 0.8); /* Ensure visibility of the burger menu button */
 }
 
-
 /* Make the burger icon black when the navbar is scrolled */
 .navbar .navbar-toggler-icon.black-icon {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30' width='30' height='30'%3E%3Cpath stroke='rgba(0,0,0,1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
@@ -71,12 +70,18 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: opacity 0.3s ease;
   opacity: 0;
-  display: none;
+  visibility: hidden;
+  display: block; 
+  position: absolute;
+  transform: translateY(-10px); /* Slight upward transition */
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
+/* Show dropdown and make sure it expands the navbar */
 .navbar .dropdown:hover .dropdown-menu {
-  display: block;
   opacity: 1;
+  visibility: visible;
+  transform: translateY(0); /* Smoothly brings the dropdown into view */
 }
 
 /* Style for dropdown links */
@@ -92,16 +97,16 @@
   color: black;
 }
 
-/* Ensuring the dropdown stays inside the navbar */
+/* Remove absolute positioning so the navbar height can adjust */
 .dropdown-menu {
-  position: absolute;
+  position: absolute; /* Ensure it's part of the normal flow */
   top: 100%;
   left: 0;
   z-index: 1000;
   min-width: 10rem;
 }
 
-/* Align dropdown on the right side for business button */
+/* Align dropdown on the right side for the business button */
 .navbar .navbtn + .dropdown-menu {
   left: auto;
   right: 0;
@@ -119,6 +124,7 @@
 
   .dropdown-menu {
     position: static;
+    transform: none; /* Reset transform for mobile */
   }
 
   .navbar .offcanvas-body {

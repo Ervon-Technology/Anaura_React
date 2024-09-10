@@ -4,6 +4,7 @@ import logo from "../../images/Logo.png";
 
 const MyNavbar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [expanded, setExpanded] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,9 +18,29 @@ const MyNavbar = () => {
       }
     };
 
+    // Function to expand the navbar height when a dropdown opens
+    const handleDropdownOpen = () => {
+      const navbar = document.querySelector(".navbar");
+      navbar.style.height = "auto"; // Allow automatic height expansion
+      setExpanded(true);
+    };
+
+    // Function to reset the navbar height when the dropdown closes
+    const handleDropdownClose = () => {
+      const navbar = document.querySelector(".navbar");
+      navbar.style.height = "auto"; // Reset back to normal
+      setExpanded(false);
+    };
+
+    // Listen for Bootstrap dropdown events
+    document.addEventListener("shown.bs.dropdown", handleDropdownOpen);
+    document.addEventListener("hidden.bs.dropdown", handleDropdownClose);
+
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      document.removeEventListener("shown.bs.dropdown", handleDropdownOpen);
+      document.removeEventListener("hidden.bs.dropdown", handleDropdownClose);
     };
   }, []);
 
@@ -27,9 +48,11 @@ const MyNavbar = () => {
     <>
       {/* Navbar section */}
       <nav
-        className={`navbar navbar-expand-lg ${scrolled ? "navbar-light bg-white shadow" : "navbar-dark bg-transparent"} fixed-top hover-bg`}
+        className={`navbar navbar-expand-lg ${
+          scrolled ? "navbar-light bg-white shadow" : "navbar-dark bg-transparent"
+        } fixed-top hover-bg ${expanded ? "expanded" : ""}`}
       >
-        <div className="container">
+        <div className="container-fluid mx-5">
           <a className="navbar-brand" href="/">
             <img src={logo} height="30" alt="ANAURA" />
           </a>
@@ -42,7 +65,7 @@ const MyNavbar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className={`navbar-toggler-icon ${scrolled ? 'black-icon' : ''}`}></span>
+            <span className={`navbar-toggler-icon ${scrolled ? "black-icon" : ""}`}></span>
           </button>
           <div
             className="offcanvas offcanvas-end"
@@ -63,7 +86,7 @@ const MyNavbar = () => {
             </div>
             <div className="offcanvas-body">
               <ul className="navbar-nav ms-auto">
-                <li className="nav-item dropdown">
+                <li className="nav-item dropdown me-3">
                   <a
                     className="nav-link dropdown-toggle"
                     href="#"
@@ -75,17 +98,23 @@ const MyNavbar = () => {
                   </a>
                   <ul className="dropdown-menu" aria-labelledby="dropdownDiscover">
                     <li>
-                      <a className="dropdown-item" href="/ocean">ANAURA Our Ocean</a>
+                      <a className="dropdown-item" href="/ocean">
+                        ANAURA Our Ocean
+                      </a>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="/fashion">How it's made</a>
+                      <a className="dropdown-item" href="/fashion">
+                        How it's made
+                      </a>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="/brands">Anaura for brands</a>
+                      <a className="dropdown-item" href="/brands">
+                        Anaura for brands
+                      </a>
                     </li>
                   </ul>
                 </li>
-                <li className="nav-item dropdown">
+                <li className="nav-item dropdown me-3">
                   <a
                     className="nav-link dropdown-toggle"
                     href="#"
@@ -97,21 +126,24 @@ const MyNavbar = () => {
                   </a>
                   <ul className="dropdown-menu" aria-labelledby="dropdownSustainability">
                     <li>
-                      <a className="dropdown-item" href="/home">Our Story</a>
+                      <a className="dropdown-item" href="/home">
+                        Our Story
+                      </a>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="/home">Champions of Sustainability</a>
+                      <a className="dropdown-item" href="/home">
+                        Champions of Sustainability
+                      </a>
                     </li>
                   </ul>
                 </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="/about">About us</a>
+                <li className="nav-item me-4">
+                  <a className="nav-link" href="/about">
+                    About us
+                  </a>
                 </li>
                 <li className="nav-item">
-                  <a
-                    className="btn btn-outline-light rounded-pill px-3 navbtn"
-                    href="#"
-                  >
+                  <a className="btn btn-outline-light rounded-pill px-3 navbtn" href="#">
                     ANAURA For Business
                   </a>
                 </li>
