@@ -11,6 +11,7 @@ import Sustainability from './Pages/Sustainability/Sustainability';
 import Brands from './Pages/brands/Brands';
 import AnauraHome from './Pages/anauraHome/anauraHome';
 import HowItsMade from './Pages/HowItsMade/HowItsMade';
+import OurStory from './Pages/ourStory/ourStory';
 import Footer from './Pages/Component/footer/Footer';
 
 
@@ -30,6 +31,7 @@ function App() {
         <Route path="/Sustainability" element={<Sustainability/>} />
         <Route path="/anaura-fashion" element={<Fashion/>} />
         <Route path="/anaura-home" element={<AnauraHome/>} />
+        <Route path="/our-story" element={<OurStory/>} />
         <Route path='*' element={<PageNotFound/>} />
       </Routes>
       <Footer/>

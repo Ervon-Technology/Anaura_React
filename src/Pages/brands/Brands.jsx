@@ -1,7 +1,7 @@
 import React from "react";
 import tree from "../../images/tree.png";
 import reduce from "../../images/reduce.jpg";
-import brandPoster from "../../images/brand-poster.png";
+import brandPoster from "../../images/brand/brand-poster.jpg";
 import Img1 from '../../images/about/plasticAbout.png';
 import SavePlanet from "../Component/SavePlanet/SavePlanet";
 
@@ -15,7 +15,7 @@ const Brands = () => {
           className="d-flex justify-content-center align-items-center text-center bg-cover bg-center position-relative" 
           style={{ height: "70vh", backgroundImage: `url(${brandPoster})`, backgroundSize: "cover" }}
         >
-          <h1 className="display-4">
+          <h1 className="display-4 text-white fw-semibold">
             ANAURA FOR <br />
             <span>BRANDS</span>
           </h1>

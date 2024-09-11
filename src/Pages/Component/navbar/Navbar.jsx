@@ -131,13 +131,8 @@ const MyNavbar = () => {
                   </a>
                   <ul className="dropdown-menu" aria-labelledby="dropdownSustainability">
                     <li>
-                      <a className="dropdown-item" href="/home">
+                      <a className="dropdown-item" href="/our-story">
                         Our Story
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="/home">
-                        Champions of Sustainability
                       </a>
                     </li>
                   </ul>
@@ -148,7 +143,7 @@ const MyNavbar = () => {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="btn btn-outline-light rounded-pill px-3 navbtn" href="#">
+                  <a className="btn btn-outline-light rounded-pill px-3 navbtn" href="/contact">
                     ANAURA For Business
                   </a>
                 </li>
