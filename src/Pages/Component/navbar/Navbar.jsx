@@ -47,15 +47,15 @@ const MyNavbar = () => {
   return (
     <>
       {/* Navbar section */}
-      <div className="">
+      <div>
       <nav
-        className={`navbar navbar-expand-lg ${
+        className={`navbar navbar-expand-lg py-4 ${
           scrolled ? "navbar-light bg-white shadow" : "navbar-dark bg-transparent"
         } fixed-top hover-bg ${expanded ? "expanded" : ""}`}
       >
-        <div className="container-fluid mx-5">
+        <div className="container">
           <a className="navbar-brand" href="/">
-            <img src={logo} height="30" alt="ANAURA" />
+            <img src={logo} height="35" alt="ANAURA" />
           </a>
           <button
             className="navbar-toggler"
@@ -144,15 +144,14 @@ const MyNavbar = () => {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="btn btn-outline-light rounded-pill px-3 navbtn" href="/contact">
+                  <a className="btn btn-outline-light rounded-pill px-3 py-2 navbtn" href="/contact">
                     ANAURA For Business
                   </a>
                 </li>
               </ul>
             </div>
           </div>
-        </div>
-       
+        </div>      
       </nav>
       </div>
     </>
