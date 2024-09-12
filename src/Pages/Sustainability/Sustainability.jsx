@@ -36,7 +36,11 @@ const Sustainability = () => {
                 <EcoSection imageSrc={Img1}/>
 
                 <div style={{"background-color": "rgb(244, 244, 244)"}}>
-                    <ImpactSection imageSrc={Img2}/>
+                    <ImpactSection 
+                    subtitle={"Is Our Impact Meaningful?"}
+                    title={"Guided by Integrity, Driven by a Purposeful Vision."}
+                    des={"At Anaura, every decision—from our business operations to our team selection and growth—prioritizes the well-being of our planet.We are hopeful partners, committed to transparency and driven by a shared belief in a sustainable future."}
+                    imageSrc={Img2}/>
                 </div>
                 
                 <SavePlanet />
