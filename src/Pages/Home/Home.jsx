@@ -11,7 +11,9 @@ import ImpactSection from '../Component/ImpactSection/ImpactSection';
 
 
 import Img2 from '../../images/home/home.svg'
+import FactImg from '../../images/home/factories.svg'
 import Heading2 from '../../fonts/Heading2';
+import Marquee from 'react-fast-marquee';
 
 const Home = () => {
 
@@ -21,9 +23,9 @@ const Home = () => {
     let incrementAmount = 1;
     let incrementInterval = 10; // 10 milliseconds for 100 per second
 
-    let currentNumber = localStorage.getItem("counterNumber") 
-                        ? parseInt(localStorage.getItem("counterNumber")) 
-                        : initialNumber;
+    let currentNumber = localStorage.getItem("counterNumber")
+      ? parseInt(localStorage.getItem("counterNumber"))
+      : initialNumber;
 
     function incrementCounter() {
       currentNumber += incrementAmount;
@@ -87,92 +89,174 @@ const Home = () => {
       </section>
 
       {/* About Section */}
-      <section className="py-5" style={{ background: 'linear-gradient(to bottom, #000000, #808080)' }}>
-        <div className="container text-white">
+      <section className="py-5" style={{ background: '#ecf6ff' }}>
+
+        <div className="container">
           <div className="row">
             <div className="col-lg-6 text-center mb-4 mb-lg-0">
-              <img src={about} className="img-fluid" alt="" />
+              <img src={FactImg} className="img-fluid col-8 mx-auto" alt="" />
             </div>
             <div className="col-lg-6 d-flex align-items-center">
-              <div>
-                <h2 className="mb-3">About Anaura</h2>
+              <div className='col-9 mx-auto'>
+                <Heading2 text={"About Anaura"} />
+
+
                 <p className="fs-5 mb-4">
                   Anaura where post-consumer PET bottles are transformed into essential wearable material (rPET fabric) items. With a daily production of 320,000 sq. meters, Anaura epitomizes sustainability and style.
                 </p>
-                <button className="btn btn-outline-light rounded-pill px-4 btn-lg">
-                  Know More
-                </button>
+                <button className="btn btn-outline-dark rounded-pill px-4 btn-lg border-2 fs-6">About ANAURA</button>
               </div>
             </div>
           </div>
         </div>
       </section>
+      {/* End About Section */}
 
-     
-
-<section className="eco-section py-md-5">
-      <div className="container">
-        <div className="row align-items-center">
-          <div className="col-md-5 order-1 order-md-2 text-center mx-auto p-4" style={{"background-color": "rgb(213, 234, 255)"}}>
-            <img
-              src={Img2}
-              alt="Eco-Friendly Textiles"
-              className="img-fluid rounded col-md-10 mx-auto"
-            />
-          </div>
-          <div className="col-md-6 d-flex align-items-center order-2 order-md-1">
-            <div className="col-md-10 py-4 mx-auto">
-            
-            <Heading2 text={"Grow your brand with ANAURA"}/>
-             
-              <p className="fs-5 mb-4">We believe brands and consumers should use their purchasing power to further the environmental impact they want to see in the world.</p>     
-
-              <button className="btn btn-outline-dark rounded-pill px-4 btn-lg border-2 fs-6">ANAURA For Brands</button> 
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-      {/* Fashion and Home Section */}
-      <section className="py-5">
+      {/* Grow your brand */}
+      <section className="eco-section py-md-5">
         <div className="container">
-          <div className="row">
-            <div className="col-lg-6 my-3 d-flex flex-column justify-content-center">
-              <h1 className="display-6 fw-semibold mb-3">ANAURA FASHION</h1>
-              <p className="lead">Enjoy future proof fashion with Anaura's vast range of fabric alternatives</p>
-              <button className="btn btn-outline-dark rounded-pill btn-lg w-50">Know More</button>
+          <div className="row align-items-center">
+            <div className="col-md-5 order-1 order-md-2 text-center mx-auto p-4" style={{ "background-color": "rgb(213, 234, 255)" }}>
+              <img
+                src={Img2}
+                alt="Eco-Friendly Textiles"
+                className="img-fluid rounded col-md-10 mx-auto"
+              />
             </div>
-            <div className="col-lg-6 my-3">
-              <div className="row">
-                <div className="col-6">
-                  <img src={oneOne} alt="" className="w-100" />
-                </div>
-                <div className="col-6">
-                  <img src={oneTwo} alt="" className="w-100" />
-                </div>
+            <div className="col-md-6 d-flex align-items-center order-2 order-md-1">
+              <div className="col-md-10 py-4 mx-auto">
+
+                <Heading2 text={"Grow your brand with ANAURA"} />
+
+                <p className="fs-5 mb-4">We believe brands and consumers should use their purchasing power to further the environmental impact they want to see in the world.</p>
+
+                <button className="btn btn-outline-dark rounded-pill px-4 btn-lg border-2 fs-6">ANAURA For Brands</button>
               </div>
-            </div>
-            <div className="col-lg-6 my-3">
-              <div className="row">
-                <div className="col-6">
-                  <img src={oneTwo} alt="" className="w-100" />
-                </div>
-                <div className="col-6">
-                  <img src={oneOne} alt="" className="w-100" />
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-6 my-3 d-flex flex-column justify-content-center">
-              <h1 className="display-6 fw-semibold mb-3">ANAURA HOME</h1>
-              <p className="lead">Step into the future of home fashion with recycled material for Home Furnishing items</p>
-              <button className="btn btn-outline-dark rounded-pill btn-lg w-50">Know More</button>
             </div>
           </div>
         </div>
       </section>
+      {/* End Grow your brand */}
+
+
+      {/* ANAURA FOR FASSION */}
+      <section className="eco-section">
+
+        <div className="row align-items-center">
+
+          <img
+            src={oneOne}
+            alt="Eco-Friendly Textiles"
+            className="col-md-4 p-0"
+          />
+
+          <div className="col-md-6 d-flex align-items-center order-2 order-md-1 mx-auto">
+            <div className="col-md-10 py-4 mx-auto">
+
+              <Heading2 text={"ANAURA Fassion"} />
+
+              <p className="fs-5 mb-4 col-md-8">Enjoy future proof fashion with anaura vast range of fabric alternatives</p>
+
+              <button className="btn btn-outline-dark rounded-pill px-4 btn-lg border-2 fs-6">ANAURA For Brands</button>
+
+              <div className="mt-5">
+                <Marquee>
+                  <div className="d-flex">
+                    <img
+                      src={oneOne}
+                      alt="Eco-Friendly Textiles"
+                      className="col-md-4 p-0 mx-2" style={{ "width": "10rem" }}
+                    />
+                    <img
+                      src={oneOne}
+                      alt="Eco-Friendly Textiles"
+                      className="col-md-4 p-0 mx-2" style={{ "width": "10rem" }}
+                    />
+                    <img
+                      src={oneOne}
+                      alt="Eco-Friendly Textiles"
+                      className="col-md-4 p-0 mx-2" style={{ "width": "10rem" }}
+                    />
+                    <img
+                      src={oneOne}
+                      alt="Eco-Friendly Textiles"
+                      className="col-md-4 p-0 mx-2" style={{ "width": "10rem" }}
+                    />
+                  </div>
+                </Marquee>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+      {/* END ANAURA FOR FASSION */}
+
+
+      {/* ANAURA FOR HOME */}
+      <section className="eco-section py-5 my-5">
+
+        <div className="container">
+          <div className="row align-items-center">
+
+            <div className="col-md-6 d-flex align-items-center mx-auto">
+              <div className="col-md-10 py-4 mx-auto">
+
+                <Heading2 text={"ANAURA Home"} />
+
+                <p className="fs-5 mb-4 col-md-8">Step into the future of home fashion with recycled material for Home Furnishing items</p>
+
+                <button className="btn btn-outline-dark rounded-pill px-4 btn-lg border-2 fs-6">Know More ANAURA Home</button>
+
+                <div className="mt-5">
+                <Marquee>
+                  <div className="d-flex">
+                    <img
+                      src={oneOne}
+                      alt="Eco-Friendly Textiles"
+                      className="col-md-4 p-0 mx-2" style={{ "width": "10rem" }}
+                    />
+                    <img
+                      src={oneOne}
+                      alt="Eco-Friendly Textiles"
+                      className="col-md-4 p-0 mx-2" style={{ "width": "10rem" }}
+                    />
+                    <img
+                      src={oneOne}
+                      alt="Eco-Friendly Textiles"
+                      className="col-md-4 p-0 mx-2" style={{ "width": "10rem" }}
+                    />
+                    <img
+                      src={oneOne}
+                      alt="Eco-Friendly Textiles"
+                      className="col-md-4 p-0 mx-2" style={{ "width": "10rem" }}
+                    />
+                  </div>
+                </Marquee>
+              </div>
+
+
+              </div>
+            </div>
+
+            <div className="col-md-6 text-center">
+            <img
+                      src={oneOne}
+                      alt="Eco-Friendly Textiles"
+                      className="col-md-8 p-0 mx-2" 
+                    />
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+      {/* END ANAURA FOR HOME */}
+
+
 
       {/* Recycling Counter Section */}
       <section className="position-relative overflow-hidden d-flex align-items-center" style={{ height: '70vh' }}>
