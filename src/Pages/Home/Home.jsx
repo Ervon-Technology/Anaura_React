@@ -11,7 +11,18 @@ import ImpactSection from '../Component/ImpactSection/ImpactSection';
 
 
 import Img2 from '../../images/home/home.svg'
-// import FactImg from '../../images/home/factories.svg'
+import spring from '../../images/home/spring@2x.svg'
+
+import summer from '../../images/home/summer.svg'
+import winter from '../../images/home/winter@2x.svg'
+import FactImg from '../../images/home/factories.svg'
+
+import sofa from '../../images/home/furniture@2x.svg'
+import carpet from '../../images/home/carpet@2x.svg'
+import excarpet from '../../images/home/excarpet@2x.svg'
+
+
+
 import Heading2 from '../../fonts/Heading2';
 import Marquee from 'react-fast-marquee';
 
@@ -90,7 +101,6 @@ const Home = () => {
 
       {/* About Section */}
       <section className="py-5" style={{ background: '#ecf6ff' }}>
-
         <div className="container">
           <div className="row">
             <div className="col-lg-6 text-center mb-4 mb-lg-0">
@@ -99,8 +109,6 @@ const Home = () => {
             <div className="col-lg-6 d-flex align-items-center">
               <div className='col-9 mx-auto'>
                 <Heading2 text={"About Anaura"} />
-
-
                 <p className="fs-5 mb-4">
                   Anaura where post-consumer PET bottles are transformed into essential wearable material (rPET fabric) items. With a daily production of 320,000 sq. meters, Anaura epitomizes sustainability and style.
                 </p>
@@ -141,44 +149,47 @@ const Home = () => {
 
       {/* ANAURA FOR FASSION */}
       <section className="eco-section">
-
         <div className="row align-items-center">
-
           <img
             src={oneOne}
             alt="Eco-Friendly Textiles"
             className="col-md-4 p-0"
           />
-
           <div className="col-md-6 d-flex align-items-center order-2 order-md-1 mx-auto">
             <div className="col-md-10 py-4 mx-auto">
-
               <Heading2 text={"ANAURA Fassion"} />
-
               <p className="fs-5 mb-4 col-md-8">Enjoy future proof fashion with anaura vast range of fabric alternatives</p>
-
               <button className="btn btn-outline-dark rounded-pill px-4 btn-lg border-2 fs-6">ANAURA For Brands</button>
-
               <div className="mt-5">
                 <Marquee>
                   <div className="d-flex">
                     <img
-                      src={oneOne}
+                      src={spring}
                       alt="Eco-Friendly Textiles"
                       className="col-md-4 p-0 mx-2" style={{ "width": "10rem" }}
                     />
                     <img
-                      src={oneOne}
+                      src={summer}
                       alt="Eco-Friendly Textiles"
                       className="col-md-4 p-0 mx-2" style={{ "width": "10rem" }}
                     />
                     <img
-                      src={oneOne}
+                      src={winter}
+                      alt="Eco-Friendly Textiles"
+                      className="col-md-4 p-0 mx-2" style={{ "width": "10rem" }}
+                    />
+                     <img
+                      src={spring}
                       alt="Eco-Friendly Textiles"
                       className="col-md-4 p-0 mx-2" style={{ "width": "10rem" }}
                     />
                     <img
-                      src={oneOne}
+                      src={summer}
+                      alt="Eco-Friendly Textiles"
+                      className="col-md-4 p-0 mx-2" style={{ "width": "10rem" }}
+                    />
+                    <img
+                      src={winter}
                       alt="Eco-Friendly Textiles"
                       className="col-md-4 p-0 mx-2" style={{ "width": "10rem" }}
                     />
@@ -188,7 +199,6 @@ const Home = () => {
             </div>
           </div>
         </div>
-
       </section>
       {/* END ANAURA FOR FASSION */}
 
@@ -212,25 +222,36 @@ const Home = () => {
                 <Marquee>
                   <div className="d-flex">
                     <img
-                      src={oneOne}
+                      src={sofa}
                       alt="Eco-Friendly Textiles"
                       className="col-md-4 p-0 mx-2" style={{ "width": "10rem" }}
                     />
                     <img
-                      src={oneOne}
+                      src={excarpet}
                       alt="Eco-Friendly Textiles"
                       className="col-md-4 p-0 mx-2" style={{ "width": "10rem" }}
                     />
                     <img
-                      src={oneOne}
+                      src={carpet}
                       alt="Eco-Friendly Textiles"
                       className="col-md-4 p-0 mx-2" style={{ "width": "10rem" }}
                     />
                     <img
-                      src={oneOne}
+                      src={sofa}
                       alt="Eco-Friendly Textiles"
                       className="col-md-4 p-0 mx-2" style={{ "width": "10rem" }}
                     />
+                    <img
+                      src={excarpet}
+                      alt="Eco-Friendly Textiles"
+                      className="col-md-4 p-0 mx-2" style={{ "width": "10rem" }}
+                    />
+                    <img
+                      src={carpet}
+                      alt="Eco-Friendly Textiles"
+                      className="col-md-4 p-0 mx-2" style={{ "width": "10rem" }}
+                    />
+                 
                   </div>
                 </Marquee>
               </div>
@@ -251,9 +272,6 @@ const Home = () => {
 
         </div>
       </section>
-
-
-
       {/* END ANAURA FOR HOME */}
 
 
