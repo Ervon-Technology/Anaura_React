@@ -2,6 +2,7 @@ import React from "react";
 import saveEarth from "../../images/our-story/save-earth.jpg";
 import company from "../../images/Logo.png";
 import sustainability from "../../images/our-story/sustainables.jpg";
+import SustainabilityImpact from "../Component/SustainabilityImpact/SustainabilityImpact";
 import story1 from "../../images/our-story/story-1.jpg";
 import story2 from "../../images/our-story/story-2.jpg";
 import story3 from "../../images/our-story/story-3.jpg";
@@ -35,18 +36,20 @@ const OurStory = () => {
       </div>
 
       {/* Sustainability Impact Section */}
-      <div className="bg-light py-5 text-center">
+      {/* <div className="py-5 m-5 text-center" style={{ backgroundColor: "rgb(255, 222, 225)" }}>
         <div className="container">
-          <h6 className="text-uppercase text-secondary mb-3 fw-bold ">
-            Our Sustainability Impact
-          </h6>
-          <h3 className="text-dark fw-light display-4">
-            We’ve been at the forefront of sustainable innovation for decades,
-            hoping to make a small impact. Our goal is to be light with our
-            footprint and frugal with resources.
-          </h3>
+          <div className="col-md-9 mx-auto my-3">
+            <h6 className="text-muted text-uppercase mb-3 fw-bold">
+              Our Sustainability Impact
+            </h6>
+            <p className="font-weight-normal display-6">
+              We’ve been at the forefront of sustainable innovation for decades, hoping to make a small impact. Our goal is to be light with our footprint and frugal with resources.
+            </p>
+          </div>
         </div>
-      </div>
+      </div> */}
+      <SustainabilityImpact />
+
 
       {/* Circular Economy Section */}
       <div className="container py-5">
