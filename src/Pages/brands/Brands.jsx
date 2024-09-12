@@ -1,6 +1,7 @@
 import React from "react";
 import tree from "../../images/tree.png";
 import reduce from "../../images/reduce.jpg";
+import business from "../../images/brand/business-growth.jpg"
 import brandPoster from "../../images/brand/brand-poster.jpg";
 import Img1 from '../../images/about/plasticAbout.png';
 import SavePlanet from "../Component/SavePlanet/SavePlanet";
@@ -50,11 +51,7 @@ const Brands = () => {
                 <div className="px-3 py-4">
                   <p className="lead fw-semibold">
                     88% of consumers said they buy products from a company leading with a purpose.
-                  </p>
-                  <p className="lead fw-semibold">
-                    It's more than environmental or social purpose; it's a toolkit to enhance your brand story.
-                  </p>
-                  <p className="lead fw-semibold">
+                    It's more than environmental or social purpose; it's a toolkit to enhance your brand story.     
                     94% of consumers say it's a brand's responsibility to create products that are not harmful to the earth.
                   </p>
                 </div>
@@ -68,7 +65,7 @@ const Brands = () => {
           <div className="container">
             <div className="row align-items-center">
               <div className="col-md-6 text-center">
-                <img src={tree} alt="Eco-Friendly Textiles" className="img-fluid rounded mb-4 mb-md-0" />
+                <img src={business} alt="Eco-Friendly Textiles" className="img-fluid rounded mb-4 mb-md-0" />
               </div>
               <div className="col-md-6">
                 <p className="fs-2 fw-light text-center text-lg-start">

@@ -55,7 +55,7 @@ const Home = () => {
                 ECO-FRIENDLY. SUSTAINABLE. FUTURE-READY.
               </div>
               <div className="display-6 col-12 col-lg-8 mx-auto text-center">
-                ANAURA is a sustainable alternative to unsustainable fabrics, building trust, traceability and sustainability in fashion and home furnishing!
+                ANAURA is a sustainable alternative to unsustainable fabrics, building trust, traceability, and sustainability in fashion and home furnishing!
               </div>
             </div>
           </div>
@@ -67,7 +67,7 @@ const Home = () => {
         <div className="container">
           <div className="row align-items-center text-center text-md-start">
             <div className="col-lg-8 col-12 fw-bold mb-4 mb-lg-0">
-              <div className="display-5 fw-semibold ">
+              <div className="display-5 fw-semibold">
                 Trustable. Traceable. Sustainable.
               </div>
             </div>
@@ -109,8 +109,8 @@ const Home = () => {
           <div className="row">
             <div className="col-lg-6 my-3 d-flex flex-column justify-content-center">
               <h1 className="display-6 fw-semibold mb-3">ANAURA FASHION</h1>
-              <p className="lead">Enjoy future proof fashion with anaura vast range of fabric alternatives</p>
-              <button className="btn btn-outline-dark rounded-pill px-4 btn-lg">Know More</button>
+              <p className="lead">Enjoy future proof fashion with Anaura's vast range of fabric alternatives</p>
+              <button className="btn btn-outline-dark rounded-pill btn-lg w-50">Know More</button>
             </div>
             <div className="col-lg-6 my-3">
               <div className="row">
@@ -133,9 +133,9 @@ const Home = () => {
               </div>
             </div>
             <div className="col-lg-6 my-3 d-flex flex-column justify-content-center">
-              <h1 className="display-6  fw-semibold mb-3">ANAURA HOME</h1>
+              <h1 className="display-6 fw-semibold mb-3">ANAURA HOME</h1>
               <p className="lead">Step into the future of home fashion with recycled material for Home Furnishing items</p>
-              <button className="btn btn-outline-dark rounded-pill px-4 btn-lg">Know More</button>
+              <button className="btn btn-outline-dark rounded-pill btn-lg w-50">Know More</button>
             </div>
           </div>
         </div>
@@ -144,7 +144,7 @@ const Home = () => {
       {/* Recycling Counter Section */}
       <section className="position-relative overflow-hidden d-flex align-items-center" style={{ height: '70vh' }}>
         <video className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" autoPlay loop muted playsInline>
-          <source src={counter} type="video/mp4" /> {/* Use the imported video file */}
+          <source src={counter} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
