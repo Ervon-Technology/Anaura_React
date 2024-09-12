@@ -11,7 +11,7 @@ import ImpactSection from '../Component/ImpactSection/ImpactSection';
 
 
 import Img2 from '../../images/home/home.svg'
-import FactImg from '../../images/home/factories.svg'
+// import FactImg from '../../images/home/factories.svg'
 import Heading2 from '../../fonts/Heading2';
 import Marquee from 'react-fast-marquee';
 
@@ -94,7 +94,7 @@ const Home = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-6 text-center mb-4 mb-lg-0">
-              <img src={FactImg} className="img-fluid col-8 mx-auto" alt="" />
+              {/* <img src={FactImg} className="img-fluid col-8 mx-auto" alt="" /> */}
             </div>
             <div className="col-lg-6 d-flex align-items-center">
               <div className='col-9 mx-auto'>
