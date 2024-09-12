@@ -7,6 +7,11 @@ import oneOne from '../../images/one-one.png';
 import oneTwo from '../../images/one-two.png';
 import counter from '../../videos/ocenwast.mp4';
 import logo from "../../images/Logo.png";
+import ImpactSection from '../Component/ImpactSection/ImpactSection';
+
+
+import Img2 from '../../images/home/home.svg'
+import Heading2 from '../../fonts/Heading2';
 
 const Home = () => {
 
@@ -102,6 +107,34 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+     
+
+<section className="eco-section py-md-5">
+      <div className="container">
+        <div className="row align-items-center">
+          <div className="col-md-5 order-1 order-md-2 text-center mx-auto p-4" style={{"background-color": "rgb(213, 234, 255)"}}>
+            <img
+              src={Img2}
+              alt="Eco-Friendly Textiles"
+              className="img-fluid rounded col-md-10 mx-auto"
+            />
+          </div>
+          <div className="col-md-6 d-flex align-items-center order-2 order-md-1">
+            <div className="col-md-10 py-4 mx-auto">
+            
+            <Heading2 text={"Grow your brand with ANAURA"}/>
+             
+              <p className="fs-5 mb-4">We believe brands and consumers should use their purchasing power to further the environmental impact they want to see in the world.</p>     
+
+              <button className="btn btn-outline-dark rounded-pill px-4 btn-lg border-2 fs-6">ANAURA For Brands</button> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
 
       {/* Fashion and Home Section */}
       <section className="py-5">

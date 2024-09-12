@@ -47,6 +47,7 @@ const MyNavbar = () => {
   return (
     <>
       {/* Navbar section */}
+      <div className="">
       <nav
         className={`navbar navbar-expand-lg ${
           scrolled ? "navbar-light bg-white shadow" : "navbar-dark bg-transparent"
@@ -151,7 +152,9 @@ const MyNavbar = () => {
             </div>
           </div>
         </div>
+       
       </nav>
+      </div>
     </>
   );
 };
