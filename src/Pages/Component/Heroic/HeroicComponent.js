@@ -4,7 +4,7 @@ import './HeroSection.css'; // Import the CSS file for custom styling
 const HeroSection = ({ bgImg, title }) => {
   return (
     <div className="hero-section" style={{ backgroundImage: `url('${bgImg}')` }}>
-      <div className="container py-5">
+      <div className="container py-5" style={{"min-height": "38rem"}}>
         <div className="hero-overlay"></div>
         <div className="hero-content py-5">
           <div className="col-md-9 col-12 mx-auto text-center py-5">
