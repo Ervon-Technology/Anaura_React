@@ -5,7 +5,7 @@ const EcoSection = ({ imageSrc }) => {
     <section className="py-5">
       <div className="container py-5">
         <div className="row align-items-center">
-          <div className="col-md-6 d-flex justify-content-center justify-content-md-start mb-4 mb-md-0">
+          <div className="col-md-6 text-center mb-4 mb-md-0">
             <img
               src={imageSrc}
               alt="Eco-Friendly Textiles"
@@ -14,7 +14,7 @@ const EcoSection = ({ imageSrc }) => {
             />
           </div>
           <div className="col-md-6 d-flex align-items-center">
-            <div className="text-center text-md-start">
+            <div className="col-md-10 mx-auto text-center text-md-start">
               <h6 className="text-muted mb-3 text-uppercase">
                 Championing Eco-Friendly Textiles
               </h6>

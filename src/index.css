@@ -38,3 +38,7 @@ body, p {
     font-optical-sizing: auto;
     font-weight: 600;
 }
+
+.lh26 {
+    line-height: 2.6rem;
+}

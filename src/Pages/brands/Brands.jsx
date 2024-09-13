@@ -5,6 +5,7 @@ import business from "../../images/brand/business-growth.jpg"
 import brandPoster from "../../images/brand/brand-poster.jpg";
 import Img1 from '../../images/about/plasticAbout.png';
 import SavePlanet from "../Component/SavePlanet/SavePlanet";
+import HeroSection from "../Component/Heroic/HeroicComponent";
 
 const Brands = () => {
   return (
@@ -12,15 +13,10 @@ const Brands = () => {
       <div className="container-fluid p-0">
         
         {/* Hero Section */}
-        <section 
-          className="d-flex justify-content-center align-items-center text-center bg-cover bg-center position-relative" 
-          style={{ height: "70vh", backgroundImage: `url(${brandPoster})`, backgroundSize: "cover" }}
-        >
-          <h1 className="display-4 text-white fw-semibold">
-            ANAURA FOR <br />
-            <span>BRANDS</span>
-          </h1>
-        </section>
+        <HeroSection
+          bgImg={brandPoster}
+          title={'ANAURA FOR BRANDS.'}
+        />
 
         {/* First Row */}
         <section className="py-5">
@@ -68,7 +64,7 @@ const Brands = () => {
                 <img src={business} alt="Eco-Friendly Textiles" className="img-fluid rounded mb-4 mb-md-0" />
               </div>
               <div className="col-md-6">
-                <p className="fs-2 fw-light text-center text-lg-start">
+                <p className="fs-2 fw-light text-center text-lg-start lh26">
                   Stakeholders are increasingly seeking businesses that combine profitability with meaningful impact. With ANAURA, you can easily create and communicate your impact to drive business growth.
                 </p>
               </div>
@@ -84,7 +80,7 @@ const Brands = () => {
                 <img src={reduce} alt="Reduce Plastic" className="img-fluid rounded" />
               </div>
               <div className="col-md-6 order-2 order-md-1">
-                <p className="fs-2 fw-light text-center text-lg-start">
+                <p className="fs-2 fw-light text-center text-lg-start lh26">
                   By reducing your plastic footprint, you’re part of a community that champions the planet and its people. Be an inspiration for your target audience.
                 </p>
               </div>
@@ -103,7 +99,7 @@ const Brands = () => {
                 <h6 className="text-muted mb-3 text-uppercase text-lg-start">
                   Make your brand Trustable, Traceable & Sustainable
                 </h6>
-                <p className="fs-2 fw-light text-lg-start">
+                <p className="fs-2 fw-light text-lg-start lh26">
                   With Anaura, Anaura comes with quality standardisation certificates. You can trace Anaura back to where it was made: OBP, HBP, or PCR, and it’s made with a sustainable manufacturing process by one of India’s largest integrated manufacturing plants.
                 </p>
               </div>
