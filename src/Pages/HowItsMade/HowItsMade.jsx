@@ -5,7 +5,8 @@ import caro1 from '../../images/sustainability/caro1.png';
 import caro2 from '../../images/sustainability/caro2.png';
 import caro3 from '../../images/sustainability/caro3.png';
 import Img1 from '../../images/about/plasticAbout.png';
-
+import Img2 from '../../images/hows-it-made/img2.jpg'
+import Img4 from '../../images/hows-it-made/img4.jpg'
 import HeroSection from '../Component/Heroic/HeroicComponent';
 import SustainabilityImpact from '../Component/SustainabilityImpact/SustainabilityImpact';
 import EnvironmentAware from '../Component/EnvironmentAware/EnvironmentAware';
@@ -56,17 +57,28 @@ export default function HowItsMade() {
         <ProcessGrid />
 
         {/* Eco Section */}
-        <EcoSection imageSrc={Img1} />
+        <EcoSection imageSrc={Img4} />
 
         {/* Impact Section */}
         <div style={{ backgroundColor: 'rgb(244, 244, 244)' }}>
-          <ImpactSection imageSrc={Img1} />
+          <ImpactSection
+            title="Innovating Circular Fashion"
+            subtitle="Closing the Loop"
+            des="At ANAURA, we believe in the circular economy. By transforming waste into wearable fabrics, we're closing the loop in fashion production. Our approach ensures that materials are not discarded after use but are reimagined and reused, reducing pollution and conserving resources. Together, we can build a future where fashion is truly sustainable."
+            imageSrc={Img2}  
+          />
         </div>
 
-        {/* Repeated Eco Section */}
-        <EcoSection imageSrc={Img1} />
 
-        {/* SavePlanet Component */}
+        <div style={{ backgroundColor: 'rgb(244, 244, 244)' }}>
+          <ImpactSection
+            title="Embracing Sustainability in Fashion"
+            subtitle="Eco-Friendly Textiles"
+            des="Our innovative textiles are designed to reduce the environmental impact of fashion. By using recycled materials and sustainable production processes, we minimize waste and conserve natural resources. Join us in our mission to create a greener future for fashion—without compromising on style or quality."
+            imageSrc={Img1}
+          />
+        </div>
+ {/* SavePlanet Component */}
         <SavePlanet />
       </main>
     </div>
