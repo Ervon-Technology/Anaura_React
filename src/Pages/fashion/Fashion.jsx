@@ -1,22 +1,25 @@
 import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import green from "../../images/green_outfit.jpg";
-import peach from "../../images/peach_outfit.jpg";
-import peacock from "../../images/peacock_ourfit.jpg";
-import scarf from "../../images/scarf_outfit.jpg";
-import laptopImage1 from "../../images/carousal-1.jpg"; 
-import laptopImage2 from "../../images/carousal-2.jpg";
-import laptopImage3 from "../../images/carousal-3.jpg";
-import springImage from "../../images/spring_collection.jpg";
-import winterImage from "../../images/winter_collection.jpg";
-import summerImage from "../../images/summer_collection.jpg";
-import sportsWearImage from "../../images/sports_wear.jpg";
+import green from "../../images/fashion/green_outfit.jpg";
+import peach from "../../images/fashion/peach_outfit.jpg";
+import peacock from "../../images/fashion/peacock_ourfit.jpg";
+import scarf from "../../images/fashion/scarf_outfit.jpg";
+import laptopImage1 from "../../images/fashion/carousal-1.jpg"; 
+import laptopImage2 from "../../images/fashion/carousal-2.jpg";
+import laptopImage3 from "../../images/fashion/carousal-3.jpg";
+import springImage from "../../images/fashion/spring_collection.jpg";
+import winterImage from "../../images/fashion/winter_collection.jpg";
+import summerImage from "../../images/fashion/summer_collection.jpg";
+import sportsWearImage from "../../images/fashion/sports_wear.jpg";
+import mobilesummer from "../../images/fashion/mobile-summers.jpg";
+import mobilewinter from "../../images/fashion/mobile-winters.jpg";
+import mobilespring from "../../images/fashion/mobile-spring.jpg";
+import mobilesports from "../../images/fashion/mobile-sports.jpg";
 import FashionCard from "./FashionCard";
 import SavePlanet from "../Component/SavePlanet/SavePlanet";
 import './Fashion.css';
 
 function Fashion() {
-
   // Images for the mobile carousel
   const mobileSlides = [
     { src: green, alt: "Green Outfit" },
@@ -38,7 +41,15 @@ function Fashion() {
     { name: "SUSTAINABLE SPORTS WEAR", image: sportsWearImage },
   ];
 
+  const mobileCollections = [
+    { name: "SPRING COLLECTION", image: mobilespring },
+    { name: "WINTER COLLECTION", image: mobilewinter },
+    { name: "SUMMER COLLECTION", image: mobilesummer },
+    { name: "SUSTAINABLE SPORTS WEAR", image: mobilesports },
+  ];
+
   const [activeCollectionIndex, setActiveCollectionIndex] = useState(0);
+  const [activeMobileCollectionIndex, setActiveMobileCollectionIndex] = useState(0);
 
   // Automatically change the background image every 3 seconds
   useEffect(() => {
@@ -48,8 +59,20 @@ function Fashion() {
     return () => clearInterval(interval);
   }, [collections.length]);
 
+  // Automatically change the background image for mobile collections every 3 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveMobileCollectionIndex((prevIndex) => (prevIndex + 1) % mobileCollections.length);
+    }, 4000); // Change the image every 3 seconds
+    return () => clearInterval(interval);
+  }, [mobileCollections.length]);
+
   const handleMouseEnter = (index) => {
     setActiveCollectionIndex(index);
+  };
+
+  const handleMobileMouseEnter = (index) => {
+    setActiveMobileCollectionIndex(index);
   };
 
   return (
@@ -169,27 +192,86 @@ function Fashion() {
         </div>
       </div>
 
-      {/* Collections Section */}
+      {/* Collections Section for Tablets/Laptops */}
       <div
-        className="container-fluid mt-5 py-5 bg-light"
+        className="container-fluid mt-5 py-5 bg-light position-relative d-none d-md-block"
         style={{
-          height: "700px", // Increased height for the Collections section
+          height: "700px",
           backgroundImage: `url(${collections[activeCollectionIndex].image})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           transition: "background-image 0.5s ease-in-out",
         }}
       >
-        <div className="container my-5">
+        {/* Black overlay */}
+        <div
+          className="position-absolute top-0 start-0 w-100 h-100"
+          style={{
+            backgroundColor: "rgba(0, 0, 0, 0.6)", // Black background with 60% opacity
+          }}
+        ></div>
+
+        <div
+          className="container my-5 position-relative text-white"
+          style={{
+            zIndex: 1, // Ensure the text is on top of the black overlay
+          }}
+        >
           {collections.map((collection, index) => (
             <h2
               key={index}
-              className={`display-5 w-50 mb-4 ${index === activeCollectionIndex ? "text-danger fw-normal" : "fw-normal"}`}
+              className={`display-5 w-75 mb-4 ${
+                index === activeCollectionIndex
+                  ? "text-danger fw-normal"
+                  : "fw-normal"
+              }`}
               onMouseEnter={() => handleMouseEnter(index)}
               style={{ cursor: "pointer" }}
             >
               {collection.name}
             </h2>
+          ))}
+        </div>
+      </div>
+
+      {/* Collections Section for Mobile */}
+      <div
+        className="container-fluid mt-5 py-5 bg-light position-relative d-md-none"
+        style={{
+          height: "700px",
+          backgroundImage: `url(${mobileCollections[activeMobileCollectionIndex].image})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          transition: "background-image 0.5s ease-in-out",
+        }}
+      >
+        {/* Black overlay */}
+        <div
+          className="position-absolute top-0 start-0 w-100 h-100"
+          style={{
+            backgroundColor: "rgba(0, 0, 0, 0.6)", // Black background with 60% opacity
+          }}
+        ></div>
+
+        <div
+          className="container my-5 position-relative text-white"
+          style={{
+            zIndex: 1, // Ensure the text is on top of the black overlay
+          }}
+        >
+          {mobileCollections.map((collection, index) => (
+            <h1
+              key={index}
+              className={`mb-4 ${
+                index === activeMobileCollectionIndex
+                  ? "text-danger fw-normal"
+                  : "fw-normal"
+              }`}
+              onMouseEnter={() => handleMobileMouseEnter(index)}
+              style={{ cursor: "pointer" }}
+            >
+              {collection.name}
+            </h1>
           ))}
         </div>
       </div>

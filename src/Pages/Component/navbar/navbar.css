@@ -78,7 +78,7 @@
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-/* Show dropdown and make sure it expands the navbar */
+/* Show dropdown on hover on desktop/tablet sizes */
 .navbar .dropdown:hover .dropdown-menu {
   opacity: 1;
   visibility: visible;
@@ -113,19 +113,34 @@
   right: 0;
 }
 
-/* For mobile responsiveness */
+/* For mobile responsiveness (max-width: 800px) */
 @media (max-width: 800px) {
-  .navbar .nav-link, .navbar .btn-outline-light {
+  /* Dropdown menu should appear by default */
+  .navbar .dropdown-menu {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+    position: static !important; /* Static positioning in offcanvas */
+    box-shadow: none !important; /* Remove box shadow */
+    padding: 0 !important; /* Remove padding */
+    border: none !important; /* Remove borders */
+    background-color: transparent !important; /* Remove background color for mobile */
+  }
+
+  /* Disable hover effect for dropdowns on mobile */
+  .navbar .dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+
+  .navbar .nav-link, 
+  .navbar .btn-outline-light {
     color: black !important;
   }
 
   .navbar .navbar-toggler {
     color: white !important; /* Ensure the burger menu icon is visible on dark backgrounds */
-  }
-
-  .dropdown-menu {
-    position: static;
-    transform: none; /* Reset transform for mobile */
   }
 
   .navbar .offcanvas-body {
