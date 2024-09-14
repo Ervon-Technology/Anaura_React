@@ -2,27 +2,19 @@ import React, { useEffect } from 'react';
 import background from '../../videos/background.mp4';
 import rudra from '../../images/rudra.svg';
 import auara from '../../images/auara.svg';
-import about from '../../images/about.png';
 import oneOne from '../../images/one-one.png';
-import oneTwo from '../../images/one-two.png';
 import counter from '../../videos/ocenwast.mp4';
-import logo from "../../images/Logo.png";
-import ImpactSection from '../Component/ImpactSection/ImpactSection';
-import CarpetsImg from '../../images/anaura-home/carpets.jpg'
-import recyleFabric from '../../images/home/recycleFabric.jpg'
+import CarpetsImg from '../../images/anaura-home/carpets.jpg';
+import recyleFabric from '../../images/home/recycleFabric.jpg';
 
-import Img2 from '../../images/home/home.svg'
-import spring from '../../images/home/spring@2x.svg'
+import Img2 from '../../images/home/home.svg';
+import spring from '../../images/home/spring@2x.svg';
+import summer from '../../images/home/summer.svg';
+import winter from '../../images/home/winter@2x.svg';
+import FactImg from '../../images/home/factories.svg';
 
-import summer from '../../images/home/summer.svg'
-import winter from '../../images/home/winter@2x.svg'
-import FactImg from '../../images/home/factories.svg'
-
-import sofa from '../../images/home/furniture@2x.svg'
-import carpet from '../../images/home/carpet@2x.svg'
-import excarpet from '../../images/home/excarpet@2x.svg'
-
-
+import sofa from '../../images/home/furniture@2x.svg';
+import excarpet from '../../images/home/excarpet@2x.svg';
 
 import Heading2 from '../../fonts/Heading2';
 import Marquee from 'react-fast-marquee';
@@ -49,13 +41,11 @@ const Home = () => {
     counterElement.innerText = currentNumber.toLocaleString("en-US");
     const intervalId = setInterval(incrementCounter, incrementInterval);
 
-    // Cleanup interval on component unmount
     return () => clearInterval(intervalId);
   }, []);
 
   return (
-    <div>
-
+    <div style={{ overflowX: 'hidden' }}>
       {/* Hero Section */}
       <section className="position-relative overflow-hidden d-flex align-items-center" style={{ minHeight: '70vh' }}>
         <video
@@ -82,37 +72,25 @@ const Home = () => {
           </div>
         </div>
       </section>
-      {/*  */}
 
       {/* Trusted Brands Section */}
-      <section className="py-5">
+      <section className="py-5 px-3 px-md-5">
         <div className="container">
           <div className="row align-items-center text-center text-md-start">
             <div className="col-lg-8 col-12 fw-bold mb-4 mb-lg-0">
-              <div className=" text-uppercase">
-                <Marquee speed={100}>
-                  <div className="d-flex">
-                    <div className="mx-3">
+              <div className="text-uppercase">
+                <Marquee speed={100} gradient={false}>
+                  <div className="d-flex flex-wrap justify-content-center">
+                    <div className="mx-2">
                       <Heading1 text={"Trustable"} />
                     </div>
-                    <div className="mx-3">
+                    <div className="mx-2">
                       <Heading1 text={"Traceable"} />
                     </div>
-                    <div className="mx-3">
-                      <Heading1 text={"Sustainable"} />
-                    </div>
-                    <div className="mx-3">
-                      <Heading1 text={"Trustable"} />
-                    </div>
-                    <div className="mx-3">
-                      <Heading1 text={"Traceable"} />
-                    </div>
-                    <div className="mx-3">
+                    <div className="mx-2">
                       <Heading1 text={"Sustainable"} />
                     </div>
                   </div>
-
-
                 </Marquee>
               </div>
             </div>
@@ -127,14 +105,14 @@ const Home = () => {
       </section>
 
       {/* About Section */}
-      <section className="py-5" style={{ background: '#ecf6ff' }}>
+      <section className="py-5 px-3 px-md-5" style={{ background: '#ecf6ff' }}>
         <div className="container">
           <div className="row">
             <div className="col-lg-6 text-center mb-4 mb-lg-0">
               <img src={FactImg} className="img-fluid col-8 mx-auto" alt="" />
             </div>
             <div className="col-lg-6 d-flex align-items-center">
-              <div className='col-9 mx-auto'>
+              <div className="col-12 mx-auto">
                 <Heading2 text={"About Anaura"} />
                 <p className="fs-5 mb-4">
                   Anaura where post-consumer PET bottles are transformed into essential wearable material (rPET fabric) items. With a daily production of 320,000 sq. meters, Anaura epitomizes sustainability and style.
@@ -145,13 +123,12 @@ const Home = () => {
           </div>
         </div>
       </section>
-      {/* End About Section */}
 
       {/* Grow your brand */}
-      <section className="eco-section py-md-5">
+      <section className="eco-section py-md-5 px-3 px-md-5">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-md-5 order-1 order-md-2 text-center mx-auto p-4" style={{ "background-color": "rgb(213, 234, 255)" }}>
+            <div className="col-md-5 order-1 order-md-2 text-center mx-auto p-4" style={{ backgroundColor: 'rgb(213, 234, 255)' }}>
               <img
                 src={Img2}
                 alt="Eco-Friendly Textiles"
@@ -160,66 +137,34 @@ const Home = () => {
             </div>
             <div className="col-md-6 d-flex align-items-center order-2 order-md-1">
               <div className="col-md-10 py-4 mx-auto">
-
                 <Heading2 text={"Grow your brand with ANAURA"} />
-
                 <p className="fs-5 mb-4">We believe brands and consumers should use their purchasing power to further the environmental impact they want to see in the world.</p>
-
                 <button className="btn btn-outline-dark rounded-pill px-4 btn-lg border-2 fs-6">ANAURA For Brands</button>
               </div>
             </div>
           </div>
         </div>
       </section>
-      {/* End Grow your brand */}
 
-
-      {/* ANAURA FOR FASSION */}
-      <section className="eco-section" style={{ background: "#e4f2ff" }}>
+      {/* ANAURA FOR FASHION */}
+      <section className="eco-section px-3 px-md-5" style={{ background: "#e4f2ff" }}>
         <div className="row align-items-center">
           <img
             src={oneOne}
             alt="Eco-Friendly Textiles"
-            className="col-md-4 p-0"
+            className="col-md-4 p-0 img-fluid"
           />
-          <div className="col-md-6 d-flex align-items-center order-2 order-md-1 mx-auto">
+          <div className="col-md-6 d-flex align-items-center mx-auto">
             <div className="col-md-10 py-4 mx-auto">
-              <Heading2 text={"ANAURA Fassion"} />
-              <p className="fs-5 mb-4 col-md-8">Enjoy future proof fashion with anaura vast range of fabric alternatives</p>
+              <Heading2 text={"ANAURA Fashion"} />
+              <p className="fs-5 mb-4 col-md-12">Enjoy future-proof fashion with Anaura's vast range of fabric alternatives.</p>
               <button className="btn btn-outline-dark rounded-pill px-4 btn-lg border-2 fs-6">ANAURA For Brands</button>
               <div className="mt-5">
-                <Marquee>
-                  <div className="d-flex">
-                    <img
-                      src={spring}
-                      alt="Eco-Friendly Textiles"
-                      className="col-md-4 p-0 mx-2" style={{ "width": "10rem" }}
-                    />
-                    <img
-                      src={summer}
-                      alt="Eco-Friendly Textiles"
-                      className="col-md-4 p-0 mx-2" style={{ "width": "10rem" }}
-                    />
-                    <img
-                      src={winter}
-                      alt="Eco-Friendly Textiles"
-                      className="col-md-4 p-0 mx-2" style={{ "width": "10rem" }}
-                    />
-                    <img
-                      src={spring}
-                      alt="Eco-Friendly Textiles"
-                      className="col-md-4 p-0 mx-2" style={{ "width": "10rem" }}
-                    />
-                    <img
-                      src={summer}
-                      alt="Eco-Friendly Textiles"
-                      className="col-md-4 p-0 mx-2" style={{ "width": "10rem" }}
-                    />
-                    <img
-                      src={winter}
-                      alt="Eco-Friendly Textiles"
-                      className="col-md-4 p-0 mx-2" style={{ "width": "10rem" }}
-                    />
+                <Marquee gradient={false}>
+                  <div className="d-flex justify-content-center">
+                    <img src={spring} alt="Spring" className="mx-1 img-fluid" style={{ width: '12rem' }} />
+                    <img src={summer} alt="Summer" className="mx-1 img-fluid" style={{ width: '12rem' }} />
+                    <img src={winter} alt="Winter" className="mx-1 img-fluid" style={{ width: '12rem' }} />
                   </div>
                 </Marquee>
               </div>
@@ -227,79 +172,36 @@ const Home = () => {
           </div>
         </div>
       </section>
-      {/* END ANAURA FOR FASSION */}
-
 
       {/* ANAURA FOR HOME */}
-      <section className="eco-section py-5 my-5">
-
+      <section className="eco-section py-5 my-5 px-3 px-md-5">
         <div className="container">
           <div className="row align-items-center">
-
             <div className="col-md-6 d-flex align-items-center mx-auto">
               <div className="col-md-10 py-4 mx-auto">
-
                 <Heading2 text={"ANAURA Home"} />
-
-                <p className="fs-5 mb-4 col-md-8">Step into the future of home fashion with recycled material for Home Furnishing items</p>
-
+                <p className="fs-5 mb-4 col-md-12">Step into the future of home fashion with recycled material for Home Furnishing items.</p>
                 <button className="btn btn-outline-dark rounded-pill px-4 btn-lg border-2 fs-6">Know More ANAURA Home</button>
-
                 <div className="mt-5">
-                  <Marquee>
-                    <div className="d-flex">
-                      <img
-                        src={sofa}
-                        alt="Eco-Friendly Textiles"
-                        className="col-md-4 p-0 mx-2" style={{ "width": "10rem" }}
-                      />
-                      <img
-                        src={excarpet}
-                        alt="Eco-Friendly Textiles"
-                        className="col-md-4 p-0 mx-2" style={{ "width": "10rem" }}
-                      />
-                      <img
-                        src={carpet}
-                        alt="Eco-Friendly Textiles"
-                        className="col-md-4 p-0 mx-2" style={{ "width": "10rem" }}
-                      />
-                      <img
-                        src={sofa}
-                        alt="Eco-Friendly Textiles"
-                        className="col-md-4 p-0 mx-2" style={{ "width": "10rem" }}
-                      />
-                      <img
-                        src={excarpet}
-                        alt="Eco-Friendly Textiles"
-                        className="col-md-4 p-0 mx-2" style={{ "width": "10rem" }}
-                      />
-                      <img
-                        src={carpet}
-                        alt="Eco-Friendly Textiles"
-                        className="col-md-4 p-0 mx-2" style={{ "width": "10rem" }}
-                      />
-
+                  <Marquee gradient={false}>
+                    <div className="d-flex justify-content-center">
+                      <img src={sofa} alt="Sofa" className="mx-1 img-fluid" style={{ width: '16rem' }} />
+                      <img src={excarpet} alt="Carpet" className="mx-1 img-fluid" style={{ width: '16rem' }} />
                     </div>
                   </Marquee>
                 </div>
-
-
               </div>
             </div>
-
             <div className="col-md-6 text-center">
               <img
                 src={CarpetsImg}
-                alt="Eco-Friendly Textiles"
-                className="w-100 p-0 mx-2"
+                alt="Carpets"
+                className="w-100 p-0 img-fluid"
               />
             </div>
-
           </div>
-
         </div>
       </section>
-      {/* END ANAURA FOR HOME */}
 
       {/* Recycling Counter Section */}
       <section className="position-relative overflow-hidden d-flex align-items-center" style={{ height: '70vh' }}>
@@ -319,34 +221,32 @@ const Home = () => {
         </div>
       </section>
 
-
       {/* Fifth Row */}
-      <section className="py-5">
+      <section className="py-5 px-3 px-md-5">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-md-6 text-center">
-              <img src={recyleFabric} alt="Eco-Friendly Textiles" className="col-10 rounded mb-4 mb-md-0" />
+              <img src={recyleFabric} alt="Recycle Fabric" className="col-10 rounded mb-4 mb-md-0 img-fluid" />
             </div>
             <div className="col-md-6">
-            <div className="col-md-10 py-4 mx-auto">
-              <h6 className="text-muted mb-3 text-uppercase text-lg-start">
-                Make your brand Trustable, Traceable & Sustainable
-              </h6>
-              <p className="fs-5 mb-4">
-                With Anaura, Anaura comes with quality standardisation certificates. You can trace Anaura back to where it was made: OBP, HBP, or PCR, and it’s made with a sustainable manufacturing process by one of India’s largest integrated manufacturing plants.
-              </p>
-            </div>
+              <div className="col-md-10 py-4 mx-auto">
+                <h6 className="text-muted mb-3 text-uppercase text-lg-start">
+                  Make your brand Trustable, Traceable & Sustainable
+                </h6>
+                <p className="fs-5 mb-4">
+                  With Anaura, Anaura comes with quality standardisation certificates. You can trace Anaura back to where it was made: OBP, HBP, or PCR, and it’s made with a sustainable manufacturing process by one of India’s largest integrated manufacturing plants.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      {/*  */}
 
       {/* Contact Section */}
-      <section className="py-5" style={{ background: '#ecf6ff' }}>
+      <section className="py-5 px-3 px-md-5" style={{ background: '#ecf6ff' }}>
         <div className="container text-center py-5">
           <h2 className="text-uppercase mb-4 fw-light fs-4">GET IN TOUCH</h2>
-          <p className="mb-4 fs-1 fw-medium" style={{ "line-height": "1.6" }}>
+          <p className="mb-4 fs-1 fw-medium" style={{ lineHeight: '1.6' }}>
             Learn how ANAURA can enhance your<br />brand's eco-story.
           </p>
           <button className="btn btn-outline-dark rounded-pill px-5 py-3 btn-lg">
@@ -354,10 +254,6 @@ const Home = () => {
           </button>
         </div>
       </section>
-      {/*  */}
-
-
-
     </div>
   );
 }

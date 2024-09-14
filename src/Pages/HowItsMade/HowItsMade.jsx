@@ -78,7 +78,7 @@ export default function HowItsMade() {
             imageSrc={Img1}
           />
         </div>
- {/* SavePlanet Component */}
+        {/* SavePlanet Component */}
         <SavePlanet />
       </main>
     </div>
