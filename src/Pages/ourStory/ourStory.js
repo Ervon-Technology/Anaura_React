@@ -35,19 +35,7 @@ const OurStory = () => {
         </div>
       </div>
 
-      {/* Sustainability Impact Section */}
-      {/* <div className="py-5 m-5 text-center" style={{ backgroundColor: "rgb(255, 222, 225)" }}>
-        <div className="container">
-          <div className="col-md-9 mx-auto my-3">
-            <h6 className="text-muted text-uppercase mb-3 fw-bold">
-              Our Sustainability Impact
-            </h6>
-            <p className="font-weight-normal display-6">
-              We’ve been at the forefront of sustainable innovation for decades, hoping to make a small impact. Our goal is to be light with our footprint and frugal with resources.
-            </p>
-          </div>
-        </div>
-      </div> */}
+      
       <SustainabilityImpact />
 
 
@@ -76,8 +64,8 @@ const OurStory = () => {
       </div>
 
       {/* Champions of Sustainability Section */}
-      <div className="bg-light py-5">
-        <div className="container">
+      <div className="bg-light">
+        <div>
           <div className="row align-items-center">
             {/* Image Column */}
             <div className="col-md-4 mb-4 mb-md-0">
@@ -90,7 +78,7 @@ const OurStory = () => {
             </div>
 
             {/* Text Column */}
-            <div className="col-md-8 text-center text-md-start px-4 px-md-4">
+            <div className="col-md-8 text-center text-md-start px-4 px-md-5">
               <h5 className="text-secondary mb-3">Champions of Sustainability</h5>
               <h3 className="text-dark mb-4 fw-normal display-6">
                 Our partners are extraordinary leaders who inspire other businesses to be good stewards of our planet and future.
@@ -111,7 +99,7 @@ const OurStory = () => {
         <h3 className="text-dark mb-4 fw-normal display-6">
           Behind the scenes at ANAURA
         </h3>
-        <p className="lead mx-4 mx-md-5">
+        <p className="lead mx-1 mx-md-5">
           We look at every decision through the lens of our three core goals:
           reducing our environmental impact, mainstreaming sustainable fiber,
           and being useful to the planet. If we’re happy we checked those boxes,
@@ -121,7 +109,7 @@ const OurStory = () => {
 
       {/* Reducing Environmental Impact Section */}
       <div className="container py-5">
-        <div className="row align-items-center flex-column-reverse flex-md-row-reverse">
+        <div className="row align-items-center flex-column-reverse flex-md-row">
           <div className="col-md-6 col-lg-7  text-center text-md-start">
             <h6 className="text-secondary text-uppercase mb-3">
               Reducing Our Environmental Impact
@@ -171,7 +159,7 @@ const OurStory = () => {
 
       {/* Useful to the Planet Section */}
       <div className="container py-5">
-        <div className="row align-items-center flex-column-reverse flex-md-row-reverse">
+        <div className="row align-items-center flex-column-reverse flex-md-row">
           <div className="col-md-6 col-lg-7  text-center text-md-start">
             <h6 className="text-secondary text-uppercase mb-3">
               Are We Being Useful To The Planet?
