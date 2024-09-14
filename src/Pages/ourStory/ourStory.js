@@ -35,15 +35,15 @@ const OurStory = () => {
         </div>
       </div>
 
-      
       <SustainabilityImpact />
-
 
       {/* Circular Economy Section */}
       <div className="container py-5">
         <div className="row align-items-center flex-column-reverse flex-md-row-reverse">
           <div className="col-md-6 text-center text-md-start">
-            <h6 className="text-uppercase text-secondary mb-3">A Circular Economy</h6>
+            <h6 className="text-uppercase text-secondary mb-3">
+              A Circular Economy
+            </h6>
             <h2 className="text-dark mb-4 fw-normal">Regenerative by design.</h2>
             <p className="lead">
               Keeping materials and products in circulation for as long as
@@ -65,20 +65,20 @@ const OurStory = () => {
 
       {/* Champions of Sustainability Section */}
       <div className="bg-light">
-        <div>
-          <div className="row align-items-center">
-            {/* Image Column */}
-            <div className="col-md-4 mb-4 mb-md-0">
-              <img
-                src={sustainability}
-                alt="Sustainability champions"
-                className="img-fluid"
-                style={{ maxWidth: "100%", height: "auto" }} // Decrease image size responsively
-              />
-            </div>
-
-            {/* Text Column */}
-            <div className="col-md-8 text-center text-md-start px-4 px-md-5">
+        <div className="row align-items-center gx-0">
+          {/* Image Column */}
+          <div className="col-md-4 mb-4 mb-md-0">
+            <img
+              src={sustainability}
+              alt="Sustainability champions"
+              className="img-fluid w-100"
+              style={{ objectFit: "cover", height: "100%" }}
+            />
+          </div>
+            
+          {/* Text Column */}
+          <div className="col-md-8 text-center text-md-start px-3 px-md-5">
+            <div className="container py-5">
               <h5 className="text-secondary mb-3">Champions of Sustainability</h5>
               <h3 className="text-dark mb-4 fw-normal display-6">
                 Our partners are extraordinary leaders who inspire other businesses to be good stewards of our planet and future.
@@ -93,6 +93,8 @@ const OurStory = () => {
           </div>
         </div>
       </div>
+
+
 
       {/* Behind the Scenes Section */}
       <div className="container text-center py-5">
@@ -110,7 +112,7 @@ const OurStory = () => {
       {/* Reducing Environmental Impact Section */}
       <div className="container py-5">
         <div className="row align-items-center flex-column-reverse flex-md-row">
-          <div className="col-md-6 col-lg-7  text-center text-md-start">
+          <div className="col-md-6 col-lg-7 px-3 pe-0 pe-lg-5 text-center text-md-start">
             <h6 className="text-secondary text-uppercase mb-3">
               Reducing Our Environmental Impact
             </h6>
@@ -143,12 +145,15 @@ const OurStory = () => {
               className="img-fluid rounded"
             />
           </div>
-          <div className="col-md-6 col-lg-7 text-center text-md-start">
-            <h6 className="text-secondary text-uppercase mb-3">Mainstreaming Sustainable Fiber</h6>
+          <div className="col-md-6 col-lg-7 px-3 ps-0 ps-lg-5 text-center text-md-start">
+            <h6 className="text-secondary text-uppercase mb-3">
+              Mainstreaming Sustainable Fiber
+            </h6>
             <h3 className="text-dark mb-4 fw-normal fs-2">
-            We don’t just make ANAURA, we help educate about sustainable textiles.
+              We don’t just make ANAURA, we help educate about sustainable
+              textiles.
             </h3>
-            <p className="lead">
+            <p className="lead ">
               ANAURA® is made with less carbon, using non-toxic products. It
               reduces global warming potential compared to conventional virgin
               polyester.
@@ -160,25 +165,23 @@ const OurStory = () => {
       {/* Useful to the Planet Section */}
       <div className="container py-5">
         <div className="row align-items-center flex-column-reverse flex-md-row">
-          <div className="col-md-6 col-lg-7  text-center text-md-start">
+          <div className="col-md-6 col-lg-7 px-3 pe-0 pe-lg-5 text-center text-md-start">
             <h6 className="text-secondary text-uppercase mb-3">
               Are We Being Useful To The Planet?
             </h6>
             <h3 className="text-dark mb-4 fw-normal fs-2">
-              Our approach is built on transparency and fueled by the desire to be helpful.
+              Our approach is built on transparency and fueled by the desire to
+              be helpful.
             </h3>
-            <p className="lead">
-                How we do business, who we hire and how we grow are focused on what’s good for tomorrow. 
-                When it comes to figuring out the future of our planet, we’re optimistic collaborators, 
-                honest sharers and passionate believers.
+            <p className="lead ">
+              How we do business, who we hire and how we grow are focused on
+              what’s good for tomorrow. When it comes to figuring out the future
+              of our planet, we’re optimistic collaborators, honest sharers and
+              passionate believers.
             </p>
           </div>
           <div className="col-md-6 col-lg-5 mb-4 mb-md-0">
-            <img
-              src={story3}
-              alt="fashion3"
-              className="img-fluid rounded"
-            />
+            <img src={story3} alt="fashion3" className="img-fluid rounded" />
           </div>
         </div>
       </div>
