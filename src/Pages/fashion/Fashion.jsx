@@ -95,7 +95,7 @@ function Fashion() {
           ))}
         </div>
         <button
-          className="carousel-control-prev relative top-50"
+          className="carousel-control-prev relative "
           type="button"
           data-bs-target="#mobileCarousel"
           data-bs-slide="prev"
@@ -104,7 +104,7 @@ function Fashion() {
           <span className="visually-hidden">Previous</span>
         </button>
         <button
-          className="carousel-control-next relative top-50"
+          className="carousel-control-next relative "
           type="button"
           data-bs-target="#mobileCarousel"
           data-bs-slide="next"
@@ -132,7 +132,7 @@ function Fashion() {
           ))}
         </div>
         <button
-          className="carousel-control-prev relative top-50"
+          className="carousel-control-prev relative"
           type="button"
           data-bs-target="#desktopTabletCarousel"
           data-bs-slide="prev"
@@ -141,7 +141,7 @@ function Fashion() {
           <span className="visually-hidden">Previous</span>
         </button>
         <button
-          className="carousel-control-next relative top-50"
+          className="carousel-control-next relative"
           type="button"
           data-bs-target="#desktopTabletCarousel"
           data-bs-slide="next"

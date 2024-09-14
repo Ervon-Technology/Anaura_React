@@ -8,9 +8,10 @@ import CarpetsImg from '../../images/anaura-home/carpets.jpg';
 import recyleFabric from '../../images/home/recycleFabric.jpg';
 
 import Img2 from '../../images/home/home.svg';
-import spring from '../../images/home/spring@2x.svg';
-import summer from '../../images/home/summer.svg';
-import winter from '../../images/home/winter@2x.svg';
+import spring from '../../images/home/spring.jpg';
+import summer from '../../images/home/summer.jpg';
+import winter from '../../images/home/winter.jpg';
+import sport from '../../images/home/sports.jpg'
 import FactImg from '../../images/home/factories.svg';
 
 import sofa from '../../images/home/furniture@2x.svg';
@@ -24,13 +25,17 @@ const Home = () => {
 
   useEffect(() => {
     let counterElement = document.getElementById("counter");
-    let initialNumber = 1362000;
+    let initialNumber = 11362000245; // The initial number you want
     let incrementAmount = 1;
     let incrementInterval = 10; // 10 milliseconds for 100 per second
 
+    // Check if the local storage is set to a smaller value than the initial number
     let currentNumber = localStorage.getItem("counterNumber")
-      ? parseInt(localStorage.getItem("counterNumber"))
+      ? Math.max(parseInt(localStorage.getItem("counterNumber")), initialNumber)
       : initialNumber;
+
+    // Update the local storage if the currentNumber is less than the initial number
+    localStorage.setItem("counterNumber", currentNumber);
 
     function incrementCounter() {
       currentNumber += incrementAmount;
@@ -38,7 +43,9 @@ const Home = () => {
       localStorage.setItem("counterNumber", currentNumber);
     }
 
+    // Ensure the large number is displayed correctly on initial load
     counterElement.innerText = currentNumber.toLocaleString("en-US");
+
     const intervalId = setInterval(incrementCounter, incrementInterval);
 
     return () => clearInterval(intervalId);
@@ -165,6 +172,7 @@ const Home = () => {
                     <img src={spring} alt="Spring" className="mx-1 img-fluid" style={{ width: '12rem' }} />
                     <img src={summer} alt="Summer" className="mx-1 img-fluid" style={{ width: '12rem' }} />
                     <img src={winter} alt="Winter" className="mx-1 img-fluid" style={{ width: '12rem' }} />
+                    <img src={sport} alt="sport" className="mx-1 img-fluid" style={{ width: '12rem' }} />
                   </div>
                 </Marquee>
               </div>
@@ -215,7 +223,7 @@ const Home = () => {
             <div className="col-12">
               <h3 className="mb-4 flex-wrap fs-1 mx-auto col-10 fw-normal">Recycling 8.8 Million Plastic Bottles Everyday, Slashing 1,40,000 MT of Co2 Emission Annually</h3>
               <h5 className="mb-4 fw-normal">Recycling more than 6000 plastics bottles per minute</h5>
-              <div id="counter" className="display-1 fw-bold">1,362,000</div>
+              <div id="counter" className="display-1 fw-bold">11,362,000,245</div>
             </div>
           </div>
         </div>

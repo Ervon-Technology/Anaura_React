@@ -28,10 +28,6 @@ const OurStory = () => {
           <h2 className="display-4 fw-bold mb-3" style={{ fontSize: "3rem" }}>
             We are earth optimists.
           </h2>
-          <p className="lead" style={{ fontSize: "1.5rem" }}>
-            We see opportunity in mistakes, possibility in failure, and hope in
-            dark places (like the bottom of your recycling bin).
-          </p>
         </div>
       </div>
 
@@ -75,7 +71,7 @@ const OurStory = () => {
               style={{ objectFit: "cover", height: "100%" }}
             />
           </div>
-            
+
           {/* Text Column */}
           <div className="col-md-8 text-center text-md-start px-3 px-md-5">
             <div className="container py-5">
@@ -103,7 +99,7 @@ const OurStory = () => {
         </h3>
         <p className="lead mx-1 mx-md-5">
           We look at every decision through the lens of our three core goals:
-          reducing our environmental impact, mainstreaming sustainable fiber,
+          reducing our environmental impact, mainstreaming sustainable fashion,
           and being useful to the planet. If we’re happy we checked those boxes,
           then we greenlight a plan.
         </p>
@@ -117,12 +113,10 @@ const OurStory = () => {
               Reducing Our Environmental Impact
             </h6>
             <h3 className="text-dark mb-4 fw-normal fs-2">
-              We are leading innovators in sustainable technology development.
+              Making a difference against Plastic Pollution
             </h3>
             <p className="lead">
-              Our collaboration has reduced the energy required to texture our
-              yarn. ANAURA SmartDye™ and WaterWise™ have reduced the amount of
-              water and energy used in the dye process.
+              Together, let's reshape the future through innovative recycling. Be part of Rudra Ecovation's journey to a sustainable tomorrow. 
             </p>
           </div>
           <div className="col-md-6 col-lg-5 mb-4 mb-md-0">
@@ -147,11 +141,11 @@ const OurStory = () => {
           </div>
           <div className="col-md-6 col-lg-7 px-3 ps-0 ps-lg-5 text-center text-md-start">
             <h6 className="text-secondary text-uppercase mb-3">
-              Mainstreaming Sustainable Fiber
+              Mainstreaming Sustainable Fabric
             </h6>
             <h3 className="text-dark mb-4 fw-normal fs-2">
               We don’t just make ANAURA, we help educate about sustainable
-              textiles.
+              upcycle Fabric.
             </h3>
             <p className="lead ">
               ANAURA® is made with less carbon, using non-toxic products. It
