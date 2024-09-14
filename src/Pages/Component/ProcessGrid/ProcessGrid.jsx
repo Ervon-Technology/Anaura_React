@@ -8,23 +8,23 @@ import fabric from '../../../images/hows-it-made/pic-4.jpg';
 
 const steps = [
   {
-    title: 'Cleaning & Sanitising',
-    description: 'Cleaning and sanitizing plastic water bottles after removing labels and caps.',
+    title: 'Bottle to Flakes',
+    description: '',
     image: cleaning,
   },
   {
-    title: 'Melting into Flakes',
-    description: 'Using innovative technology to melt bottles into small flakes.',
+    title: 'Flakes to Fibers',
+    description: '',
     image: melting,
   },
   {
-    title: 'Extruding into Fibers',
-    description: 'Extruding and melting the flakes into long and short fibers on the spinneret machine.',
+    title: 'Fibers to Yarn',
+    description: '',
     image: extruding,
   },
   {
-    title: 'Spinning into Fabric',
-    description: 'Spinning fibers into yarn and converting them into polyester fabric and Anaura.',
+    title: 'Yarn to Upcycle Fabrics',
+    description: '',
     image: fabric,
   },
 ];

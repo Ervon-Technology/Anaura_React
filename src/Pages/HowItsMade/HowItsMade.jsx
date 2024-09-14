@@ -28,8 +28,8 @@ export default function HowItsMade() {
         {/* Environment Aware Section */}
         <EnvironmentAware
           title={""}
-          heading={"Leading Plastic recycling company in India makes top textiles from plastic waste"}
-          body={" We have been the forerunners in transforming PET waste into premium, sustainable textiles. These textiles manufactured at our plastic recycling plant weave a future of eco-conscious fashion and empower the creation of sustainable homeware. It’s a metamorphosis from waste to wonder, a testament to circularity and creativity."}
+          heading={"Only Integrated waste plastic recycle plant in India"}
+          body={" We have been the forerunners in transforming Plastic waste into premium, sustainable Materials. These Materials manufactured at our plastic recycling plant weave a future of eco-conscious fashion and empower the creation of sustainable fashion. It’s a metamorphosis from waste to wonder, a testament to circularity and creativity."}
           img1={caro1}
           img2={caro2}
           img3={caro3}
@@ -74,7 +74,7 @@ export default function HowItsMade() {
           <ImpactSection
             title="Embracing Sustainability in Fashion"
             subtitle="Eco-Friendly Textiles"
-            des="Our innovative textiles are designed to reduce the environmental impact of fashion. By using recycled materials and sustainable production processes, we minimize waste and conserve natural resources. Join us in our mission to create a greener future for fashion—without compromising on style or quality."
+            des="Our innovative upcycle fabrics are designed to reduce the environmental impact of fashion. By using recycled materials and sustainable production processes, we minimize waste and conserve natural resources. Join us in our mission to create a greener future for fashion—without compromising on style or quality."
             imageSrc={Img1}
           />
         </div>

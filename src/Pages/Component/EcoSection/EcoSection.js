@@ -16,17 +16,17 @@ const EcoSection = ({ imageSrc }) => {
           <div className="col-md-6 d-flex align-items-center">
             <div className="col-md-10 mx-auto text-center text-md-start">
               <h6 className="text-muted mb-3 text-uppercase">
-                Championing Eco-Friendly Textiles
+                Championing Eco-Friendly Materials
               </h6>
               <p className="font-weight-normal display-6 mb-4">
-                Innovating Beyond Fiber, Advocating for Sustainability
+                Innovating Beyond recycleing, upcycling for sustainablility
               </p>
               <p className="fs-5 mb-5">
-                At Anaura, our fibers are crafted with a lower carbon footprint,
+                At Anaura, our Products are crafted with a lower carbon footprint,
                 free from harmful chemicals. Compared to traditional virgin
                 polyester, we significantly reduce global warming potential.
-                We’re not just about creating sustainable textiles; we’re about
-                inspiring change. Our nationwide mobile outreach program
+                We’re not just about creating sustainable materials; we’re about
+                inspiring change. Our nationwide outreach program
                 empowers brands and consumers to adopt planet-friendly
                 practices.
               </p>
