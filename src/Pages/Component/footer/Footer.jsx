@@ -38,6 +38,9 @@ const Footer = () => {
             <a href="/anaura-for-brands" class="text-decoration-none text-dark fw-semibold">Anaura for brands</a>
           </li> */}
           <li class="mb-4">
+            <a href="/our-story" class="contact text-decoration-none text-dark fw-semibold">Our Story</a>
+          </li>
+          <li class="mb-4">
             <a href="/Sustainability" class="Sustainability text-decoration-none text-dark fw-semibold">Sustainability</a>
           </li>
           <li class="mb-4">
