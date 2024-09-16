@@ -1,126 +1,123 @@
-.main-container-background {
-    position: relative; /* Necessary for positioning the overlay */
-    height: 100%;
-    background: url('https://s3-alpha-sig.figma.com/img/27de/ec04/1258c253a7d02da5e464c6dc960ae72b?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=WeqvqYnpHahi4nogAYNVaRBCvd-Sj6fzvfWXZRk0L7~CgOdlPrsmy3FT6zIchEj0YJr59-9BtmvBoSpl1tctsu1TZlc~NcoDMExT~5uGDZsHtSUsRATtXHb40q69mIF-IC05tNDDBZjlLZf9KwpYX0iJIR7VtIDJgWvvZqAxsI-MC0ooB6rxzL-dk13qHSBudnhKGBO06CCcKdbi6kZ31zvJ~8LoYaQOHZ4PMF4vbE4ltPwpAAn8X~xVEJEHSr2kUJeoDgDONCX9e9ykHjFwkbipu6KcfKC-Za~eIDx3RR0QaDGDKaYFKi9O2-~2~FnYHvalo3~pk9xXxeoXQ60GIQ__');
+/* Overall Page Styling */
+.contact-page {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Hero Section */
+  .contact-hero {
+    position: relative;
+    height: 70vh;
+    background: url('https://img.freepik.com/free-photo/young-beautiful-african-girl-speaking-phone-shopping-mall_176420-5750.jpg?t=st=1726475838~exp=1726479438~hmac=04076f50ee7d4030bf13096672609360f04e98509c1623fb30edbd15067e1fb3&w=996');
     background-size: cover;
-    overflow: hidden; /* Ensure the overlay does not overflow */
-}
-
-.background-overlay {
+    background-attachment: fixed;
+    background-position: center;
+  }
+  
+  .hero-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(29, 29, 29, 0.7); /* Black fade with 50% opacity */
-    backdrop-filter: contrast(1000%); /* Apply contrast filter to the overlay */
-    z-index: 1; /* Ensure the overlay is on top of the background image but behind content */
-}
-
-.content {
-    position: relative; /* Ensure content is above the overlay */
-    z-index: 2; /* Content is above the overlay */
-}
-
-.fst-btn {
-    height: 50px;
-    background-color: #fff;
-    color: black;
-    font-size: 20px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .contact-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: white;
+    text-align: center;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
     font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .main-btn {
+    background-color: #FF5733;
+    color: white;
+    font-size: 18px;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+  }
+  
+  .main-btn:hover {
+    background-color: #e6492d;
+  }
+  
+  /* Form Section */
+  .form-section {
+    background-color: #f8f9fa;
+  }
+  
+  .form-container {
+    background-color: white;
     border-radius: 15px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.fst-btn:hover {
-    background-color: #f0f0f0; /* Slightly different hover effect */
-    color: black;
-}
-
-.snd-btn {
-    height: 52px;
-    width: 198px;
-    border: 1px solid black;
-    border-radius: 45px;
-    font-size: 22px;
-    font-weight: 600;
-    padding: 8px;
-    transition: border-color 0.3s;
-}
-
-.snd-btn:hover {
-    border-color: #333; /* Change border color on hover */
-}
-
-.someText {
-    font-size: 36px; /* Responsive font size */
-    width: 55%; /* Responsive width */
-}
-
-.fom-container {
-    max-width: 90%;
-    height: auto;
+    padding: 40px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
     margin: auto;
-    width: 700px;
-    border-radius: 20px;
-    padding: 20px;
-}
-
-label {
-    font-size: 15px;
-    font-weight: 600;
-}
-
-input {
-    height: 40px;
-    border: 0.2px solid rgba(72, 62, 62, 0.541) !important;
-    
-}
-
-.changed-inp {
-    height: 100px;
-    border: 0.2px solid rgba(72, 62, 62, 0.541) !important;
-}
-
-@media screen and (min-width: 320px) and (max-width: 397px) {
-    .fst-btn {
-        height: 50px;
+  }
+  
+  .form-label {
+    font-weight: 500;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .form-input {
+    height: 45px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s;
+    padding: 10px;
+  }
+  
+  .form-input:focus {
+    border-color: #FF5733;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 87, 51, 0.5);
+  }
+  
+  .submit-btn {
+    background-color: #FF5733;
+    color: white;
+    font-size: 18px;
+    padding: 15px 30px;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background-color: #e6492d;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
     }
-    .someText {
-        font-size: 27px;
-        width: 100%;
+  
+    .hero-subtitle {
+        font-size: 1.2rem;
     }
-    .fom-container {
-        width: 300px;
-        height: 100%;
+  
+    .form-container {
+        padding: 20px;
     }
-}
-
-@media screen and (min-width: 400px) and (max-width: 426px) {
-    .fst-btn {
-        height: 50px;
-    }
-    .someText {
-        font-size: 30px;
-        width: 100%;
-    }
-    .fom-container {
-        width: 350px;
-        height: 100%;
-    }
-}
-
-@media screen and (min-width: 601px) and (max-width: 800px) {
-    .someText {
-        font-size: 40px;
-        width: 100%;
-    }
-}
-
-@media screen and (min-width: 801px) and (max-width: 1025px) {
-    /* Add styles for this range if needed */
-}
-
-@media screen and (min-width: 1300px) and (max-width: 1441px) {
-   
-}
+  }
+  
