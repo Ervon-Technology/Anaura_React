@@ -1,0 +1,25 @@
+.feature-item {
+    background-color: #fff;
+    border: 1px solid #ebebeb;
+    border-radius: 8px;
+    height: 200px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feature-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .feature-icon {
+    width: 60px;
+    height: 60px;
+    object-fit: contain; /* Ensures icons maintain their proportions */
+  }
+  
+  .feature-text {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+  }
+  

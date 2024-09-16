@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import AnauraFeatures from "../Component/AnauraFeatures/AnauraFeatures";
 import green from "../../images/fashion/green_outfit.jpg";
 import peach from "../../images/fashion/peach_outfit.jpg";
 import peacock from "../../images/fashion/peacock_ourfit.jpg";
@@ -10,11 +11,9 @@ import laptopImage3 from "../../images/fashion/carousal-3.jpg";
 import springImage from "../../images/fashion/spring_collection.jpg";
 import winterImage from "../../images/fashion/winter_collection.jpg";
 import summerImage from "../../images/fashion/summer_collection.jpg";
-import sportsWearImage from "../../images/fashion/sports_wear.jpg";
 import mobilesummer from "../../images/fashion/mobile-summers.jpg";
 import mobilewinter from "../../images/fashion/mobile-winters.jpg";
 import mobilespring from "../../images/fashion/mobile-spring.jpg";
-import mobilesports from "../../images/fashion/mobile-sports.jpg";
 import FashionCard from "./FashionCard";
 import SavePlanet from "../Component/SavePlanet/SavePlanet";
 import './Fashion.css';
@@ -38,14 +37,12 @@ function Fashion() {
     { name: "SPRING COLLECTION", image: springImage },
     { name: "WINTER COLLECTION", image: winterImage },
     { name: "SUMMER COLLECTION", image: summerImage },
-    { name: "SUSTAINABLE SPORTS WEAR", image: sportsWearImage },
   ];
 
   const mobileCollections = [
     { name: "SPRING COLLECTION", image: mobilespring },
     { name: "WINTER COLLECTION", image: mobilewinter },
     { name: "SUMMER COLLECTION", image: mobilesummer },
-    { name: "SUSTAINABLE SPORTS WEAR", image: mobilesports },
   ];
 
   const [activeCollectionIndex, setActiveCollectionIndex] = useState(0);
@@ -191,6 +188,8 @@ function Fashion() {
           </div>
         </div>
       </div>
+
+      <AnauraFeatures />
 
       {/* Collections Section for Tablets/Laptops */}
       <div

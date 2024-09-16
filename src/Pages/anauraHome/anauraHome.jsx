@@ -21,6 +21,7 @@ import collection3 from "../../images/anaura-home/exhibition-carpets-collection.
 
 import SavePlanet from "../Component/SavePlanet/SavePlanet";
 import "./anauraHome.css";
+import AnauraFeatures from "../Component/AnauraFeatures/AnauraFeatures";
 
 function AnauraHome() {
   // Images for the mobile carousel
@@ -297,6 +298,11 @@ function AnauraHome() {
         </div>
       </div>
 
+
+
+
+      <AnauraFeatures />
+      
       <SavePlanet />
     </div>
   );

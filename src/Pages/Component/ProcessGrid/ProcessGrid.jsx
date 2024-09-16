@@ -1,9 +1,9 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import './ProcessGrid.css'; // Import custom CSS for necessary styles
-import cleaning from '../../../images/hows-it-made/pic-1.jpg';
+import cleaning from '../../../images/hows-it-made/pic-1.webp';
 import melting from '../../../images/hows-it-made/pic-2.jpg';
-import extruding from '../../../images/hows-it-made/pic-3.jpg';
+import extruding from '../../../images/hows-it-made/pic-3.jpeg';
 import fabric from '../../../images/hows-it-made/pic-4.jpg';
 
 const steps = [

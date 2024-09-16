@@ -3,6 +3,7 @@ import saveEarth from "../../images/our-story/save-earth.jpg";
 import company from "../../images/Logo.png";
 import sustainability from "../../images/our-story/sustainables.jpg";
 import SustainabilityImpact from "../Component/SustainabilityImpact/SustainabilityImpact";
+import AnauraFeatures from "../Component/AnauraFeatures/AnauraFeatures";
 import story1 from "../../images/our-story/story-1.jpg";
 import story2 from "../../images/our-story/story-2.jpg";
 import story3 from "../../images/our-story/story-3.jpg";
@@ -104,6 +105,9 @@ const OurStory = () => {
           then we greenlight a plan.
         </p>
       </div>
+
+
+      <AnauraFeatures />
 
       {/* Reducing Environmental Impact Section */}
       <div className="container py-5">

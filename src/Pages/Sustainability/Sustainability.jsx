@@ -15,6 +15,7 @@ import caro3 from '../../images/sustainability/caro3.png'
 
 import Img3 from '../../images/sustainability/sustainability.png'
 import EnvironmentAware from '../Component/EnvironmentAware/EnvironmentAware'
+import AnauraFeatures from '../Component/AnauraFeatures/AnauraFeatures'
 
 const Sustainability = () => {
     return (
@@ -43,6 +44,9 @@ const Sustainability = () => {
                     imageSrc={Img2}/>
                 </div>
                 
+
+                <AnauraFeatures />
+
                 <SavePlanet />
 
             </main>

@@ -8,7 +8,7 @@ import Img1 from '../../images/about/plasticAbout.png';
 import Img2 from '../../images/hows-it-made/img2.jpg'
 import Img4 from '../../images/hows-it-made/img4.jpg'
 import HeroSection from '../Component/Heroic/HeroicComponent';
-import SustainabilityImpact from '../Component/SustainabilityImpact/SustainabilityImpact';
+import AnauraFeatures from '../Component/AnauraFeatures/AnauraFeatures';
 import EnvironmentAware from '../Component/EnvironmentAware/EnvironmentAware';
 import ProcessGrid from '../Component/ProcessGrid/ProcessGrid';
 import SavePlanet from '../Component/SavePlanet/SavePlanet';
@@ -78,6 +78,8 @@ export default function HowItsMade() {
             imageSrc={Img1}
           />
         </div>
+
+        <AnauraFeatures />
         {/* SavePlanet Component */}
         <SavePlanet />
       </main>

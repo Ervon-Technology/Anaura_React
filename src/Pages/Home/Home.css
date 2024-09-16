@@ -1,0 +1,50 @@
+.carousel-item {
+    transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+  }
+  
+  .carousel-caption {
+    position: relative; /* Ensure the caption is positioned relative to the parent */
+    z-index: 2; /* Make sure the text is above the overlay */
+  }
+  
+  .carousel-caption h3 {
+    animation: fadeInDown 1s;
+    font-size: 45px;
+  }
+  
+  .carousel-caption p {
+    animation: fadeInUp 1s;
+    font-size: 20px;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Black with 60% opacity */
+    z-index: 1; /* Lower z-index so the text appears above the overlay */
+  }
+  
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }  

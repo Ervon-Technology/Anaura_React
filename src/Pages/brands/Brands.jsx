@@ -3,9 +3,10 @@ import tree from "../../images/tree.png";
 import reduce from "../../images/reduce.jpg";
 import business from "../../images/brand/business-growth.jpg"
 import brandPoster from "../../images/brand/brand-poster.jpg";
-import Img1 from '../../images/about/plasticAbout.png';
+import recycling from '../../images/brand/love.jpg'
 import SavePlanet from "../Component/SavePlanet/SavePlanet";
 import HeroSection from "../Component/Heroic/HeroicComponent";
+import AnauraFeatures from "../Component/AnauraFeatures/AnauraFeatures";
 
 const Brands = () => {
   return (
@@ -22,11 +23,11 @@ const Brands = () => {
         <section className="py-5">
           <div className="container">
             <div className="row align-items-center">
-              <div className="col-lg-6 col-md-12 mb-4">
-                <img src={Img1} alt="" className="w-100 img-fluid" />
+              <div className="col-lg-5 col-md-12 mb-4">
+                <img src={recycling} alt="" className="w-100 img-fluid" />
               </div>
-              <div className="col-lg-6 col-md-12">
-                <p className="fs-2 fw-light text-center text-lg-start">
+              <div className="col-lg-7 col-md-12">
+                <p className=" fw-light display-6 text-lg-start">
                   New generation wants brands to take a stand on issues close to their hearts.
                 </p>
               </div>
@@ -106,6 +107,7 @@ const Brands = () => {
             </div>
           </div>
         </section>
+        <AnauraFeatures />
 
         {/* SavePlanet Component */}
         <SavePlanet />

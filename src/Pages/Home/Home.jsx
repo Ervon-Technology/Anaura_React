@@ -1,25 +1,32 @@
-import React, { useEffect } from 'react';
-import background from '../../videos/background.mp4';
-import rudra from '../../images/rudra.svg';
-import auara from '../../images/auara.svg';
+import React, { useEffect, useState } from 'react';
+import { Carousel } from 'react-bootstrap';
+import './Home.css'
+import AnauraFeatures from '../Component/AnauraFeatures/AnauraFeatures';
+import AboutAnaura from '../../images/home/about-anaura.mp4'
 import oneOne from '../../images/one-one.png';
 import counter from '../../videos/ocenwast.mp4';
 import CarpetsImg from '../../images/anaura-home/carpets.jpg';
 import recyleFabric from '../../images/home/recycleFabric.jpg';
 
-import Img2 from '../../images/home/home.svg';
-import spring from '../../images/home/spring.jpg';
-import summer from '../../images/home/summer.jpg';
-import winter from '../../images/home/winter.jpg';
-import sport from '../../images/home/sports.jpg'
-import FactImg from '../../images/home/factories.svg';
+import GrowYourBrand from '../../images/home/grow-your-brand.jpg';
+import spring from '../../images/home/spring.png';
+import summer from '../../images/home/summer.png';
+import winter from '../../images/home/winter.png';
 
-import sofa from '../../images/home/furniture@2x.svg';
-import excarpet from '../../images/home/excarpet@2x.svg';
+
+import furnishing from '../../images/home/home-furnishings.jpg'
+import carpet from '../../images/home/carpet.jpg'
+import exhibitioncarpet from '../../images/home/exhibition-carpet.jpg'
+// import sofa from '../../images/home/furniture@2x.svg';
+// import excarpet from '../../images/home/excarpet@2x.svg';
 
 import Heading2 from '../../fonts/Heading2';
 import Marquee from 'react-fast-marquee';
-import Heading1 from '../../fonts/Heading1';
+
+
+import AnauraHomeImg from '../../images/home/anaura-home.jpg';
+import AnauraFashionImg from '../../images/home/anaura-fashion.jpg';
+import AnauraAthleisureImg from '../../images/home/anaura-athleisure.jpg';
 
 const Home = () => {
 
@@ -51,72 +58,73 @@ const Home = () => {
     return () => clearInterval(intervalId);
   }, []);
 
+
+    const [index, setIndex] = useState(0);
+  
+    const handleSelect = (selectedIndex, e) => {
+      setIndex(selectedIndex);
+    };
+  
+    const slides = [
+      {
+        image: AnauraHomeImg,
+        captionTitle: 'Anaura Home',
+        captionText: 'Stylish and contemporary home decor and furnishings designed to elevate living spaces with elegance and comfort.',
+      },
+      {
+        image: AnauraFashionImg,
+        captionTitle: 'Anaura Fashion',
+        captionText: 'Trendsetting, versatile fashion that blends timeless elegance with modern trends for every occasion.',
+      },
+      {
+        image: AnauraAthleisureImg,
+        captionTitle: 'Anaura Athleisure',
+        captionText: 'Fashion-forward activewear that combines comfort, style, and performance, perfect for both workouts and casual wear.',
+      },
+    ];
+  
+
   return (
     <div style={{ overflowX: 'hidden' }}>
-      {/* Hero Section */}
-      <section className="position-relative overflow-hidden d-flex align-items-center" style={{ minHeight: '70vh' }}>
-        <video
-          className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
-          autoPlay
-          loop
-          muted
-          playsInline
-        >
-          <source src={background} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <div className="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
-        <div className="container py-5 text-white" style={{ zIndex: 1 }}>
-          <div className="row py-5">
-            <div className="col-12">
-              <div className="fs-6 text-center mb-3 pt-5">
-                ECO-FRIENDLY. SUSTAINABLE. FUTURE-READY.
-              </div>
-              <div className="display-6 col-12 col-lg-8 mx-auto text-center">
-                ANAURA is a sustainable alternative to unsustainable fabrics, building trust, traceability, and sustainability in fashion and home furnishing!
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      
 
-      {/* Trusted Brands Section */}
-      <section className="py-5 px-3 px-md-5">
-        <div className="container">
-          <div className="row align-items-center text-center text-md-start">
-            <div className="col-lg-8 col-12 fw-bold mb-4 mb-lg-0">
-              <div className="text-uppercase">
-                <Marquee speed={100} gradient={false}>
-                  <div className="d-flex flex-wrap justify-content-center">
-                    <div className="mx-2">
-                      <Heading1 text={"Trustable"} />
-                    </div>
-                    <div className="mx-2">
-                      <Heading1 text={"Traceable"} />
-                    </div>
-                    <div className="mx-2">
-                      <Heading1 text={"Sustainable"} />
-                    </div>
-                  </div>
-                </Marquee>
-              </div>
-            </div>
-            <div className="col-lg-2 col-6 mb-3 mb-lg-0">
-              <img src={rudra} alt="" className="img-fluid" />
-            </div>
-            <div className="col-lg-2 col-6">
-              <img src={auara} alt="" className="img-fluid" />
-            </div>
-          </div>
-        </div>
-      </section>
+      <section id="slider-section" className="full-screen-carousel">
+      <Carousel
+        activeIndex={index}
+        onSelect={handleSelect}
+        fade
+        interval={2000} // Set automatic sliding
+        nextIcon={<span className="carousel-control-next-icon" />}
+        prevIcon={<span className="carousel-control-prev-icon" />}
+      >
+        {slides.map((slide, idx) => (
+          <Carousel.Item key={idx} className="carousel-item-custom">
+            <div className="overlay "></div>
+            <img
+              className="d-block w-100"
+              src={slide.image}
+              alt={`Slide ${idx + 1}`}
+              style={{ objectFit: 'cover', width: '100vw', height: '100vh' }}
+            />
+            <Carousel.Caption className="carousel-caption-custom">
+              <h3>{slide.captionTitle}</h3>
+              <p>{slide.captionText}</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+        ))}
+      </Carousel>
+    </section>
 
       {/* About Section */}
       <section className="py-5 px-3 px-md-5" style={{ background: '#ecf6ff' }}>
         <div className="container">
           <div className="row">
             <div className="col-lg-6 text-center mb-4 mb-lg-0">
-              <img src={FactImg} className="img-fluid col-8 mx-auto" alt="" />
+              {/* Video set to autoplay, loop, muted, and larger */}
+              <video className="col-10 mx-auto" autoPlay muted loop playsInline style={{ maxHeight: '400px', width: '100%' }}>
+                <source src={AboutAnaura} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
             <div className="col-lg-6 d-flex align-items-center">
               <div className="col-12 mx-auto">
@@ -131,15 +139,16 @@ const Home = () => {
         </div>
       </section>
 
+
       {/* Grow your brand */}
       <section className="eco-section py-md-5 px-3 px-md-5">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-md-5 order-1 order-md-2 text-center mx-auto p-4" style={{ backgroundColor: 'rgb(213, 234, 255)' }}>
+            <div className="col-md-5 order-1 order-md-2 text-center mx-auto p-4">
               <img
-                src={Img2}
+                src={GrowYourBrand}
                 alt="Eco-Friendly Textiles"
-                className="img-fluid rounded col-md-10 mx-auto"
+                className="img-fluid  col-md-10 mx-auto"
               />
             </div>
             <div className="col-md-6 d-flex align-items-center order-2 order-md-1">
@@ -154,25 +163,24 @@ const Home = () => {
       </section>
 
       {/* ANAURA FOR FASHION */}
-      <section className="eco-section px-3 px-md-5" style={{ background: "#e4f2ff" }}>
+      <section className="eco-section " style={{ background: "#e4f2ff" }}>
         <div className="row align-items-center">
           <img
             src={oneOne}
             alt="Eco-Friendly Textiles"
-            className="col-md-4 p-0 img-fluid"
+            className="col-md-5 p-0 img-fluid"
           />
-          <div className="col-md-6 d-flex align-items-center mx-auto">
-            <div className="col-md-10 py-4 mx-auto">
+          <div className="col-md-7 d-flex align-items-center mx-auto">
+            <div className="col-md-10 py-4 mx-auto px-3 px-md-0 px-lg-5">
               <Heading2 text={"ANAURA Fashion"} />
               <p className="fs-5 mb-4 col-md-12">Enjoy future-proof fashion with Anaura's vast range of fabric alternatives.</p>
               <button className="btn btn-outline-dark rounded-pill px-4 btn-lg border-2 fs-6">ANAURA For Brands</button>
               <div className="mt-5">
                 <Marquee gradient={false}>
                   <div className="d-flex justify-content-center">
-                    <img src={spring} alt="Spring" className="mx-1 img-fluid" style={{ width: '12rem' }} />
-                    <img src={summer} alt="Summer" className="mx-1 img-fluid" style={{ width: '12rem' }} />
-                    <img src={winter} alt="Winter" className="mx-1 img-fluid" style={{ width: '12rem' }} />
-                    <img src={sport} alt="sport" className="mx-1 img-fluid" style={{ width: '12rem' }} />
+                    <img src={spring} alt="Spring" className="mx-1 img-fluid" style={{ width: '13rem' }} />
+                    <img src={summer} alt="Summer" className="mx-1 img-fluid" style={{ width: '13rem' }} />
+                    <img src={winter} alt="Winter" className="mx-1 img-fluid" style={{ width: '13rem' }} />
                   </div>
                 </Marquee>
               </div>
@@ -185,22 +193,23 @@ const Home = () => {
       <section className="eco-section py-5 my-5 px-3 px-md-5">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-md-6 d-flex align-items-center mx-auto">
-              <div className="col-md-10 py-4 mx-auto">
+            <div className="col-lg-6 d-flex align-items-center mx-auto">
+              <div className="col-lg-10 py-4 mx-auto">
                 <Heading2 text={"ANAURA Home"} />
                 <p className="fs-5 mb-4 col-md-12">Step into the future of home fashion with recycled material for Home Furnishing items.</p>
                 <button className="btn btn-outline-dark rounded-pill px-4 btn-lg border-2 fs-6">Know More ANAURA Home</button>
                 <div className="mt-5">
                   <Marquee gradient={false}>
                     <div className="d-flex justify-content-center">
-                      <img src={sofa} alt="Sofa" className="mx-1 img-fluid" style={{ width: '16rem' }} />
-                      <img src={excarpet} alt="Carpet" className="mx-1 img-fluid" style={{ width: '16rem' }} />
+                      <img src={furnishing} alt="Home furnishing" className="mx-1 img-fluid" style={{ width: '16rem' }} />
+                      <img src={carpet} alt="Carpet" className="mx-1 img-fluid" style={{ width: '16rem' }} />
+                      <img src={exhibitioncarpet} alt=" Exhibition Carpet" className="mx-1 img-fluid" style={{ width: '16rem' }} />
                     </div>
                   </Marquee>
                 </div>
               </div>
             </div>
-            <div className="col-md-6 text-center">
+            <div className="col-lg-6 text-center">
               <img
                 src={CarpetsImg}
                 alt="Carpets"
@@ -249,6 +258,8 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      <AnauraFeatures />
 
       {/* Contact Section */}
       <section className="py-5 px-3 px-md-5" style={{ background: '#ecf6ff' }}>

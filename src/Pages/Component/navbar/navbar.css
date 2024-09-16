@@ -1,153 +1,122 @@
-/* Default styles for the navbar */
-.navbar {
-  background-color: transparent;
-  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+/* Overall Page Styling */
+.contact-page {
+  font-family: 'Poppins', sans-serif;
 }
 
-.navbar .nav-link,
-.navbar .navbar-brand,
-.navbar .navbtn {
-  color: white !important;
-  transition: color 0.3s ease, background-color 0.3s ease;
+/* Hero Section */
+.contact-hero {
+  position: relative;
+  height: 70vh;
+  background: url('https://img.freepik.com/free-photo/young-beautiful-african-girl-speaking-phone-shopping-mall_176420-5750.jpg?t=st=1726475838~exp=1726479438~hmac=04076f50ee7d4030bf13096672609360f04e98509c1623fb30edbd15067e1fb3&w=996');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
 
-.navbar .navbar-toggler {
-  border-color: rgba(255, 255, 255, 0.8); /* Ensure visibility of the burger menu button */
-}
-
-/* Make the burger icon black when the navbar is scrolled */
-.navbar .navbar-toggler-icon.black-icon {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30' width='30' height='30'%3E%3Cpath stroke='rgba(0,0,0,1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
-
-/* Scrolled navbar or white background state */
-.navbar.scrolled {
-  background-color: white !important;
-  color: black !important;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.navbar.scrolled .nav-link,
-.navbar.scrolled .navbar-brand,
-.navbar.scrolled .navbtn {
-  color: black !important;
-}
-
-.navbar.scrolled .navbtn {
-  border-color: black !important;
-}
-
-/* Hover effect for "ANAURA For Business" button */
-.navbtn:hover {
-  background-color: black !important;
-  color: white !important;
-  border-color: black !important;
-}
-
-/* Hover effect on navbar */
-.navbar:hover {
-  background-color: white !important;
-  color: black !important;
-}
-
-.navbar:hover .nav-link,
-.navbar:hover .navbar-brand,
-.navbar:hover .navbtn {
-  color: black !important;
-}
-
-.navbar:hover .navbtn:hover {
-  background-color: black !important;
-  color: white !important;
-  border-color: black !important;
-}
-
-/* Dropdown styling */
-.navbar .dropdown-menu {
-  background-color: white;
-  padding: 0px;
-  border: none;
-  margin-top: 0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: opacity 0.3s ease;
-  opacity: 0;
-  visibility: hidden;
-  display: block; 
+.hero-overlay {
   position: absolute;
-  transform: translateY(-10px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-/* Show dropdown on hover on desktop/tablet sizes */
-.navbar .dropdown:hover .dropdown-menu {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0); /* Smoothly brings the dropdown into view */
-}
-
-/* Style for dropdown links */
-.navbar .dropdown-menu .dropdown-item {
-  color: black;
-  padding: 13px 10px;
-  font-size: 0.9rem;
-  transition: background-color 0.3s ease;
-}
-
-.navbar .dropdown-menu .dropdown-item:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-  color: black;
-}
-
-/* Remove absolute positioning so the navbar height can adjust */
-.dropdown-menu {
-  position: absolute; /* Ensure it's part of the normal flow */
-  top: 100%;
+  top: 0;
   left: 0;
-  z-index: 1000;
-  min-width: 10rem;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
 }
 
-/* Align dropdown on the right side for the business button */
-.navbar .navbtn + .dropdown-menu {
-  left: auto;
-  right: 0;
+.contact-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: white;
+  text-align: center;
 }
 
-/* For mobile responsiveness (max-width: 800px) */
-@media (max-width: 800px) {
-  /* Dropdown menu should appear by default */
-  .navbar .dropdown-menu {
-    opacity: 1 !important;
-    visibility: visible !important;
-    transform: none !important;
-    position: static !important; /* Static positioning in offcanvas */
-    box-shadow: none !important; /* Remove box shadow */
-    padding: 0 !important; /* Remove padding */
-    border: none !important; /* Remove borders */
-    background-color: transparent !important; /* Remove background color for mobile */
+.hero-title {
+  font-size: 3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.main-btn {
+  background-color: #FF5733;
+  color: white;
+  font-size: 18px;
+  padding: 15px 30px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+}
+
+.main-btn:hover {
+  background-color: #e6492d;
+}
+
+/* Form Section */
+.form-section {
+  background-color: #f8f9fa;
+}
+
+.form-container {
+  background-color: white;
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: auto;
+}
+
+.form-label {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #333;
+}
+
+.form-input {
+  height: 45px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s;
+  padding: 10px;
+}
+
+.form-input:focus {
+  border-color: #FF5733;
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 87, 51, 0.5);
+}
+
+.submit-btn {
+  background-color: #FF5733;
+  color: white;
+  font-size: 18px;
+  padding: 15px 30px;
+  border-radius: 30px;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #e6492d;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .hero-title {
+      font-size: 2.5rem;
   }
 
-  /* Disable hover effect for dropdowns on mobile */
-  .navbar .dropdown:hover .dropdown-menu {
-    opacity: 1;
-    visibility: visible;
-    transform: none;
+  .hero-subtitle {
+      font-size: 1.2rem;
   }
 
-  .navbar .nav-link, 
-  .navbar .btn-outline-light {
-    color: black !important;
-  }
-
-  .navbar .navbar-toggler {
-    color: white !important; /* Ensure the burger menu icon is visible on dark backgrounds */
-  }
-
-  .navbar .offcanvas-body {
-    padding-left: 18px;
-  }
-
-  .navbar .dropdown-menu .dropdown-item {
-    padding: 10px 15px;
+  .form-container {
+      padding: 20px;
   }
 }

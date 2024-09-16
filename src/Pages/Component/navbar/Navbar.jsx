@@ -123,7 +123,7 @@ const MyNavbar = () => {
                 <li className="nav-item dropdown me-3">
                   <a
                     className="nav-link dropdown-toggle"
-                    href="/Sustainability"
+                    href=""
                     id="dropdownSustainability"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
@@ -134,6 +134,11 @@ const MyNavbar = () => {
                     <li>
                       <a className="dropdown-item" href="/our-story">
                         Our Story
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="/Sustainability">
+                        Champions of Subtainability
                       </a>
                     </li>
                   </ul>
