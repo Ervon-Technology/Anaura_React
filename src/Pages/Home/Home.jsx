@@ -8,7 +8,7 @@ import counter from '../../videos/ocenwast.mp4';
 import CarpetsImg from '../../images/anaura-home/carpets.jpg';
 import recyleFabric from '../../images/home/recycleFabric.jpg';
 
-import GrowYourBrand from '../../images/home/grow-your-brand.jpg';
+import GrowYourBrand from '../../images/home/grow-your-brand-2.jpg';
 import spring from '../../images/home/spring.png';
 import summer from '../../images/home/summer.png';
 import winter from '../../images/home/winter.png';
@@ -118,16 +118,16 @@ const Home = () => {
       {/* About Section */}
       <section className="py-5 px-3 px-md-5" style={{ background: '#ecf6ff' }}>
         <div className="container">
-          <div className="row">
-            <div className="col-lg-6 text-center mb-4 mb-lg-0">
+          <div className="row py-5">
+            <div className="col-lg-6 text-center mb-4 d-flex align-items-center mb-lg-0">
               {/* Video set to autoplay, loop, muted, and larger */}
-              <video className="col-10 mx-auto" autoPlay muted loop playsInline style={{ maxHeight: '400px', width: '100%' }}>
+              <video className="col-12 col-md-10 col-lg-12   mx-auto" autoPlay muted loop playsInline style={{ maxHeight: '400px' }}>
                 <source src={AboutAnaura} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
             <div className="col-lg-6 d-flex align-items-center">
-              <div className="col-12 mx-auto">
+              <div className="col-md-10 mx-auto">
                 <Heading2 text={"About Anaura"} />
                 <p className="fs-5 mb-4">
                   Anaura where post-consumer PET bottles are transformed into essential wearable material (rPET fabric) items. With a daily production of 320,000 sq. meters, Anaura epitomizes sustainability and style.
@@ -144,14 +144,14 @@ const Home = () => {
       <section className="eco-section py-md-5 px-3 px-md-5">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-md-5 order-1 order-md-2 text-center mx-auto p-4">
+            <div className="col-lg-6 order-1 order-lg-2 text-center mx-auto">
               <img
                 src={GrowYourBrand}
                 alt="Eco-Friendly Textiles"
-                className="img-fluid  col-md-10 mx-auto"
+                className="img-fluid  mx-auto col-md-10"
               />
             </div>
-            <div className="col-md-6 d-flex align-items-center order-2 order-md-1">
+            <div className="col-lg-6 d-flex align-items-center order-2 order-lg-1">
               <div className="col-md-10 py-4 mx-auto">
                 <Heading2 text={"Grow your brand with ANAURA"} />
                 <p className="fs-5 mb-4">We believe brands and consumers should use their purchasing power to further the environmental impact they want to see in the world.</p>
@@ -167,20 +167,20 @@ const Home = () => {
         <div className="row align-items-center">
           <img
             src={oneOne}
-            alt="Eco-Friendly Textiles"
-            className="col-md-5 p-0 img-fluid"
+            alt="Fashion"
+            className="col-md-5 d-none d-md-block p-0 img-fluid"
           />
           <div className="col-md-7 d-flex align-items-center mx-auto">
-            <div className="col-md-10 py-4 mx-auto px-3 px-md-0 px-lg-5">
+            <div className="col-md-10 py-4 mx-auto px-4 px-md-0 px-lg-5">
               <Heading2 text={"ANAURA Fashion"} />
               <p className="fs-5 mb-4 col-md-12">Enjoy future-proof fashion with Anaura's vast range of fabric alternatives.</p>
               <button className="btn btn-outline-dark rounded-pill px-4 btn-lg border-2 fs-6">ANAURA For Brands</button>
               <div className="mt-5">
                 <Marquee gradient={false}>
                   <div className="d-flex justify-content-center">
-                    <img src={spring} alt="Spring" className="mx-1 img-fluid" style={{ width: '13rem' }} />
-                    <img src={summer} alt="Summer" className="mx-1 img-fluid" style={{ width: '13rem' }} />
-                    <img src={winter} alt="Winter" className="mx-1 img-fluid" style={{ width: '13rem' }} />
+                    <img src={spring} alt="Spring" className="mx-1 img-fluid" style={{ width: '13rem', height: '150px', objectFit: 'cover' }} />
+                    <img src={summer} alt="Summer" className="mx-1 img-fluid" style={{ width: '13rem', height: '150px', objectFit: 'cover' }} />
+                    <img src={winter} alt="Winter" className="mx-1 img-fluid" style={{ width: '13rem', height: '150px', objectFit: 'cover' }} />
                   </div>
                 </Marquee>
               </div>
@@ -190,7 +190,7 @@ const Home = () => {
       </section>
 
       {/* ANAURA FOR HOME */}
-      <section className="eco-section py-5 my-5 px-3 px-md-5">
+      <section className="eco-section py-5 my-0 my-md-5 px-3 px-md-5">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6 d-flex align-items-center mx-auto">
@@ -209,7 +209,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-6 text-center">
+            <div className="col-lg-6 text-center d-none d-md-block">
               <img
                 src={CarpetsImg}
                 alt="Carpets"
