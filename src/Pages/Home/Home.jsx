@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Carousel } from 'react-bootstrap';
 import './Home.css'
+import background from '../../videos/rudraheroic.mp4';
 import AnauraFeatures from '../Component/AnauraFeatures/AnauraFeatures';
 import AboutAnaura from '../../images/home/about-anaura.mp4'
 import oneOne from '../../images/one-one.png';
@@ -27,6 +28,7 @@ import Marquee from 'react-fast-marquee';
 import AnauraHomeImg from '../../images/home/anaura-home.jpg';
 import AnauraFashionImg from '../../images/home/anaura-fashion.jpg';
 import AnauraAthleisureImg from '../../images/home/anaura-athleisure.jpg';
+
 
 const Home = () => {
 
@@ -87,8 +89,9 @@ const Home = () => {
   return (
     <div style={{ overflowX: 'hidden' }}>
       
-
-      <section id="slider-section" className="full-screen-carousel">
+     
+      
+      {/* <section id="slider-section" className="full-screen-carousel">
       <Carousel
         activeIndex={index}
         onSelect={handleSelect}
@@ -113,7 +116,34 @@ const Home = () => {
           </Carousel.Item>
         ))}
       </Carousel>
-    </section>
+    </section> */}
+
+     {/* Hero Section */}
+     <section className="position-relative overflow-hidden d-flex align-items-center" style={{ minHeight: '70vh' }}>
+        <video
+          className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
+          autoPlay
+          loop
+          muted
+          playsInline
+        >
+          <source src={background} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div className="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+        <div className="container py-5 text-white" style={{ zIndex: 1 }}>
+          <div className="row py-5">
+            <div className="col-12">
+              <div className="fs-6 text-center mb-3 pt-5">
+                ECO-FRIENDLY. SUSTAINABLE. FUTURE-READY.
+              </div>
+              <div className="display-6 col-12 col-lg-8 mx-auto text-center">
+                ANAURA is a sustainable alternative to unsustainable fabrics, building trust, traceability, and sustainability in fashion and home furnishing!
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* About Section */}
       <section className="py-5 px-3 px-md-5" style={{ background: '#ecf6ff' }}>
