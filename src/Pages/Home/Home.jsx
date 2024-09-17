@@ -119,7 +119,7 @@ const Home = () => {
     </section> */}
 
      {/* Hero Section */}
-     <section className="position-relative overflow-hidden d-flex align-items-center" style={{ minHeight: '70vh' }}>
+     <section className="position-relative overflow-hidden d-flex align-items-center" style={{ minHeight: '90vh' }}>
         <video
           className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
           autoPlay
