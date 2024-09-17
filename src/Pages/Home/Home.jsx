@@ -169,6 +169,7 @@ const Home = () => {
             src={oneOne}
             alt="Fashion"
             className="col-md-5 d-none d-md-block p-0 img-fluid"
+            style={{ maxHeight: '36rem', objectFit: 'cover', objectPosition: 'top left' }}
           />
           <div className="col-md-7 d-flex align-items-center mx-auto">
             <div className="col-md-10 py-4 mx-auto px-4 px-md-0 px-lg-5">

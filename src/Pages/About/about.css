@@ -61,7 +61,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent dark overlay */
+    background-color: rgba(0, 0, 0, 0.071); /* Semi-transparent dark overlay */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,16 +72,6 @@
   
   .certification-card:hover .certification-overlay {
     opacity: 1; /* Fade in the overlay on hover */
-  }
-  
-  .certification-overlay h5 {
-    color: #fff;
-    font-size: 1.2rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-align: center;
-    padding: 10px;
   }
   
   /* Responsiveness */

@@ -64,7 +64,6 @@ const About = () => {
                                 <div className="certification-card">
                                     <img src={Certification1} alt="Certification 1" className="img-fluid certification-img" />
                                     <div className="certification-overlay">
-                                        <h5>Certification 1</h5>
                                     </div>
                                 </div>
                             </div>
@@ -72,7 +71,6 @@ const About = () => {
                                 <div className="certification-card">
                                     <img src={Certification2} alt="Certification 2" className="img-fluid certification-img" />
                                     <div className="certification-overlay">
-                                        <h5>Certification 2</h5>
                                     </div>
                                 </div>
                             </div>
@@ -80,7 +78,6 @@ const About = () => {
                                 <div className="certification-card">
                                     <img src={Certification3} alt="Certification 3" className="img-fluid certification-img" />
                                     <div className="certification-overlay">
-                                        <h5>Certification 3</h5>
                                     </div>
                                 </div>
                             </div>
@@ -88,7 +85,6 @@ const About = () => {
                                 <div className="certification-card">
                                     <img src={Certification4} alt="Certification 4" className="img-fluid certification-img" />
                                     <div className="certification-overlay">
-                                        <h5>Certification 4</h5>
                                     </div>
                                 </div>
                             </div>
@@ -96,7 +92,6 @@ const About = () => {
                                 <div className="certification-card">
                                     <img src={Certification5} alt="Certification 5" className="img-fluid certification-img" />
                                     <div className="certification-overlay">
-                                        <h5>Certification 5</h5>
                                     </div>
                                 </div>
                             </div>
