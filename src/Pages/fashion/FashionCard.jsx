@@ -1,6 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import peacock from "../../images/fashion/peacock_ourfit.jpg";
+import peacock from "../../images/fashion/scarf_outfit.jpg";
 import white from "../../images/fashion/white_outfit.jpg";
 import scarf from "../../images/fashion/scarf_outfit.jpg";
 import suit from "../../images/fashion/suit_outfit.jpg";
