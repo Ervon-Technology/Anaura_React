@@ -3,6 +3,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import AnauraFeatures from "../Component/AnauraFeatures/AnauraFeatures";
 import green from "../../images/fashion/green_outfit.jpg";
 import peach from "../../images/fashion/scarf_outfit.jpg";
+// import peach from "../../images/fashion/";
+
 import peacock from "../../images/fashion/scarf_outfit.jpg";
 import scarf from "../../images/fashion/scarf_outfit.jpg";
 import laptopImage1 from "../../images/fashion/carousal-1.jpg"; 
@@ -177,7 +179,7 @@ function Fashion() {
         <div className="row align-items-center">
           <div className="col-lg-6 d-none d-lg-flex">
             <img
-              src={peach}
+              src={winterImage}
               alt="Fashion"
               className="img-fluid rounded"
               style={{ height: "600px", width: "550px", objectFit: "cover" }}

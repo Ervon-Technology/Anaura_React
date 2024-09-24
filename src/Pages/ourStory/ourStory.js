@@ -1,6 +1,6 @@
 import React from "react";
 import saveEarth from "../../images/our-story/save-earth.jpg";
-import company from "../../images/Logo.png";
+import story4 from "../../images/our-story/story-4.jpg";
 import sustainability from "../../images/our-story/sustainables.jpg";
 import SustainabilityImpact from "../Component/SustainabilityImpact/SustainabilityImpact";
 import AnauraFeatures from "../Component/AnauraFeatures/AnauraFeatures";
@@ -51,7 +51,7 @@ const OurStory = () => {
           </div>
           <div className="col-md-6 mb-4 mb-md-0">
             <img
-              src={company}
+              src={story4}
               width={500}
               alt="Circular economy"
               className="img-fluid rounded"

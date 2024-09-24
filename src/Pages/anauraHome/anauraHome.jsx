@@ -3,8 +3,8 @@
 import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import HomeFashionCard from "./homeFashionCard";
-import furniture1 from "../../images/anaura-home/furniture-1.png";
-import furniture2 from "../../images/anaura-home/furniture-2.png";
+import furniture1 from "../../images/anaura-home/home-furnitures1.jpg";
+import furniture2 from "../../images/anaura-home/home-furnitures2.jpg";
 import homefurnitures from "../../images/anaura-home/home-furnitures.jpg";
 import carpets from "../../images/anaura-home/carpets.jpg";
 import exhibitioncarpets from "../../images/anaura-home/exhibition-carpets.jpg";

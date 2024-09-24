@@ -1,5 +1,7 @@
 import React from "react";
-import tree from "../../images/tree.png";
+// import tree from "../../images/tree.png";
+import gogreen from "../../images/brand/gogreen.jpg";
+
 import reduce from "../../images/reduce.jpg";
 import business from "../../images/brand/business-growth.jpg"
 import brandPoster from "../../images/brand/brand-poster.jpg";
@@ -93,8 +95,8 @@ const Brands = () => {
         <section className="py-5">
           <div className="container">
             <div className="row align-items-center">
-              <div className="col-md-6 text-center">
-                <img src={tree} alt="Eco-Friendly Textiles" className="img-fluid rounded mb-4 mb-md-0" />
+              <div className="col-md-6 text-center ">
+                <img src={gogreen} alt="Eco-Friendly Textiles" className="img-fluid rounded mb-4 mb-md-0 "  />
               </div>
               <div className="col-md-6">
                 <h6 className="text-muted mb-3 text-uppercase text-lg-start">
