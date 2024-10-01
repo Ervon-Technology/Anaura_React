@@ -4,6 +4,7 @@ import './Home.css'
 import background from '../../videos/rudraheroic.mp4';
 import AnauraFeatures from '../Component/AnauraFeatures/AnauraFeatures';
 import AboutAnaura from '../../images/home/about-anaura.mp4'
+import AboutAnaura2 from '../../images/home/about-anaura2.mp4'
 import oneOne from '../../images/one-one.png';
 import counter from '../../videos/ocenwast.mp4';
 import CarpetsImg from '../../images/anaura-home/carpets.jpg';
@@ -127,21 +128,12 @@ const Home = () => {
           muted
           playsInline
         >
-          <source src={background} type="video/mp4" />
+          <source src={AboutAnaura} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
         <div className="container py-5 text-white" style={{ zIndex: 1 }}>
-          <div className="row py-5">
-            <div className="col-12">
-              <div className="fs-6 text-center mb-3 pt-5">
-                ECO-FRIENDLY. SUSTAINABLE. FUTURE-READY.
-              </div>
-              <div className="display-6 col-12 col-lg-8 mx-auto text-center">
-                ANAURA is a sustainable alternative to unsustainable fabrics, building trust, traceability, and sustainability in fashion and home furnishing!
-              </div>
-            </div>
-          </div>
+          
         </div>
       </section>
 
@@ -152,7 +144,7 @@ const Home = () => {
             <div className="col-lg-6 text-center mb-4 d-flex align-items-center mb-lg-0">
               {/* Video set to autoplay, loop, muted, and larger */}
               <video className="col-12 col-md-10 col-lg-12   mx-auto" autoPlay muted loop playsInline style={{ maxHeight: '400px' }}>
-                <source src={AboutAnaura} type="video/mp4" />
+                <source src={AboutAnaura2} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
@@ -170,27 +162,7 @@ const Home = () => {
       </section>
 
 
-      {/* Grow your brand */}
-      <section className="eco-section py-md-5 px-3 px-md-5">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-lg-6 order-1 order-lg-2 text-center mx-auto">
-              <img
-                src={GrowYourBrand}
-                alt="Eco-Friendly Textiles"
-                className="img-fluid  mx-auto col-md-10"
-              />
-            </div>
-            <div className="col-lg-6 d-flex align-items-center order-2 order-lg-1">
-              <div className="col-md-10 py-4 mx-auto">
-                <Heading2 text={"Grow your brand with ANAURA"} />
-                <p className="fs-5 mb-4">We believe brands and consumers should use their purchasing power to further the environmental impact they want to see in the world.</p>
-                <button className="btn btn-outline-dark rounded-pill px-4 btn-lg border-2 fs-6">ANAURA For Brands</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      
 
       {/* ANAURA FOR FASHION */}
       <section className="eco-section " style={{ background: "#e4f2ff" }}>
@@ -246,6 +218,28 @@ const Home = () => {
                 alt="Carpets"
                 className="w-100 p-0 img-fluid"
               />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Grow your brand */}
+      <section className="eco-section py-md-5 px-3 px-md-5">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-lg-6 order-1 order-lg-2 text-center mx-auto">
+              <img
+                src={GrowYourBrand}
+                alt="Eco-Friendly Textiles"
+                className="img-fluid  mx-auto col-md-10"
+              />
+            </div>
+            <div className="col-lg-6 d-flex align-items-center order-2 order-lg-1">
+              <div className="col-md-10 py-4 mx-auto">
+                <Heading2 text={"Grow your brand with ANAURA"} />
+                <p className="fs-5 mb-4">We believe brands and consumers should use their purchasing power to further the environmental impact they want to see in the world.</p>
+                <button className="btn btn-outline-dark rounded-pill px-4 btn-lg border-2 fs-6">ANAURA For Brands</button>
+              </div>
             </div>
           </div>
         </div>

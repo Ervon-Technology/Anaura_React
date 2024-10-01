@@ -2,7 +2,7 @@ import React from 'react';
 
 import Img3 from '../../images/sustainability/sustainability.png';
 import caro1 from '../../images/sustainability/caro1.png';
-import caro2 from '../../images/sustainability/caro2.png';
+import caro2 from '../../images/hows-it-made/seabottle.jpg';
 import caro3 from '../../images/sustainability/caro3.png';
 import Img1 from '../../images/about/plasticAbout.png';
 import Img2 from '../../images/hows-it-made/img2.jpg'
