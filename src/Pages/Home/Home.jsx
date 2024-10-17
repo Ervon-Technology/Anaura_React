@@ -9,8 +9,9 @@ import oneOne from '../../images/one-one.png';
 import counter from '../../videos/ocenwast.mp4';
 import CarpetsImg from '../../images/anaura-home/carpets.jpg';
 import recyleFabric from '../../images/home/recycleFabric.jpg';
+import bottlecaprecycling from '../../images/home/bottle-cap-recycling.jpg'
 
-import GrowYourBrand from '../../images/home/grow-your-brand-2.jpg';
+import GrowYourBrand from '../../images/home/grow-your-brand.jpg';
 import spring from '../../images/home/spring.png';
 import summer from '../../images/home/summer.png';
 import winter from '../../images/home/winter.png';
@@ -283,6 +284,90 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* Bottle CAp Recycling  */}
+      <section className="eco-section" style={{ background: "#e4f2ff", padding: '2rem 0' }}>
+  <div className="container">
+    <div className="row align-items-center">
+      {/* Content Column - Left */}
+      <div className="col-md-7 d-flex align-items-center mx-auto">
+        <div className="col-md-10 py-4 mx-auto px-2">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#045518] mb-3">
+            From Bottle Caps to Fabrics
+          </h2>
+          <p className="fs-5 mb-3">
+            Anaura transforms bottle caps into high-quality raw materials for fabrics, reducing waste and supporting a circular economy.
+          </p>
+          <p className="fs-5 mb-4">
+            Our eco-friendly solutions protect the environment while offering innovative products.
+          </p>
+          <button className="btn btn-outline-dark rounded-pill px-4 btn-lg border-2 fs-6">
+            Learn More
+          </button>
+        </div>
+      </div>
+
+      {/* Image Column - Right */}
+      <div className="col-md-5">
+        <img
+          src={bottlecaprecycling}
+          alt="Recycling bottle caps to fabric"
+          className="img-fluid rounded-lg shadow-lg"
+          style={{ maxHeight: '36rem', objectFit: 'cover', objectPosition: 'top left' }}
+        />
+      </div>
+    </div>
+
+    {/* Raw Materials and Their Applications */}
+    <div className="row mt-5">
+      <div className="col-md-12 text-center">
+        <h2 className="text-xl font-bold text-[#045518] mb-3">
+          Raw Materials from Bottle Caps
+        </h2>
+        <p className="fs-5 mb-4">
+          Discover the high-quality materials we create:
+        </p>
+      </div>
+    </div>
+
+    <div className="row text-center" style={{ background: '#f7f9fc', padding: '2rem 0', borderRadius: '10px' }}>
+      {/* List of Raw Materials and Uses with fixed height */}
+      {[
+        {
+          title: 'Recycled Plastic Pellets',
+          description: 'Durable fabrics, bags, and eco-friendly products.',
+          icon: '📦', // Example icon
+        },
+        {
+          title: 'Composite Materials',
+          description: 'Used in construction and automotive industries.',
+          icon: '🏗️', // Example icon
+        },
+        {
+          title: 'Textile Fibers',
+          description: 'Woven into fabrics for clothing and home decor.',
+          icon: '👗', // Example icon
+        },
+      ].map((item, index) => (
+        <div key={index} className="col-md-4 mb-4 d-flex justify-content-center">
+          <div className="border p-4 rounded shadow-lg hover:shadow-2xl transition-transform duration-300 ease-in-out transform hover:scale-105 d-flex flex-column justify-content-between" style={{ height: '250px' }}>
+            <div className="flex items-center justify-center mb-2" style={{ fontSize: '2rem' }}>
+              {item.icon}
+            </div>
+            <h4 className="font-bold text-lg mb-1">{item.title}</h4>
+            <p className="text-gray-700">{item.description}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
 
       <AnauraFeatures />
 
