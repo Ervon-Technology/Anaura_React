@@ -8,7 +8,7 @@ import AboutAnaura2 from '../../images/home/about-anaura2.mp4'
 import oneOne from '../../images/one-one.png';
 import counter from '../../videos/ocenwast.mp4';
 import CarpetsImg from '../../images/anaura-home/carpets.jpg';
-import recyleFabric from '../../images/home/recycleFabric.jpg';
+import recyleFabric from '../../images/home/recycleFabric.png';
 import bottlecaprecycling from '../../images/home/bottle-cap-recycling.jpg'
 
 import GrowYourBrand from '../../images/home/grow-your-brand.jpg';

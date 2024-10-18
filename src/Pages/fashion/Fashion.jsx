@@ -10,12 +10,13 @@ import scarf from "../../images/fashion/scarf_outfit.jpg";
 import laptopImage1 from "../../images/fashion/carousal-1.jpg"; 
 import laptopImage2 from "../../images/fashion/carousal-2.jpg";
 import laptopImage3 from "../../images/fashion/carousal-3.jpg";
-import springImage from "../../images/fashion/spring_collection.jpg";
+import springImage from "../../images/fashion/spring-dresses.png";
 import winterImage from "../../images/fashion/winter_collection.jpg";
-import summerImage from "../../images/fashion/summer_collection.jpg";
+import summerImage from "../../images/fashion/summer-dresses.jpg";
 import mobilesummer from "../../images/fashion/mobile-summers.jpg";
 import mobilewinter from "../../images/fashion/mobile-winters.jpg";
 import mobilespring from "../../images/fashion/mobile-spring.jpg";
+import upcycledfabric from "../../images/fashion/upcycled-fabrics.jpg"
 import FashionCard from "./FashionCard";
 import SavePlanet from "../Component/SavePlanet/SavePlanet";
 import './Fashion.css';
@@ -179,7 +180,7 @@ function Fashion() {
         <div className="row align-items-center">
           <div className="col-lg-6 d-none d-lg-flex">
             <img
-              src={winterImage}
+              src={upcycledfabric}
               alt="Fashion"
               className="img-fluid rounded"
               style={{ height: "600px", width: "550px", objectFit: "cover" }}

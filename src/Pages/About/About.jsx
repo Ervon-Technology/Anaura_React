@@ -28,7 +28,7 @@ const About = () => {
                 
                 <HeroSection 
                     bgImg={BgHeroic} 
-                    title={'We are passionate creators, blending science and sustainability for the Earth.'} 
+                    title={'Combining innovation and sustainability, we shape a future where nature thrives.'} 
                 />
 
                 <SectionTwo />

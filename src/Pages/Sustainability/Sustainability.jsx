@@ -13,7 +13,7 @@ import caro1 from '../../images/sustainability/caro1.png'
 import caro2 from '../../images/hows-it-made/seabottle.jpg'
 import caro3 from '../../images/sustainability/caro3.png'
 
-import Img3 from '../../images/sustainability/sustainability.png'
+import Img3 from '../../images/sustainability/sustainability.jpg'
 import EnvironmentAware from '../Component/EnvironmentAware/EnvironmentAware'
 import AnauraFeatures from '../Component/AnauraFeatures/AnauraFeatures'
 
@@ -22,7 +22,7 @@ const Sustainability = () => {
         <div>
             <main>
 
-                <HeroSection bgImg={Img3} title={'We are passionate creators, blending science and sustainability for the Earth.'} />
+                <HeroSection bgImg={Img3} title={'"Driven by science, we craft sustainable solutions for a balanced future with nature."'} />
 
                 <SustainabilityImpact/>
 
