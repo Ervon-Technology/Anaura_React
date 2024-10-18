@@ -293,13 +293,13 @@ const Home = () => {
       <div className="col-md-7 d-flex align-items-center mx-auto">
         <div className="col-md-10 py-4 mx-auto px-2">
           <h2 className="text-3xl md:text-4xl font-bold text-[#045518] mb-3">
-            From Bottle Caps to Fabrics
+            From Bottle Caps to PP Granules
           </h2>
           <p className="fs-5 mb-3">
-            Anaura transforms bottle caps into high-quality raw materials for fabrics, reducing waste and supporting a circular economy.
+            Anaura transforms discarded bottle caps into high-quality PP granules, which are then used to manufacture a wide range of durable products.
           </p>
           <p className="fs-5 mb-4">
-            Our eco-friendly solutions protect the environment while offering innovative products.
+            Our innovative recycling approach reduces plastic waste and supports the production of eco-friendly, sustainable products.
           </p>
           <button className="btn btn-outline-dark rounded-pill px-4 btn-lg border-2 fs-6">
             Learn More
@@ -311,7 +311,7 @@ const Home = () => {
       <div className="col-md-5">
         <img
           src={bottlecaprecycling}
-          alt="Recycling bottle caps to fabric"
+          alt="Recycling bottle caps to PP granules"
           className="img-fluid rounded-lg shadow-lg"
           style={{ maxHeight: '36rem', objectFit: 'cover', objectPosition: 'top left' }}
         />
@@ -322,10 +322,10 @@ const Home = () => {
     <div className="row mt-5">
       <div className="col-md-12 text-center">
         <h2 className="text-xl font-bold text-[#045518] mb-3">
-          Raw Materials from Bottle Caps
+          PP Granules and Their Applications
         </h2>
         <p className="fs-5 mb-4">
-          Discover the high-quality materials we create:
+          Explore how our recycled PP granules are reshaping industries:
         </p>
       </div>
     </div>
@@ -334,19 +334,19 @@ const Home = () => {
       {/* List of Raw Materials and Uses with fixed height */}
       {[
         {
-          title: 'Recycled Plastic Pellets',
-          description: 'Durable fabrics, bags, and eco-friendly products.',
-          icon: '📦', // Example icon
+          title: 'Plastic Chairs',
+          description: 'Manufactured from durable PP granules, ideal for everyday use.',
+          icon: '🪑', // Example icon for chairs
         },
         {
-          title: 'Composite Materials',
-          description: 'Used in construction and automotive industries.',
-          icon: '🏗️', // Example icon
+          title: 'Plastic Crates',
+          description: 'Strong and durable crates used for transportation and storage.',
+          icon: '📦', // Example icon for crates
         },
         {
-          title: 'Textile Fibers',
-          description: 'Woven into fabrics for clothing and home decor.',
-          icon: '👗', // Example icon
+          title: 'Auto Parts',
+          description: 'PP granules are molded into essential components in the automotive industry.',
+          icon: '🚗', // Example icon for auto parts
         },
       ].map((item, index) => (
         <div key={index} className="col-md-4 mb-4 d-flex justify-content-center">
@@ -362,6 +362,7 @@ const Home = () => {
     </div>
   </div>
 </section>
+
 
 
 
