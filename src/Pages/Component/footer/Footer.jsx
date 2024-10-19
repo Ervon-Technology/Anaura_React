@@ -94,6 +94,11 @@ const Footer = () => {
               <a href="#" className="text-secondary">
                 Privacy Policy
               </a>
+            </small> &nbsp;
+            <small className="text-secondary">
+              <a href="https://www.ervon.tech/" className="text-secondary">
+                Developed and Designed by Ervon
+              </a>
             </small>
           </div>
           <div className="col-md-4 text-center text-md-end mt-3 mt-md-0">
