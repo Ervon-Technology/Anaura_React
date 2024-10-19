@@ -166,27 +166,46 @@ const Home = () => {
       
 
       {/* ANAURA FOR FASHION */}
-      <section className="eco-section " style={{ background: "#e4f2ff" }}>
-        <div className="row align-items-center">
-          <img
-            src={fashion}
-            alt="Fashion"
-            className="col-md-5 d-none d-md-block p-0 img-fluid"
-            style={{ maxHeight: '36rem', objectFit: 'cover', objectPosition: 'top left' }}
-          />
-          <div className="col-md-7 d-flex align-items-center mx-auto">
-            <div className="col-md-10 py-4 mx-auto px-4 px-md-0 px-lg-5">
-              <Heading2 text={"ANAURA Fashion"} />
-              <p className="fs-5 mb-4 col-md-12">Enjoy future-proof fashion with Anaura's vast range of fabric alternatives.</p>
-              <button className="btn btn-outline-dark rounded-pill px-4 btn-lg border-2 fs-6">ANAURA For Brands</button>
-              <div className="mt-5">
-                <Marquee gradient={false}>
-                  <div className="d-flex justify-content-center">
-                    <img src={spring} alt="Spring" className="mx-1 img-fluid" style={{ width: '13rem', height: '150px', objectFit: 'cover' }} />
-                    <img src={summer} alt="Summer" className="mx-1 img-fluid" style={{ width: '13rem', height: '150px', objectFit: 'cover' }} />
-                    <img src={winter} alt="Winter" className="mx-1 img-fluid" style={{ width: '13rem', height: '150px', objectFit: 'cover' }} />
-                  </div>
-                </Marquee>
+      <section className="eco-section" style={{ background: '#e4f2ff' }}>
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-md-5 d-none d-md-block">
+              <img
+                src={fashion}
+                alt="Fashion"
+                className="img-fluid"
+                style={{ maxHeight: '36rem', objectFit: 'cover', objectPosition: 'top left' }}
+              />
+            </div>
+            <div className="col-md-7 d-flex align-items-center mx-auto">
+              <div className="py-4 mx-auto px-4 px-md-0 px-lg-5">
+                <Heading2 text={'ANAURA Fashion'} />
+                <p className="fs-5 mb-4 col-md-12">Enjoy future-proof fashion with Anaura's vast range of fabric alternatives.</p>
+                <button className="btn btn-outline-dark rounded-pill px-4 btn-lg border-2 fs-6">ANAURA For Brands</button>
+                <div className="mt-5">
+                  <Marquee gradient={false}>
+                    <div className="d-flex justify-content-center">
+                      <img
+                        src={spring}
+                        alt="Spring"
+                        className="mx-1 img-fluid"
+                        style={{ width: '13rem', height: '150px', objectFit: 'cover' }}
+                      />
+                      <img
+                        src={summer}
+                        alt="Summer"
+                        className="mx-1 img-fluid"
+                        style={{ width: '13rem', height: '150px', objectFit: 'cover' }}
+                      />
+                      <img
+                        src={winter}
+                        alt="Winter"
+                        className="mx-1 img-fluid"
+                        style={{ width: '13rem', height: '150px', objectFit: 'cover' }}
+                      />
+                    </div>
+                  </Marquee>
+                </div>
               </div>
             </div>
           </div>
@@ -197,8 +216,8 @@ const Home = () => {
       <section className="eco-section py-5 my-0 my-md-5 px-3 px-md-5">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-6 d-flex align-items-center mx-auto">
-              <div className="col-lg-10 py-4 mx-auto">
+            <div className="col-lg-7 d-flex align-items-center mx-auto">
+              <div className="py-4 mx-auto px-2">
                 <Heading2 text={"ANAURA Home"} />
                 <p className="fs-5 mb-4 col-md-12">Step into the future of home fashion with recycled material for Home Furnishing items.</p>
                 <button className="btn btn-outline-dark rounded-pill px-4 btn-lg border-2 fs-6">Know More ANAURA Home</button>
@@ -213,7 +232,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-6 text-center d-none d-md-block">
+            <div className="col-lg-5 text-center d-none d-md-block">
               <img
                 src={home}
                 alt="Carpets"
@@ -228,15 +247,15 @@ const Home = () => {
       <section className="eco-section py-md-5 px-3 px-md-5">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-6 order-1 order-lg-2 text-center mx-auto">
+            <div className="col-lg-5 order-1 order-lg-2 text-center mx-auto">
               <img
                 src={GrowYourBrand}
                 alt="Eco-Friendly Textiles"
-                className="img-fluid  mx-auto col-md-10"
+                className="img-fluid  mx-auto "
               />
             </div>
-            <div className="col-lg-6 d-flex align-items-center order-2 order-lg-1">
-              <div className="col-md-10 py-4 mx-auto">
+            <div className="col-lg-7 d-flex align-items-center order-2 order-lg-1">
+              <div className="py-4 mx-auto">
                 <Heading2 text={"Grow your brand with ANAURA"} />
                 <p className="fs-5 mb-4">We believe brands and consumers should use their purchasing power to further the environmental impact they want to see in the world.</p>
                 <button className="btn btn-outline-dark rounded-pill px-4 btn-lg border-2 fs-6">ANAURA For Brands</button>
@@ -268,11 +287,11 @@ const Home = () => {
       <section className="py-5 px-3 px-md-5">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-md-6 text-center">
-              <img src={recyleFabric} alt="Recycle Fabric" className="col-10 rounded mb-4 mb-md-0 img-fluid" />
+            <div className="col-md-6 ">
+              <img src={recyleFabric} alt="Recycle Fabric" className="rounded mb-4 mb-md-0 img-fluid" />
             </div>
             <div className="col-md-6">
-              <div className="col-md-10 py-4 mx-auto">
+              <div className="py-4 mx-auto px-2">
                 <h6 className="text-muted mb-3 text-uppercase text-lg-start">
                   Make your brand Trustable, Traceable & Sustainable
                 </h6>
@@ -290,8 +309,8 @@ const Home = () => {
   <div className="container">
     <div className="row align-items-center">
       {/* Content Column - Left */}
-      <div className="col-md-7 d-flex align-items-center mx-auto">
-        <div className="col-md-10 py-4 mx-auto px-2">
+      <div className="col-md-6 d-flex align-items-center mx-auto">
+        <div className="py-4 mx-auto px-2">
           <h2 className="text-3xl md:text-4xl font-bold text-[#045518] mb-3">
             From Bottle Caps to PP Granules
           </h2>
@@ -308,7 +327,7 @@ const Home = () => {
       </div>
 
       {/* Image Column - Right */}
-      <div className="col-md-5">
+      <div className="col-md-6">
         <img
           src={bottlecaprecycling}
           alt="Recycling bottle caps to PP granules"
@@ -319,13 +338,6 @@ const Home = () => {
     </div>
   </div>
 </section>
-
-
-
-
-
-
-
 
       <AnauraFeatures />
 
