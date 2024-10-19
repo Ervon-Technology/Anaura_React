@@ -5,7 +5,7 @@ import background from '../../videos/rudraheroic.mp4';
 import AnauraFeatures from '../Component/AnauraFeatures/AnauraFeatures';
 import AboutAnaura from '../../images/home/about-anaura.mp4'
 import AboutAnaura2 from '../../images/home/about-anaura2.mp4'
-import oneOne from '../../images/one-one.png';
+import fashion from '../../images/anaura-home/fashion.jpg';
 import counter from '../../videos/ocenwast.mp4';
 import CarpetsImg from '../../images/anaura-home/carpets.jpg';
 import recyleFabric from '../../images/home/recycleFabric.png';
@@ -25,7 +25,7 @@ import exhibitioncarpet from '../../images/home/exhibition-carpet.jpg'
 
 import Heading2 from '../../fonts/Heading2';
 import Marquee from 'react-fast-marquee';
-
+import home from '../../images/anaura-home/home.jpg'
 
 import AnauraHomeImg from '../../images/home/anaura-home.jpg';
 import AnauraFashionImg from '../../images/home/anaura-fashion.jpg';
@@ -169,7 +169,7 @@ const Home = () => {
       <section className="eco-section " style={{ background: "#e4f2ff" }}>
         <div className="row align-items-center">
           <img
-            src={oneOne}
+            src={fashion}
             alt="Fashion"
             className="col-md-5 d-none d-md-block p-0 img-fluid"
             style={{ maxHeight: '36rem', objectFit: 'cover', objectPosition: 'top left' }}
@@ -215,7 +215,7 @@ const Home = () => {
             </div>
             <div className="col-lg-6 text-center d-none d-md-block">
               <img
-                src={CarpetsImg}
+                src={home}
                 alt="Carpets"
                 className="w-100 p-0 img-fluid"
               />
@@ -316,49 +316,6 @@ const Home = () => {
           style={{ maxHeight: '36rem', objectFit: 'cover', objectPosition: 'top left' }}
         />
       </div>
-    </div>
-
-    {/* Raw Materials and Their Applications */}
-    <div className="row mt-5">
-      <div className="col-md-12 text-center">
-        <h2 className="text-xl font-bold text-[#045518] mb-3">
-          PP Granules and Their Applications
-        </h2>
-        <p className="fs-5 mb-4">
-          Explore how our recycled PP granules are reshaping industries:
-        </p>
-      </div>
-    </div>
-
-    <div className="row text-center" style={{ background: '#f7f9fc', padding: '2rem 0', borderRadius: '10px' }}>
-      {/* List of Raw Materials and Uses with fixed height */}
-      {[
-        {
-          title: 'Plastic Chairs',
-          description: 'Manufactured from durable PP granules, ideal for everyday use.',
-          icon: '🪑', // Example icon for chairs
-        },
-        {
-          title: 'Plastic Crates',
-          description: 'Strong and durable crates used for transportation and storage.',
-          icon: '📦', // Example icon for crates
-        },
-        {
-          title: 'Auto Parts',
-          description: 'PP granules are molded into essential components in the automotive industry.',
-          icon: '🚗', // Example icon for auto parts
-        },
-      ].map((item, index) => (
-        <div key={index} className="col-md-4 mb-4 d-flex justify-content-center">
-          <div className="border p-4 rounded shadow-lg hover:shadow-2xl transition-transform duration-300 ease-in-out transform hover:scale-105 d-flex flex-column justify-content-between" style={{ height: '250px' }}>
-            <div className="flex items-center justify-center mb-2" style={{ fontSize: '2rem' }}>
-              {item.icon}
-            </div>
-            <h4 className="font-bold text-lg mb-1">{item.title}</h4>
-            <p className="text-gray-700">{item.description}</p>
-          </div>
-        </div>
-      ))}
     </div>
   </div>
 </section>
