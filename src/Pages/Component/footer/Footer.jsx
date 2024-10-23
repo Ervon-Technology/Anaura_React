@@ -97,7 +97,7 @@ const Footer = () => {
             </small> &nbsp;
             <small className="text-secondary">
               <a href="https://www.ervon.tech/" className="text-secondary">
-                Designed Developed and by Ervon
+                Designed and Developed by Ervon
               </a>
             </small>
           </div>
